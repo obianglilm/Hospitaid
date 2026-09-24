@@ -1,0 +1,418 @@
+// HospitAid — Schéma de base de données (Phase 2)
+// Reflète le modèle validé en Phase 1 : référentiel médical, tarification
+// paramétrable, accès payant forfaitaire par établissement, gouvernance
+// des données (statuts de validation, historique, audit).
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ─────────────────────────────────────────────────────────────
+// UTILISATEURS, RÔLES, PERMISSIONS
+// ─────────────────────────────────────────────────────────────
+
+enum RoleName {
+  VISITOR // non utilisé en base (visiteur = pas de compte), gardé pour référence
+  PATIENT
+  ADMIN
+  // Réservés pour une activation future sans migration lourde :
+  DATA_OPERATOR
+  FINANCE_ADMIN
+}
+
+enum CoverageType {
+  EXONERE
+  PLEIN
+  PLEIN_ALD
+  PAF
+}
+
+model User {
+  id                  String   @id @default(cuid())
+  email               String   @unique
+  passwordHash        String
+  fullName            String?
+  phone               String?
+  role                RoleName @default(PATIENT)
+  defaultCoverageType CoverageType?
+  mfaEnabled          Boolean  @default(false)
+  mfaSecret           String?
+  createdAt           DateTime @default(now())
+  updatedAt           DateTime @updatedAt
+
+  payments       Payment[]
+  accessGrants   AccessGrant[]
+  pricingQueries PricingQuery[]
+  auditLogs      AuditLog[]
+  notifications  Notification[]
+  importJobs     ImportJob[]
+
+  @@index([role])
+}
+
+// ─────────────────────────────────────────────────────────────
+// ÉTABLISSEMENTS SANITAIRES
+// ─────────────────────────────────────────────────────────────
+
+enum FacilityStatus {
+  ACTIVE
+  INACTIVE
+  ARCHIVED
+}
+
+model FacilityType {
+  id         String          @id @default(cuid())
+  code       String          @unique // PUBLIC, PRIVATE, LAB, IMAGING, OTHER
+  label      String
+  facilities HealthFacility[]
+}
+
+model HealthFacility {
+  id              String         @id @default(cuid())
+  name            String
+  shortName       String?
+  typeId          String
+  type            FacilityType   @relation(fields: [typeId], references: [id])
+  address         String?
+  city            String         @default("Libreville")
+  zone            String?
+  latitude        Float?
+  longitude       Float?
+  phone           String?
+  email           String?
+  website         String?
+  status          FacilityStatus @default(ACTIVE)
+  verifiedAt      DateTime?
+  sourceNote      String?
+  internalNotes   String? // notes administratives non publiques
+  createdAt       DateTime       @default(now())
+  updatedAt       DateTime       @updatedAt
+
+  facilityExams FacilityExam[]
+  payments      Payment[]
+
+  @@index([status])
+  @@index([city])
+}
+
+// ─────────────────────────────────────────────────────────────
+// EXAMENS ET NOMENCLATURE
+// ─────────────────────────────────────────────────────────────
+
+enum ValidationStatus {
+  A_VERIFIER
+  VERIFIE
+  EXPIRE
+  ARCHIVE
+}
+
+// Valeurs nationales des lettres-clés (source : Annexe 1, Nomenclature
+// des actes des professions de santé, Gabon, décembre 2010). Sert de
+// référence pour calculer le tarif conventionné des actes techniques
+// (tarif = coefficient de l'acte × valeur nationale de la lettre-clé).
+// Les consultations (C, Cs, CNPSY, CPr...) n'utilisent PAS cette table :
+// leur tarif est saisi directement par établissement (voir Tariff),
+// car il varie par niveau de structure sanitaire (Annexes 2 et 3).
+model LettreCle {
+  id            String    @id @default(cuid())
+  code          String    @unique // K, KC, KE, Z, ZN, B, D, PRO, SF, SFI, AIS, AMI...
+  label         String
+  nationalValue Int // FCFA
+  source        String?
+  effectiveFrom DateTime  @default(now())
+  effectiveTo   DateTime?
+
+  exams Exam[]
+}
+
+model ExamCategory {
+  id               String         @id @default(cuid())
+  name             String
+  parentCategoryId String?
+  parentCategory   ExamCategory?  @relation("CategoryHierarchy", fields: [parentCategoryId], references: [id])
+  subCategories    ExamCategory[] @relation("CategoryHierarchy")
+  exams            Exam[]
+}
+
+model NomenclatureCode {
+  id            String    @id @default(cuid())
+  code          String
+  label         String
+  version       String
+  effectiveFrom DateTime
+  effectiveTo   DateTime?
+  source        String? // ex: référence du PDF CNAMGS importé
+  exams         Exam[]
+
+  @@unique([code, version])
+}
+
+model Exam {
+  id                  String            @id @default(cuid())
+  officialName        String
+  commonName          String?
+  categoryId          String?
+  category            ExamCategory?     @relation(fields: [categoryId], references: [id])
+  nomenclatureCodeId  String?
+  nomenclatureCode    NomenclatureCode? @relation(fields: [nomenclatureCodeId], references: [id])
+  description         String?
+  actType             String?
+  isConsultation      Boolean           @default(false) // true = tarif saisi par établissement (pas de lettre-clé)
+  lettreCleCode       String? // ex: "B", "KC" — pour les actes techniques uniquement
+  lettreCle           LettreCle?        @relation(fields: [lettreCleCode], references: [code])
+  coefficient         Int? // "cotation" du document — utilisé avec lettreCle.nationalValue
+  status              ValidationStatus  @default(A_VERIFIER)
+  nomenclatureVersion String?
+  effectiveFrom       DateTime?
+  effectiveTo         DateTime?
+  createdAt           DateTime          @default(now())
+  updatedAt           DateTime          @updatedAt
+
+  facilityExams  FacilityExam[]
+  coverageRules  CoverageRule[]
+  payments       Payment[]
+  pricingQueries PricingQuery[]
+
+  @@index([status])
+  @@index([officialName])
+}
+
+// Table de liaison N-N Établissement <-> Examen
+model FacilityExam {
+  id                 String            @id @default(cuid())
+  facilityId         String
+  facility           HealthFacility    @relation(fields: [facilityId], references: [id])
+  examId             String
+  exam               Exam              @relation(fields: [examId], references: [id])
+  isAvailable        Boolean           @default(true)
+  verifiedAt         DateTime?
+  verificationStatus ValidationStatus  @default(A_VERIFIER)
+  source             String?
+  comment            String?
+
+  tariffs Tariff[]
+
+  @@unique([facilityId, examId])
+  @@index([verificationStatus])
+}
+
+// ─────────────────────────────────────────────────────────────
+// TARIFICATION
+// ─────────────────────────────────────────────────────────────
+
+model Tariff {
+  id                  String            @id @default(cuid())
+  facilityExamId      String
+  facilityExam        FacilityExam      @relation(fields: [facilityExamId], references: [id])
+  tariffType          String            @default("STANDARD")
+  referenceAmount     Int // tarif conventionné (FCFA), base de remboursement CNAMGS
+  facilityBilledAmount Int? // tarif réellement facturé par l'établissement, si différent
+                             // du tarif conventionné (cas fréquent en privé) ; si null,
+                             // on considère facilityBilledAmount = referenceAmount
+  validFrom           DateTime
+  validTo             DateTime?
+  version             Int               @default(1)
+  status              ValidationStatus  @default(A_VERIFIER)
+  source              String?
+  authorId            String?
+  createdAt           DateTime          @default(now())
+  updatedAt           DateTime          @updatedAt
+
+  history TariffHistory[]
+
+  @@index([facilityExamId, status])
+}
+
+model TariffHistory {
+  id            String   @id @default(cuid())
+  tariffId      String
+  tariff        Tariff   @relation(fields: [tariffId], references: [id])
+  previousValue Int?
+  newValue      Int
+  changedBy     String
+  changedAt     DateTime @default(now())
+  reason        String?
+}
+
+// Règle de prise en charge : par défaut globale, ou exception
+// par examen/établissement (l'une des deux clés optionnelles).
+// coverageRatePercent = part prise en charge par la CNAMGS (80/90/100/0),
+// conforme à l'Annexe 1 : Affection courante 80%, ALD 90%,
+// Femme enceinte déclarée 100%. PAF (0%) est une hypothèse à valider
+// avec la CNAMGS, non présente explicitement dans ce document.
+model CoverageRule {
+  id                  String       @id @default(cuid())
+  coverageType        CoverageType
+  coverageRatePercent Int // 0-100 — part prise en charge par la CNAMGS
+  isDefault           Boolean      @default(false)
+  examId              String?
+  exam                Exam?        @relation(fields: [examId], references: [id])
+  facilityId          String?
+  source              String?
+  validFrom           DateTime     @default(now())
+  validTo             DateTime?
+
+  @@index([coverageType, isDefault])
+}
+
+// ─────────────────────────────────────────────────────────────
+// PAIEMENT ET ACCÈS
+// ─────────────────────────────────────────────────────────────
+
+enum PaymentStatus {
+  PENDING
+  SUCCEEDED
+  FAILED
+  CANCELLED
+  UNKNOWN
+}
+
+enum PaymentProviderMode {
+  TEST
+  PRODUCTION
+}
+
+model PaymentProvider {
+  id       String              @id @default(cuid())
+  name     String
+  mode     PaymentProviderMode @default(TEST)
+  config   Json? // clés/paramètres non sensibles uniquement ; secrets en env
+
+  payments Payment[]
+}
+
+model Payment {
+  id           String        @id @default(cuid())
+  userId       String
+  user         User          @relation(fields: [userId], references: [id])
+  providerId   String
+  provider     PaymentProvider @relation(fields: [providerId], references: [id])
+  amount       Int // en FCFA
+  status       PaymentStatus @default(PENDING)
+  type         String        @default("FACILITY_ACCESS") // scope du paiement
+  examId       String?
+  exam         Exam?         @relation(fields: [examId], references: [id])
+  facilityId   String?
+  facility     HealthFacility? @relation(fields: [facilityId], references: [id])
+  providerRef  String?       @unique // référence transaction côté prestataire (idempotence)
+  createdAt    DateTime      @default(now())
+  confirmedAt  DateTime?
+
+  accessGrant AccessGrant?
+
+  @@index([status])
+  @@index([userId])
+}
+
+enum AccessScopeType {
+  FACILITY
+  EXAM
+  PASS
+}
+
+model AccessGrant {
+  id          String          @id @default(cuid())
+  userId      String
+  user        User            @relation(fields: [userId], references: [id])
+  scopeType   AccessScopeType @default(FACILITY)
+  scopeRefId  String // facilityId en V1
+  grantedAt   DateTime        @default(now())
+  expiresAt   DateTime?
+  paymentId   String          @unique
+  payment     Payment         @relation(fields: [paymentId], references: [id])
+
+  @@index([userId, scopeType, scopeRefId])
+}
+
+// Historique des consultations tarifaires (coverageType propre à
+// chaque requête, indépendant du defaultCoverageType du profil).
+model PricingQuery {
+  id           String       @id @default(cuid())
+  userId       String
+  user         User         @relation(fields: [userId], references: [id])
+  examId       String
+  exam         Exam         @relation(fields: [examId], references: [id])
+  facilityId   String
+  coverageType CoverageType
+  computedAt   DateTime     @default(now())
+}
+
+// ─────────────────────────────────────────────────────────────
+// GOUVERNANCE, IMPORTS, AUDIT
+// ─────────────────────────────────────────────────────────────
+
+model AuditLog {
+  id         String   @id @default(cuid())
+  actorId    String?
+  actor      User?    @relation(fields: [actorId], references: [id])
+  action     String
+  entityType String
+  entityId   String
+  before     Json?
+  after      Json?
+  createdAt  DateTime @default(now())
+
+  @@index([entityType, entityId])
+}
+
+enum ImportJobStatus {
+  UPLOADED
+  PREVIEW
+  VALIDATED
+  PUBLISHED
+  CANCELLED
+  FAILED
+}
+
+model ImportJob {
+  id          String          @id @default(cuid())
+  type        String // ex: "NOMENCLATURE_PDF", "FACILITIES_CSV"
+  fileRef     String // chemin/référence du fichier archivé
+  status      ImportJobStatus @default(UPLOADED)
+  startedById String
+  startedBy   User            @relation(fields: [startedById], references: [id])
+  startedAt   DateTime        @default(now())
+  finishedAt  DateTime?
+
+  errors ImportError[]
+}
+
+model ImportError {
+  id           String    @id @default(cuid())
+  importJobId  String
+  importJob    ImportJob @relation(fields: [importJobId], references: [id])
+  rowNumber    Int
+  errorMessage String
+}
+
+model DataSource {
+  id           String   @id @default(cuid())
+  label        String
+  type         String // ex: "CNAMGS_NOMENCLATURE_PDF"
+  referenceUrl String? // ou chemin du fichier archivé
+  addedBy      String?
+  createdAt    DateTime @default(now())
+}
+
+model Notification {
+  id        String    @id @default(cuid())
+  userId    String
+  user      User      @relation(fields: [userId], references: [id])
+  type      String
+  message   String
+  readAt    DateTime?
+  createdAt DateTime  @default(now())
+}
+
+model SystemSetting {
+  id        String   @id @default(cuid())
+  key       String   @unique
+  value     Json
+  updatedBy String?
+  updatedAt DateTime @updatedAt
+}
