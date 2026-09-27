@@ -1,11 +1,8 @@
 import { PrismaClient } from "@prisma/client";
+import nomenclatureActes from "./data/nomenclature-actes.json";
 
 const prisma = new PrismaClient();
 
-// Source : "Nomenclature des actes des professions de santé", Ministère
-// de la Santé du Gabon, Décembre 2010 — Annexe 1 : Glossaire et valeurs
-// des lettres-clés. Fichier importé : Tarification_CNAMGS (PDF fourni
-// par le porteur de projet le 23/09/2026).
 const SOURCE = "Nomenclature CNAMGS - Annexe 1 (Décembre 2010)";
 
 const LETTRES_CLES = [
@@ -27,16 +24,62 @@ const LETTRES_CLES = [
   { code: "AMS", label: "Actes pratiqués par le masseur", nationalValue: 900 },
   { code: "D", label: "Actes dentaires autres que d'orthopédie dentaire", nationalValue: 1100 },
   { code: "B", label: "Actes pratiqués par le biologiste au laboratoire", nationalValue: 125 },
+  { code: "Rd", label: "Actes de radiodiagnostic (valeur non listée en Annexe 1)", nationalValue: 0 },
+  { code: "Rt", label: "Actes de radiothérapie (valeur non listée en Annexe 1)", nationalValue: 0 },
 ] as const;
 
-// Taux de prise en charge CNAMGS par statut (Annexe 1 pour les 3 premiers ;
-// PAF confirmé par le porteur de projet = "Particulier À ses Frais",
-// personne non assurée, 0% de prise en charge CNAMGS).
 const COVERAGE_DEFAULTS = [
   { coverageType: "EXONERE" as const, coverageRatePercent: 100 },
   { coverageType: "PLEIN" as const, coverageRatePercent: 80 },
   { coverageType: "PLEIN_ALD" as const, coverageRatePercent: 90 },
-  { coverageType: "PAF" as const, coverageRatePercent: 0 }, // Particulier À ses Frais (non assuré)
+  { coverageType: "PAF" as const, coverageRatePercent: 0 },
+];
+
+const FACILITY_TYPES = [
+  { code: "PUBLIC", label: "Établissement public" },
+  { code: "PRIVATE", label: "Établissement privé" },
+  { code: "LAB", label: "Laboratoire" },
+  { code: "IMAGING", label: "Centre d'imagerie" },
+  { code: "OTHER", label: "Autre" },
+];
+
+const FACILITIES = [
+  {
+    name: "CHUL — Centre Hospitalier Universitaire de Libreville",
+    shortName: "CHUL",
+    typeCode: "PUBLIC",
+    city: "Libreville",
+    address: "Centre-ville, Libreville (adresse précise à vérifier)",
+    phone: "À vérifier — plusieurs numéros trouvés en ligne, non confirmés",
+    sourceNote: "Wikipédia FR, Yes RDV, Le Privé Online (numéros divergents) — 27/09/2026",
+  },
+  {
+    name: "CHUO — Centre Hospitalier Universitaire d'Owendo",
+    shortName: "CHUO",
+    typeCode: "PUBLIC",
+    city: "Owendo",
+    address: "BP 50, Owendo, Libreville",
+    phone: "062 52 03 82 (à reconfirmer)",
+    sourceNote: "Avis d'appel d'offres CHUO publiés dans L'Union (2023) — 27/09/2026",
+  },
+  {
+    name: "CHU Fondation Jeanne Ebori",
+    shortName: "Jeanne Ebori",
+    typeCode: "PUBLIC",
+    city: "Libreville",
+    address: "À vérifier",
+    phone: "À vérifier",
+    sourceNote: "Presse locale (L'Union) — spécialisé santé mère-enfant — 27/09/2026",
+  },
+  {
+    name: "Laboratoire National de Santé Publique",
+    shortName: "LNSP",
+    typeCode: "LAB",
+    city: "Libreville",
+    address: "À proximité du CHUL, Libreville (adresse précise à vérifier)",
+    phone: "À vérifier",
+    sourceNote: "ASLM Lab Mapping, AllAfrica, L'Union — laboratoire public rénové en 2026 — 27/09/2026",
+  },
 ];
 
 async function main() {
@@ -67,6 +110,84 @@ async function main() {
         },
       });
     }
+  }
+
+  console.log("Seed : types d'établissements...");
+  for (const t of FACILITY_TYPES) {
+    await prisma.facilityType.upsert({
+      where: { code: t.code },
+      update: { label: t.label },
+      create: t,
+    });
+  }
+
+  console.log("Seed : établissements (statut non vérifié)...");
+  for (const f of FACILITIES) {
+    const type = await prisma.facilityType.findUnique({ where: { code: f.typeCode } });
+    if (!type) continue;
+    const existing = await prisma.healthFacility.findFirst({ where: { name: f.name } });
+    if (!existing) {
+      await prisma.healthFacility.create({
+        data: {
+          name: f.name,
+          shortName: f.shortName,
+          typeId: type.id,
+          city: f.city,
+          address: f.address,
+          phone: f.phone,
+          status: "ACTIVE",
+          verifiedAt: null,
+          sourceNote: f.sourceNote,
+        },
+      });
+    }
+  }
+
+  console.log("Seed : import de la nomenclature (actes extraits du PDF officiel)...");
+  const NOMENCLATURE_VERSION = "2010-auto-extract-v1";
+  const existingCount = await prisma.nomenclatureCode.count({
+    where: { version: NOMENCLATURE_VERSION },
+  });
+  if (existingCount >= nomenclatureActes.length) {
+    console.log(`  déjà importé (${existingCount} codes) — ignoré.`);
+  } else {
+    type ActeRow = { chapter: string; code: string; label: string; letterCode: string; coefficient: number };
+    const actes = nomenclatureActes as ActeRow[];
+
+    await prisma.nomenclatureCode.createMany({
+      data: actes.map((a) => ({
+        code: a.code,
+        label: a.label,
+        version: NOMENCLATURE_VERSION,
+        effectiveFrom: new Date("2010-12-01"),
+        source:
+          "Extraction automatique — Nomenclature des actes des professions de santé, " +
+          "Gabon, décembre 2010 (fournie par le porteur de projet le 23/09/2026). " +
+          "Statut à vérifier ligne par ligne avant publication.",
+      })),
+      skipDuplicates: true,
+    });
+
+    const codes = await prisma.nomenclatureCode.findMany({
+      where: { version: NOMENCLATURE_VERSION },
+      select: { id: true, code: true },
+    });
+    const idByCode = new Map(codes.map((c) => [c.code, c.id]));
+
+    await prisma.exam.createMany({
+      data: actes.map((a) => ({
+        officialName: a.label,
+        nomenclatureCodeId: idByCode.get(a.code) ?? null,
+        actType: a.chapter,
+        isConsultation: false,
+        lettreCleCode: a.letterCode,
+        coefficient: a.coefficient,
+        status: "A_VERIFIER" as const,
+        nomenclatureVersion: NOMENCLATURE_VERSION,
+      })),
+    });
+
+    console.log(`  ${actes.length} actes importés (statut: à vérifier).`);
   }
 
   console.log("Seed terminé.");
