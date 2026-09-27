@@ -1,0 +1,8395 @@
+[
+ {
+  "chapter": "MAL",
+  "code": "F00010",
+  "label": "Clavicule, main, cheville, pied",
+  "letterCode": "KC",
+  "coefficient": 10
+ },
+ {
+  "chapter": "MAL",
+  "code": "F00011",
+  "label": "Epaule, bras, coude, avant-bras, poignet, genou, jambe",
+  "letterCode": "KC",
+  "coefficient": 20
+ },
+ {
+  "chapter": "MAL",
+  "code": "F00012",
+  "label": "Rachis, hanche, cuisse",
+  "letterCode": "KC",
+  "coefficient": 30
+ },
+ {
+  "chapter": "MAL",
+  "code": "F00013",
+  "label": "Main, styloïde radiale ou cubitale",
+  "letterCode": "KC",
+  "coefficient": 20
+ },
+ {
+  "chapter": "MAL",
+  "code": "F00016",
+  "label": "Humérus",
+  "letterCode": "KC",
+  "coefficient": 50
+ },
+ {
+  "chapter": "MAL",
+  "code": "F00017",
+  "label": "Clavicule",
+  "letterCode": "KC",
+  "coefficient": 10
+ },
+ {
+  "chapter": "MAL",
+  "code": "F00018",
+  "label": "Omoplate",
+  "letterCode": "KC",
+  "coefficient": 10
+ },
+ {
+  "chapter": "MAL",
+  "code": "F00019",
+  "label": "Avant-pied, tarse antérieur",
+  "letterCode": "KC",
+  "coefficient": 20
+ },
+ {
+  "chapter": "MAL",
+  "code": "F00020",
+  "label": "Astragale calcanéum",
+  "letterCode": "KC",
+  "coefficient": 30
+ },
+ {
+  "chapter": "MAL",
+  "code": "F00021",
+  "label": "Une malléole",
+  "letterCode": "KC",
+  "coefficient": 30
+ },
+ {
+  "chapter": "MAL",
+  "code": "F00022",
+  "label": "Deux malléoles",
+  "letterCode": "KC",
+  "coefficient": 50
+ },
+ {
+  "chapter": "MAL",
+  "code": "F00023",
+  "label": "Jambe",
+  "letterCode": "KC",
+  "coefficient": 50
+ },
+ {
+  "chapter": "MAL",
+  "code": "F00024",
+  "label": "Rotule",
+  "letterCode": "KC",
+  "coefficient": 20
+ },
+ {
+  "chapter": "MAL",
+  "code": "F00025",
+  "label": "Fémur",
+  "letterCode": "KC",
+  "coefficient": 80
+ },
+ {
+  "chapter": "MAL",
+  "code": "F00026",
+  "label": "Fractures articulaires de la hanche",
+  "letterCode": "KC",
+  "coefficient": 40
+ },
+ {
+  "chapter": "MAL",
+  "code": "F00028",
+  "label": "Autres fractures du bassin",
+  "letterCode": "KC",
+  "coefficient": 20
+ },
+ {
+  "chapter": "MAL",
+  "code": "F00029",
+  "label": "Rachis",
+  "letterCode": "KC",
+  "coefficient": 50
+ },
+ {
+  "chapter": "MAL",
+  "code": "F00030",
+  "label": "Une phalange ou un métacarpien",
+  "letterCode": "KC",
+  "coefficient": 30
+ },
+ {
+  "chapter": "MAL",
+  "code": "F00031",
+  "label": "Deux phalanges ou deux métacarpiens",
+  "letterCode": "KC",
+  "coefficient": 40
+ },
+ {
+  "chapter": "MAL",
+  "code": "F00032",
+  "label": "Trois phalanges ou trois métacarpiens",
+  "letterCode": "KC",
+  "coefficient": 50
+ },
+ {
+  "chapter": "MAL",
+  "code": "F00033",
+  "label": "Scaphoïde, radius",
+  "letterCode": "KC",
+  "coefficient": 60
+ },
+ {
+  "chapter": "MAL",
+  "code": "F00034",
+  "label": "Os du carpe, ou un os de l'avant-bras",
+  "letterCode": "KC",
+  "coefficient": 50
+ },
+ {
+  "chapter": "MAL",
+  "code": "F00035",
+  "label": "Fracture des deux os de l'avant-bras",
+  "letterCode": "KC",
+  "coefficient": 100
+ },
+ {
+  "chapter": "MAL",
+  "code": "F00040",
+  "label": "Clavicule",
+  "letterCode": "KC",
+  "coefficient": 20
+ },
+ {
+  "chapter": "MAL",
+  "code": "F00041",
+  "label": "Omoplate",
+  "letterCode": "KC",
+  "coefficient": 50
+ },
+ {
+  "chapter": "MAL",
+  "code": "F00042",
+  "label": "Phalange",
+  "letterCode": "KC",
+  "coefficient": 10
+ },
+ {
+  "chapter": "MAL",
+  "code": "F00043",
+  "label": "Avant-pied (métatarsien), tarse antérieur, une malléole",
+  "letterCode": "KC",
+  "coefficient": 50
+ },
+ {
+  "chapter": "MAL",
+  "code": "F00047",
+  "label": "Rotule",
+  "letterCode": "KC",
+  "coefficient": 50
+ },
+ {
+  "chapter": "MAL",
+  "code": "F00056",
+  "label": "Main, poignet, cheville, pied",
+  "letterCode": "KC",
+  "coefficient": 10
+ },
+ {
+  "chapter": "MAL",
+  "code": "F00057",
+  "label": "Avant-bras, bras, jambe, cuisse, genou",
+  "letterCode": "KC",
+  "coefficient": 20
+ },
+ {
+  "chapter": "MAL",
+  "code": "L00060",
+  "label": "Hanche",
+  "letterCode": "KC",
+  "coefficient": 40
+ },
+ {
+  "chapter": "MAL",
+  "code": "L00061",
+  "label": "Rachis",
+  "letterCode": "KC",
+  "coefficient": 60
+ },
+ {
+  "chapter": "MAL",
+  "code": "L00062",
+  "label": "Doigts autres que le pouce",
+  "letterCode": "KC",
+  "coefficient": 30
+ },
+ {
+  "chapter": "MAL",
+  "code": "L00063",
+  "label": "Orteils",
+  "letterCode": "KC",
+  "coefficient": 20
+ },
+ {
+  "chapter": "MAL",
+  "code": "L00064",
+  "label": "Pouce, clavicule",
+  "letterCode": "KC",
+  "coefficient": 60
+ },
+ {
+  "chapter": "MAL",
+  "code": "L00065",
+  "label": "Carpe, poignet, cheville",
+  "letterCode": "KC",
+  "coefficient": 60
+ },
+ {
+  "chapter": "MAL",
+  "code": "L00066",
+  "label": "Coude, épaule, rotule, genou",
+  "letterCode": "KC",
+  "coefficient": 80
+ },
+ {
+  "chapter": "MAL",
+  "code": "L00067",
+  "label": "Hanche",
+  "letterCode": "KC",
+  "coefficient": 100
+ },
+ {
+  "chapter": "MAL",
+  "code": "L00068",
+  "label": "Bassin",
+  "letterCode": "KC",
+  "coefficient": 80
+ },
+ {
+  "chapter": "MAL",
+  "code": "L00069",
+  "label": "Epaule",
+  "letterCode": "KC",
+  "coefficient": 100
+ },
+ {
+  "chapter": "MAL",
+  "code": "L00070",
+  "label": "Rotule",
+  "letterCode": "KC",
+  "coefficient": 80
+ },
+ {
+  "chapter": "MAL",
+  "code": "L00071",
+  "label": "Autres articulations",
+  "letterCode": "KC",
+  "coefficient": 60
+ },
+ {
+  "chapter": "MAL",
+  "code": "M00072",
+  "label": "Ponction biopsie osseuse",
+  "letterCode": "KC",
+  "coefficient": 5
+ },
+ {
+  "chapter": "MAL",
+  "code": "M00074",
+  "label": "Ablation d'une exostose, d'un séquestre",
+  "letterCode": "KC",
+  "coefficient": 30
+ },
+ {
+  "chapter": "MAL",
+  "code": "M00078",
+  "label": "Comblement d'une cavité osseuse",
+  "letterCode": "KC",
+  "coefficient": 80
+ },
+ {
+  "chapter": "MAL",
+  "code": "M00085",
+  "label": "Extirpation d'un os du carpe",
+  "letterCode": "KC",
+  "coefficient": 40
+ },
+ {
+  "chapter": "MAL",
+  "code": "M00086",
+  "label": "Amputation ou désarticulation de la main à l'épaule incluse",
+  "letterCode": "KC",
+  "coefficient": 60
+ },
+ {
+  "chapter": "MAL",
+  "code": "M00087",
+  "label": "Ablation de la clavicule",
+  "letterCode": "KC",
+  "coefficient": 50
+ },
+ {
+  "chapter": "MAL",
+  "code": "M00088",
+  "label": "Ablation de l'omoplate",
+  "letterCode": "KC",
+  "coefficient": 80
+ },
+ {
+  "chapter": "MAL",
+  "code": "M00089",
+  "label": "Amputation inter-scapulo-thoracique",
+  "letterCode": "KC",
+  "coefficient": 150
+ },
+ {
+  "chapter": "MAL",
+  "code": "M00093",
+  "label": "Injection intramusculaire",
+  "letterCode": "KE",
+  "coefficient": 1
+ },
+ {
+  "chapter": "MAL",
+  "code": "M00095",
+  "label": "Extirpation d'abcès froid sans lésion osseuse",
+  "letterCode": "KC",
+  "coefficient": 40
+ },
+ {
+  "chapter": "MAL",
+  "code": "M00096",
+  "label": "Incision d'un abcès intramusculaire",
+  "letterCode": "KC",
+  "coefficient": 15
+ },
+ {
+  "chapter": "MAL",
+  "code": "M00097",
+  "label": "Prélèvement d'un greffon tendineux ou aponévrotique",
+  "letterCode": "KC",
+  "coefficient": 30
+ },
+ {
+  "chapter": "MAL",
+  "code": "M00098",
+  "label": "Extirpation d'une tumeur musculaire encapsulée",
+  "letterCode": "KC",
+  "coefficient": 30
+ },
+ {
+  "chapter": "MAL",
+  "code": "M000101",
+  "label": "Traitement opératoire des ruptures et hernies musculaires",
+  "letterCode": "KC",
+  "coefficient": 40
+ },
+ {
+  "chapter": "MAL",
+  "code": "M000104",
+  "label": "Ténotomie",
+  "letterCode": "KC",
+  "coefficient": 15
+ },
+ {
+  "chapter": "MAL",
+  "code": "M000105",
+  "label": "Biopsie musculaire",
+  "letterCode": "KC",
+  "coefficient": 20
+ },
+ {
+  "chapter": "MAL",
+  "code": "M000106",
+  "label": "Exérèse de kystes synoviaux",
+  "letterCode": "KC",
+  "coefficient": 20
+ },
+ {
+  "chapter": "MAL",
+  "code": "M000113",
+  "label": "Synoviorthèse de toute articulation",
+  "letterCode": "KE",
+  "coefficient": 10
+ },
+ {
+  "chapter": "MAL",
+  "code": "M000114",
+  "label": "Arthroscopie diagnostique (y compris biopsique)",
+  "letterCode": "KE",
+  "coefficient": 50
+ },
+ {
+  "chapter": "MTG",
+  "code": "P000243",
+  "label": "Injection sous-cutanée, intradermique",
+  "letterCode": "KE",
+  "coefficient": 7
+ },
+ {
+  "chapter": "MTG",
+  "code": "P000245",
+  "label": "Ponction d'abcès ou de ganglion",
+  "letterCode": "KE",
+  "coefficient": 5
+ },
+ {
+  "chapter": "MTG",
+  "code": "P000251",
+  "label": "Les mêmes implants sous une muqueuse",
+  "letterCode": "KE",
+  "coefficient": 20
+ },
+ {
+  "chapter": "MTG",
+  "code": "P000279",
+  "label": "Suture secondaire d'une plaie après avivement",
+  "letterCode": "KC",
+  "coefficient": 10
+ },
+ {
+  "chapter": "MTG",
+  "code": "P000280",
+  "label": "Plastie cutanée hétéro-jambière, pour l'ensemble des temps",
+  "letterCode": "KC",
+  "coefficient": 150
+ },
+ {
+  "chapter": "MTG",
+  "code": "P000287",
+  "label": "Epilation par électrolyse ou électrocoagulation : la séance",
+  "letterCode": "KC",
+  "coefficient": 10
+ },
+ {
+  "chapter": "MTG",
+  "code": "P000288",
+  "label": "Capillaroscopie",
+  "letterCode": "KC",
+  "coefficient": 10
+ },
+ {
+  "chapter": "MTG",
+  "code": "P000289",
+  "label": "Ultraviolets pour affection dermatologique : par séance",
+  "letterCode": "KC",
+  "coefficient": 3
+ },
+ {
+  "chapter": "MTG",
+  "code": "P000296",
+  "label": "Excision d'une cicatrice vicieuse suivie de suture",
+  "letterCode": "KC",
+  "coefficient": 20
+ },
+ {
+  "chapter": "MTG",
+  "code": "P000297",
+  "label": "Excision des hygromas",
+  "letterCode": "KC",
+  "coefficient": 15
+ },
+ {
+  "chapter": "MTG",
+  "code": "P000298",
+  "label": "Excision d'un anthrax",
+  "letterCode": "KC",
+  "coefficient": 10
+ },
+ {
+  "chapter": "MTG",
+  "code": "P000302",
+  "label": "Autoplastie par mutation ou glissement",
+  "letterCode": "KC",
+  "coefficient": 60
+ },
+ {
+  "chapter": "MTG",
+  "code": "P000303",
+  "label": "Correction d'une bride rétractile par plastie en Z",
+  "letterCode": "KC",
+  "coefficient": 50
+ },
+ {
+  "chapter": "MTG",
+  "code": "P000305",
+  "label": "Mise en place d'une prothèse d'expansion cutanée",
+  "letterCode": "KC",
+  "coefficient": 30
+ },
+ {
+  "chapter": "MTG",
+  "code": "P000306",
+  "label": "Séance de gonflage d'une prothèse d'expansion cutanée",
+  "letterCode": "KE",
+  "coefficient": 5
+ },
+ {
+  "chapter": "MTG",
+  "code": "P000315",
+  "label": "Extraction de corps étrangers profonds des parties molles",
+  "letterCode": "KC",
+  "coefficient": 20
+ },
+ {
+  "chapter": "MTG",
+  "code": "V000321",
+  "label": "Injection intraveineuse",
+  "letterCode": "KE",
+  "coefficient": 2
+ },
+ {
+  "chapter": "MTG",
+  "code": "V000322",
+  "label": "Ponction d'un gros tronc veineux de la tête ou du cou",
+  "letterCode": "KE",
+  "coefficient": 3
+ },
+ {
+  "chapter": "MTG",
+  "code": "V000323",
+  "label": "Découverte d'une veine périphérique",
+  "letterCode": "KC",
+  "coefficient": 10
+ },
+ {
+  "chapter": "MTG",
+  "code": "V000324",
+  "label": "Ponction artérielle percutanée",
+  "letterCode": "KE",
+  "coefficient": 5
+ },
+ {
+  "chapter": "MTG",
+  "code": "V000325",
+  "label": "Injection intra-artérielle",
+  "letterCode": "KE",
+  "coefficient": 5
+ },
+ {
+  "chapter": "MTG",
+  "code": "V000326",
+  "label": "Perfusion veineuse aux membres",
+  "letterCode": "KE",
+  "coefficient": 5
+ },
+ {
+  "chapter": "MTG",
+  "code": "V000327",
+  "label": "Perfusion veineuse au cou ou au thorax",
+  "letterCode": "KC",
+  "coefficient": 10
+ },
+ {
+  "chapter": "MTG",
+  "code": "V000331",
+  "label": "Exsanguino-transfusion (minimum 4 litres chez l'adulte)",
+  "letterCode": "KC",
+  "coefficient": 80
+ },
+ {
+  "chapter": "MTG",
+  "code": "V000332",
+  "label": "Surveillance d'une séance de plasmaphérèse",
+  "letterCode": "KC",
+  "coefficient": 100
+ },
+ {
+  "chapter": "MTG",
+  "code": "V000333",
+  "label": "Surveillance d'une séance de cytaphérèse",
+  "letterCode": "KC",
+  "coefficient": 10
+ },
+ {
+  "chapter": "MTG",
+  "code": "V000364",
+  "label": "Les chimiothérapies avec injection intrathécale de drogues",
+  "letterCode": "KE",
+  "coefficient": 80
+ },
+ {
+  "chapter": "MTG",
+  "code": "V000366",
+  "label": "Exérèse d'un ganglion ou d'une adénopathie",
+  "letterCode": "KC",
+  "coefficient": 20
+ },
+ {
+  "chapter": "MTG",
+  "code": "N000376",
+  "label": "Ganglion de Gasser",
+  "letterCode": "KE",
+  "coefficient": 20
+ },
+ {
+  "chapter": "MTG",
+  "code": "N000377",
+  "label": "Nerf trijumeau (trou oval ou grand rond), nerf ophtalmique",
+  "letterCode": "KE",
+  "coefficient": 10
+ },
+ {
+  "chapter": "MTG",
+  "code": "N000378",
+  "label": "Nerf maxillaire supérieur ou inférieur à la base du crâne",
+  "letterCode": "KE",
+  "coefficient": 8
+ },
+ {
+  "chapter": "MTG",
+  "code": "N000381",
+  "label": "Suture nerveuse primitive",
+  "letterCode": "KC",
+  "coefficient": 60
+ },
+ {
+  "chapter": "MTG",
+  "code": "N000382",
+  "label": "Suture nerveuse secondaire",
+  "letterCode": "KC",
+  "coefficient": 70
+ },
+ {
+  "chapter": "MTG",
+  "code": "N000384",
+  "label": "Greffe nerveuse en un ou deux temps",
+  "letterCode": "KC",
+  "coefficient": 120
+ },
+ {
+  "chapter": "MTG",
+  "code": "N000385",
+  "label": "Libération d'un nerf comprimé",
+  "letterCode": "KC",
+  "coefficient": 50
+ },
+ {
+  "chapter": "MTG",
+  "code": "N000387",
+  "label": "Résection caténaire ou ganglionnaire en général",
+  "letterCode": "KC",
+  "coefficient": 120
+ },
+ {
+  "chapter": "MTG",
+  "code": "N000388",
+  "label": "Sympathectomie dorso-lombaire et sous-diaphragmatique",
+  "letterCode": "KC",
+  "coefficient": 120
+ },
+ {
+  "chapter": "MTG",
+  "code": "N000390",
+  "label": "Neurotomie périphérique",
+  "letterCode": "KC",
+  "coefficient": 40
+ },
+ {
+  "chapter": "MTE",
+  "code": "C000392",
+  "label": "Ponction lombaire avec ou sans injection médicamenteuse",
+  "letterCode": "KE",
+  "coefficient": 8
+ },
+ {
+  "chapter": "MTE",
+  "code": "C000393",
+  "label": "EEG standard",
+  "letterCode": "KE",
+  "coefficient": 30
+ },
+ {
+  "chapter": "MTE",
+  "code": "C000394",
+  "label": "EEG avec cartographie",
+  "letterCode": "KE",
+  "coefficient": 50
+ },
+ {
+  "chapter": "MTE",
+  "code": "C000395",
+  "label": "EEG de 24 h ambulatoire (\"HOLTER EEG\")",
+  "letterCode": "KE",
+  "coefficient": 80
+ },
+ {
+  "chapter": "MTE",
+  "code": "C000396",
+  "label": "EEG vidéo",
+  "letterCode": "KE",
+  "coefficient": 70
+ },
+ {
+  "chapter": "MTE",
+  "code": "C000398",
+  "label": "Examen électrocorticographique",
+  "letterCode": "KE",
+  "coefficient": 70
+ },
+ {
+  "chapter": "MTE",
+  "code": "C000399",
+  "label": "Echoencéphalogramme",
+  "letterCode": "KE",
+  "coefficient": 10
+ },
+ {
+  "chapter": "MTE",
+  "code": "C000417",
+  "label": "Electro-oculographie,",
+  "letterCode": "KE",
+  "coefficient": 30
+ },
+ {
+  "chapter": "MTE",
+  "code": "C000419",
+  "label": "Epreuves vestibulaires et d'oculomotricité",
+  "letterCode": "KE",
+  "coefficient": 50
+ },
+ {
+  "chapter": "MTE",
+  "code": "C000420",
+  "label": "Videonystagmographie",
+  "letterCode": "KE",
+  "coefficient": 50
+ },
+ {
+  "chapter": "MTE",
+  "code": "C000421",
+  "label": "Réflexe H",
+  "letterCode": "KE",
+  "coefficient": 20
+ },
+ {
+  "chapter": "MTE",
+  "code": "C000423",
+  "label": "EMG global (de surface)",
+  "letterCode": "KE",
+  "coefficient": 30
+ },
+ {
+  "chapter": "MTE",
+  "code": "C000427",
+  "label": "Biopsie neuro-musculaire",
+  "letterCode": "KE",
+  "coefficient": 30
+ },
+ {
+  "chapter": "MTE",
+  "code": "C000428",
+  "label": "Trous de trépan explorateurs, quel qu'en soit le nombre",
+  "letterCode": "KC",
+  "coefficient": 40
+ },
+ {
+  "chapter": "MTE",
+  "code": "C000429",
+  "label": "Volet décompressif",
+  "letterCode": "KC",
+  "coefficient": 100
+ },
+ {
+  "chapter": "MTE",
+  "code": "C000451",
+  "label": "Traitement d'un empyème extra-parenchymateux",
+  "letterCode": "KC",
+  "coefficient": 100
+ },
+ {
+  "chapter": "MTE",
+  "code": "C000452",
+  "label": "Ponction d'un abcès intra-parenchymateux",
+  "letterCode": "KC",
+  "coefficient": 80
+ },
+ {
+  "chapter": "TE",
+  "code": "C000453",
+  "label": "Exérèse d'un abcès ou d'une parasitose intra-parenchymateuse",
+  "letterCode": "KC",
+  "coefficient": 200
+ },
+ {
+  "chapter": "MTE",
+  "code": "C000457",
+  "label": "Exérèse des anévrismes artério-veineux méningés",
+  "letterCode": "KC",
+  "coefficient": 200
+ },
+ {
+  "chapter": "MTE",
+  "code": "C000460",
+  "label": "Evacuation d'un hématome intracérébral sustentoriel",
+  "letterCode": "KC",
+  "coefficient": 120
+ },
+ {
+  "chapter": "MTE",
+  "code": "C000461",
+  "label": "Evacuation d'un hématome cérébelleux",
+  "letterCode": "KC",
+  "coefficient": 200
+ },
+ {
+  "chapter": "MTE",
+  "code": "C000462",
+  "label": "Anastomoses vasculaires extra ou intracrâniennes",
+  "letterCode": "KC",
+  "coefficient": 200
+ },
+ {
+  "chapter": "MTE",
+  "code": "C000463",
+  "label": "Excision d'une plaie du cuir chevelu",
+  "letterCode": "KC",
+  "coefficient": 40
+ },
+ {
+  "chapter": "MTE",
+  "code": "C000468",
+  "label": "Cranioplastie par matériel (prothèse, homo ou autogreffe)",
+  "letterCode": "KC",
+  "coefficient": 100
+ },
+ {
+  "chapter": "MTE",
+  "code": "C000469",
+  "label": "Evacuation d'un hématome extradural",
+  "letterCode": "KC",
+  "coefficient": 150
+ },
+ {
+  "chapter": "MTE",
+  "code": "C000471",
+  "label": "Evacuation d'un hématome sous dural chronique",
+  "letterCode": "KC",
+  "coefficient": 80
+ },
+ {
+  "chapter": "MTE",
+  "code": "C000472",
+  "label": "Mesure de la pression intracrânienne par capteur intracrânien",
+  "letterCode": "KC",
+  "coefficient": 40
+ },
+ {
+  "chapter": "MTE",
+  "code": "C000473",
+  "label": "Traitement d'une plaie crânio-cérébrale",
+  "letterCode": "KC",
+  "coefficient": 150
+ },
+ {
+  "chapter": "MTE",
+  "code": "C000475",
+  "label": "Pose d'un drainage ventriculaire externe",
+  "letterCode": "KC",
+  "coefficient": 40
+ },
+ {
+  "chapter": "MTE",
+  "code": "C000476",
+  "label": "Dérivation ventriculo-atriale ou péritonéale, lombo-péritonéale",
+  "letterCode": "KC",
+  "coefficient": 120
+ },
+ {
+  "chapter": "MTE",
+  "code": "C000477",
+  "label": "Dérivation kysto ou sous duro-péritonéale",
+  "letterCode": "KC",
+  "coefficient": 120
+ },
+ {
+  "chapter": "MTE",
+  "code": "C000478",
+  "label": "Ablation d'une dérivation externe",
+  "letterCode": "KC",
+  "coefficient": 20
+ },
+ {
+  "chapter": "MTE",
+  "code": "C000479",
+  "label": "Ventriculo-cisternostomie",
+  "letterCode": "KC",
+  "coefficient": 150
+ },
+ {
+  "chapter": "MTE",
+  "code": "C000480",
+  "label": "Traitement des méningo-encéphalocèles",
+  "letterCode": "KC",
+  "coefficient": 120
+ },
+ {
+  "chapter": "MTE",
+  "code": "C000483",
+  "label": "Crânioplastie",
+  "letterCode": "KC",
+  "coefficient": 120
+ },
+ {
+  "chapter": "MTE",
+  "code": "C000484",
+  "label": "Crânioplastie avec réparation de la voûte orbitaire",
+  "letterCode": "KC",
+  "coefficient": 200
+ },
+ {
+  "chapter": "MTE",
+  "code": "C000486",
+  "label": "Hémisphérectomie",
+  "letterCode": "KC",
+  "coefficient": 300
+ },
+ {
+  "chapter": "MTE",
+  "code": "C000491",
+  "label": "Myélotomie ou cordotomie (percutanée ou ouverte)",
+  "letterCode": "KC",
+  "coefficient": 150
+ },
+ {
+  "chapter": "MTE",
+  "code": "C000492",
+  "label": "Implantation d'une électrode épidurale",
+  "letterCode": "KC",
+  "coefficient": 40
+ },
+ {
+  "chapter": "MTE",
+  "code": "C000493",
+  "label": "Implantation d'un stimulateur médullaire",
+  "letterCode": "KC",
+  "coefficient": 80
+ },
+ {
+  "chapter": "MTE",
+  "code": "C000495",
+  "label": "Suture et greffe de Nerf cranien",
+  "letterCode": "KC",
+  "coefficient": 200
+ },
+ {
+  "chapter": "MTE",
+  "code": "C000498",
+  "label": "Biopsie stéréotaxique d'une tumeur",
+  "letterCode": "KC",
+  "coefficient": 250
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000499",
+  "label": "Fluoroscopie",
+  "letterCode": "KE",
+  "coefficient": 10
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000504",
+  "label": "Kératométrie",
+  "letterCode": "KE",
+  "coefficient": 9
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000505",
+  "label": "Périmétrie et campimétrie quantitative",
+  "letterCode": "KE",
+  "coefficient": 12
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000506",
+  "label": "Courbe d'adaptation à l'obscurité",
+  "letterCode": "KE",
+  "coefficient": 12
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000507",
+  "label": "Exploration chromatique centrale et périphérique",
+  "letterCode": "KE",
+  "coefficient": 10
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000509",
+  "label": "Electrorétinographie",
+  "letterCode": "KE",
+  "coefficient": 30
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000510",
+  "label": "Electro-oculogramme (oculographie sensorielle et motrice)",
+  "letterCode": "KE",
+  "coefficient": 30
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000513",
+  "label": "Examen sensori-moteur dans le strabisme et l'amblyopie",
+  "letterCode": "KE",
+  "coefficient": 15
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000515",
+  "label": "Gonioscopie",
+  "letterCode": "KE",
+  "coefficient": 10
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000516",
+  "label": "Tonographie au tonomètre électronique",
+  "letterCode": "KE",
+  "coefficient": 10
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000517",
+  "label": "Courbe de tension (quatre fois par jour pendant cinq jours)",
+  "letterCode": "KE",
+  "coefficient": 12
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000518",
+  "label": "Echographie simple en mode A",
+  "letterCode": "KE",
+  "coefficient": 12
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000521",
+  "label": "Biomicroscopie aux ultra-sons",
+  "letterCode": "KE",
+  "coefficient": 15
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000525",
+  "label": "Adaptation de lentilles thérapeutiques ou lentilles pansements",
+  "letterCode": "KE",
+  "coefficient": 20
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000526",
+  "label": "Kératesthésie",
+  "letterCode": "KE",
+  "coefficient": 10
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000527",
+  "label": "Rétinographie (avec maximum de deux épreuves par an)",
+  "letterCode": "KE",
+  "coefficient": 10
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000528",
+  "label": "Pachymétrie cornéenne",
+  "letterCode": "KE",
+  "coefficient": 15
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000530",
+  "label": "Mesure du tonus oculaire sous anesthésie générale",
+  "letterCode": "KE",
+  "coefficient": 15
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000531",
+  "label": "Scaning laser ophtalmoscopie",
+  "letterCode": "KE",
+  "coefficient": 15
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000532",
+  "label": "Tomographie en cohérence optique",
+  "letterCode": "KE",
+  "coefficient": 20
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000535",
+  "label": "Chirurgie fonctionnelle du ptôsis et de la lagophtalmie",
+  "letterCode": "KC",
+  "coefficient": 80
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000540",
+  "label": "Electrolyse ciliaire au laser",
+  "letterCode": "KC",
+  "coefficient": 15
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000541",
+  "label": "Extraction d'un corps étranger de l'orbite",
+  "letterCode": "KC",
+  "coefficient": 60
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000542",
+  "label": "Biopsie de paupière",
+  "letterCode": "KC",
+  "coefficient": 15
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000545",
+  "label": "Exérèse de lésion cutanée du sourcil",
+  "letterCode": "KC",
+  "coefficient": 20
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000548",
+  "label": "Injection rétrobulbaire en série",
+  "letterCode": "KC",
+  "coefficient": 8
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000549",
+  "label": "Suture des plaies cutanéo-muqueuses des paupières",
+  "letterCode": "KC",
+  "coefficient": 30
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000551",
+  "label": "Orbitotomie avec drainage éventuel d'un phlegmon de l'orbite",
+  "letterCode": "KC",
+  "coefficient": 50
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000553",
+  "label": "Enucléation",
+  "letterCode": "KC",
+  "coefficient": 50
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000555",
+  "label": "Exentération de l'orbite",
+  "letterCode": "KC",
+  "coefficient": 90
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000556",
+  "label": "Traitement d'une plaie perforante du globe",
+  "letterCode": "KC",
+  "coefficient": 60
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000558",
+  "label": "Suture de plaie des muscles oculomoteurs",
+  "letterCode": "KC",
+  "coefficient": 60
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000559",
+  "label": "Réinsertion post traumatique de muscles oculomoteurs",
+  "letterCode": "KC",
+  "coefficient": 80
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000562",
+  "label": "Cathétérisme des voies lacrymales avec anesthésie régionale",
+  "letterCode": "KC",
+  "coefficient": 10
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000563",
+  "label": "Cathétérisme avec pose d'une sonde bicanaliculo-nasale",
+  "letterCode": "KC",
+  "coefficient": 40
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000564",
+  "label": "Ablation totale ou partielle d'une glande lacrymale",
+  "letterCode": "KC",
+  "coefficient": 30
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000565",
+  "label": "Ablation chirurgicale du sac lacrymal",
+  "letterCode": "KC",
+  "coefficient": 30
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000566",
+  "label": "Dacryocystorhinostomie ou lacodacryostomie",
+  "letterCode": "KC",
+  "coefficient": 100
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000567",
+  "label": "Réparation canaliculaire avec ou sans intubation",
+  "letterCode": "KC",
+  "coefficient": 80
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000569",
+  "label": "Fermeture de point lacrymal par cautérisation au laser",
+  "letterCode": "KC",
+  "coefficient": 10
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000570",
+  "label": "Extraction de corps étranger des voies lacrymales",
+  "letterCode": "KC",
+  "coefficient": 20
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000571",
+  "label": "Incision de l'appareil lacrymal avec ou sans drainage",
+  "letterCode": "KC",
+  "coefficient": 10
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000572",
+  "label": "Biopsie de la glande ou du sac lacrymal",
+  "letterCode": "KC",
+  "coefficient": 15
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000573",
+  "label": "Exploration et suture d'une plaie simple de conjonctive",
+  "letterCode": "KC",
+  "coefficient": 25
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000577",
+  "label": "Recouvrement conjonctival",
+  "letterCode": "KC",
+  "coefficient": 20
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000578",
+  "label": "Greffe de conjonctive (hétérogreffe ou muqueuse buccale)",
+  "letterCode": "KC",
+  "coefficient": 50
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000585",
+  "label": "Biopsie de la conjonctive",
+  "letterCode": "KC",
+  "coefficient": 8
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000586",
+  "label": "Injection sous conjontivale",
+  "letterCode": "KE",
+  "coefficient": 5
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000588",
+  "label": "Traitement chirurgical d'herpès cornéen ou d'ulcère infectieux",
+  "letterCode": "KC",
+  "coefficient": 10
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000589",
+  "label": "Greffe de la cornée",
+  "letterCode": "KC",
+  "coefficient": 120
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000591",
+  "label": "Autokératoplastie par rotation",
+  "letterCode": "KC",
+  "coefficient": 120
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000592",
+  "label": "Kératoplastie lamellaire",
+  "letterCode": "KC",
+  "coefficient": 90
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000593",
+  "label": "Kératoplastie transfixiante avec ou sans iridectomie périphérique",
+  "letterCode": "KC",
+  "coefficient": 120
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000594",
+  "label": "Kératoplastie avec extraction du cristallin et implantation",
+  "letterCode": "KC",
+  "coefficient": 150
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000595",
+  "label": "Greffe de membrane amniotique",
+  "letterCode": "KC",
+  "coefficient": 100
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000596",
+  "label": "Kératoprothèse",
+  "letterCode": "KC",
+  "coefficient": 150
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000597",
+  "label": "Biopsie de la cornée",
+  "letterCode": "KC",
+  "coefficient": 10
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000598",
+  "label": "Prélèvement superficiel de la cornée pour frottis ou culture",
+  "letterCode": "KC",
+  "coefficient": 10
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000604",
+  "label": "Chirurgie des néovaisseaux sous-rétiniens maculaires",
+  "letterCode": "KC",
+  "coefficient": 120
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000607",
+  "label": "Cyclocryothérapie trans-sclérale",
+  "letterCode": "KC",
+  "coefficient": 60
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000608",
+  "label": "Exérèse de tumeur de l'uvée( iris,corps ciliaire,choroide)",
+  "letterCode": "KC",
+  "coefficient": 120
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000611",
+  "label": "Ablation de silicone",
+  "letterCode": "KC",
+  "coefficient": 10
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000612",
+  "label": "Injection latérobulbaire ou péribulbaire",
+  "letterCode": "KE",
+  "coefficient": 10
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000613",
+  "label": "Vitrectomie postérieure simple",
+  "letterCode": "KC",
+  "coefficient": 100
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000618",
+  "label": "Remplacement du vitré par voie postérieure",
+  "letterCode": "KC",
+  "coefficient": 20
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000624",
+  "label": "Photothérapie dynamique",
+  "letterCode": "KE",
+  "coefficient": 70
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000625",
+  "label": "Thermothérapie transpupillaire",
+  "letterCode": "KE",
+  "coefficient": 70
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000626",
+  "label": "Capsulotomie et Iridectomie Laser Yag",
+  "letterCode": "KE",
+  "coefficient": 60
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000627",
+  "label": "Photocoagulation de l'Iris",
+  "letterCode": "KE",
+  "coefficient": 50
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000629",
+  "label": "Iridoplastie",
+  "letterCode": "KE",
+  "coefficient": 60
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000630",
+  "label": "Extraction intracapsulaire du cristallin sans implantation",
+  "letterCode": "KC",
+  "coefficient": 80
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000632",
+  "label": "Extraction extracapsulaire manuelle sans implantation",
+  "letterCode": "KC",
+  "coefficient": 100
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000635",
+  "label": "Extraction du cristallin par phaco-émusification avec implantation",
+  "letterCode": "KC",
+  "coefficient": 120
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000637",
+  "label": "Extraction du cristallin luxé",
+  "letterCode": "KC",
+  "coefficient": 130
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000638",
+  "label": "Extraction du cristallin ectopique ou subluxé",
+  "letterCode": "KC",
+  "coefficient": 120
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000639",
+  "label": "Capsulotomie chirurgicale",
+  "letterCode": "KC",
+  "coefficient": 50
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000642",
+  "label": "Ablation d'implant",
+  "letterCode": "KC",
+  "coefficient": 50
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000643",
+  "label": "Implantation secondaire de cristallin artificiel non suturé",
+  "letterCode": "KC",
+  "coefficient": 60
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000644",
+  "label": "Implantation secondaire de cristallin artificiel suturé",
+  "letterCode": "KC",
+  "coefficient": 100
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000645",
+  "label": "Explantation avec réimplantation",
+  "letterCode": "KC",
+  "coefficient": 60
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000653",
+  "label": "Intervention fistulisante du glaucome, quelle qu'en soit la méthode",
+  "letterCode": "KC",
+  "coefficient": 100
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000654",
+  "label": "Trabéculotomie, trabéculectomie",
+  "letterCode": "KC",
+  "coefficient": 100
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000656",
+  "label": "Traitement du glaucome par ultra-sons",
+  "letterCode": "KE",
+  "coefficient": 60
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000657",
+  "label": "Photocoagulation au Laser Yag (Cyclophotocoagulation au laser)",
+  "letterCode": "KE",
+  "coefficient": 60
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000658",
+  "label": "Goniotomie par voie externe",
+  "letterCode": "KC",
+  "coefficient": 100
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000659",
+  "label": "Sclérectomie profonde non transfixiante",
+  "letterCode": "KC",
+  "coefficient": 110
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000660",
+  "label": "Iridotomie ou iridectomie périphérique au laser",
+  "letterCode": "KE",
+  "coefficient": 50
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000662",
+  "label": "Exérèse d'une invasion épithéliale de la chambre antérieure",
+  "letterCode": "KC",
+  "coefficient": 100
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000663",
+  "label": "Réfection d'une fistule hypertrophique ou atrophique",
+  "letterCode": "KC",
+  "coefficient": 50
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000664",
+  "label": "Fermeture de fistule de la sclère",
+  "letterCode": "KC",
+  "coefficient": 50
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000665",
+  "label": "Chirurgie du strabisme",
+  "letterCode": "KC",
+  "coefficient": 90
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000666",
+  "label": "Correction des paralysies oculo-motrices et du nystagmus",
+  "letterCode": "KC",
+  "coefficient": 100
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000667",
+  "label": "Chirurgie des syndromes rétractiles oculo-moteurs",
+  "letterCode": "KC",
+  "coefficient": 100
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000669",
+  "label": "Photokératectomie au laser excimer",
+  "letterCode": "KE",
+  "coefficient": 100
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000670",
+  "label": "Photokératectomie au lasik",
+  "letterCode": "KE",
+  "coefficient": 120
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000671",
+  "label": "Pose d'implant sur oeil phaque pour la correction de la myopie",
+  "letterCode": "KC",
+  "coefficient": 100
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000672",
+  "label": "Mise en place d'anneaux intracornéens",
+  "letterCode": "KC",
+  "coefficient": 100
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000673",
+  "label": "Examen audiométrique tonal ou vocal",
+  "letterCode": "KE",
+  "coefficient": 15
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000674",
+  "label": "Impédancemétrie",
+  "letterCode": "KE",
+  "coefficient": 10
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000675",
+  "label": "Examen audiométrique spécial de l'enfant",
+  "letterCode": "KE",
+  "coefficient": 15
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000676",
+  "label": "Audiométrie tonale avec impédancemetrie",
+  "letterCode": "KE",
+  "coefficient": 25
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000677",
+  "label": "Oto-émissions acoustiques",
+  "letterCode": "KE",
+  "coefficient": 30
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000678",
+  "label": "Examen labyrinthique calorique",
+  "letterCode": "KE",
+  "coefficient": 15
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000679",
+  "label": "Examen labyrinthique postural",
+  "letterCode": "KE",
+  "coefficient": 30
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000680",
+  "label": "Exploration vestibulaire avec enregistrement VNG,ENG,…",
+  "letterCode": "KE",
+  "coefficient": 30
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000681",
+  "label": "Ablation de bouchon de cérumen ou épidermique uni ou bilatéral",
+  "letterCode": "KE",
+  "coefficient": 5
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000682",
+  "label": "Ablation de bouchon épidermique sous anesthésie générale",
+  "letterCode": "KE",
+  "coefficient": 10
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000689",
+  "label": "Chirurgie corrective bilatérale des oreilles décollées",
+  "letterCode": "KC",
+  "coefficient": 60
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000691",
+  "label": "Résection simple d'une tumeur maligne de l'oreille externe",
+  "letterCode": "KC",
+  "coefficient": 25
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000692",
+  "label": "Résection large d'une tumeur maligne de l'oreille externe",
+  "letterCode": "KC",
+  "coefficient": 60
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000693",
+  "label": "Plastie d'un lobule bifide de l'oreille externe, un coté",
+  "letterCode": "KC",
+  "coefficient": 15
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000694",
+  "label": "Ablation chirurgicale d'une chéloïde de l'oreille",
+  "letterCode": "KC",
+  "coefficient": 25
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000696",
+  "label": "Ablation chirurgicale d'une chéloïde de l'oreille",
+  "letterCode": "KC",
+  "coefficient": 25
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000698",
+  "label": "Paracentèse du tympan unilatérale",
+  "letterCode": "KC",
+  "coefficient": 10
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000699",
+  "label": "Ablation d'un polype de l'oreille moyenne",
+  "letterCode": "KC",
+  "coefficient": 10
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000700",
+  "label": "Injection transtympanique, avec maximum de quatre",
+  "letterCode": "KE",
+  "coefficient": 10
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000703",
+  "label": "Mastoïdectomie",
+  "letterCode": "KC",
+  "coefficient": 80
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000704",
+  "label": "Evidement pétro-mastoïdien",
+  "letterCode": "KC",
+  "coefficient": 120
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000705",
+  "label": "Exploration chirurgicale de l'oreille moyenne sous microscope",
+  "letterCode": "KC",
+  "coefficient": 80
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000706",
+  "label": "Myringoplastie simple",
+  "letterCode": "KC",
+  "coefficient": 80
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000707",
+  "label": "Chirurgie de l'otospongiose",
+  "letterCode": "KC",
+  "coefficient": 150
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000709",
+  "label": "Résection du rocher pour tumeur de l'oreille moyenne",
+  "letterCode": "KC",
+  "coefficient": 200
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000710",
+  "label": "Petrectomie large pour tumeur maligne",
+  "letterCode": "KC",
+  "coefficient": 300
+ },
+ {
+  "chapter": "MTE",
+  "code": "O000712",
+  "label": "Implant cochléaire",
+  "letterCode": "KC",
+  "coefficient": 200
+ },
+ {
+  "chapter": "MTE",
+  "code": "F000717",
+  "label": "Traitement du rhinophyma par décortication sans réparation",
+  "letterCode": "KC",
+  "coefficient": 30
+ },
+ {
+  "chapter": "MTE",
+  "code": "F000718",
+  "label": "Plastie narinaire réparatrice uni ou bilatérale",
+  "letterCode": "KC",
+  "coefficient": 80
+ },
+ {
+  "chapter": "MTE",
+  "code": "F000719",
+  "label": "Traitement chirurgical de la rhinite atrophique",
+  "letterCode": "KC",
+  "coefficient": 60
+ },
+ {
+  "chapter": "MTE",
+  "code": "F000723",
+  "label": "Rhinoplastie avec greffe osseuse ou cartilagineuse",
+  "letterCode": "KC",
+  "coefficient": 120
+ },
+ {
+  "chapter": "MTE",
+  "code": "F000725",
+  "label": "Ablation d'un corps étranger non enclavé des fosses nasales",
+  "letterCode": "KE",
+  "coefficient": 5
+ },
+ {
+  "chapter": "MTE",
+  "code": "F000726",
+  "label": "Ablation d'un corps étranger enclavé des fosses nasales",
+  "letterCode": "KE",
+  "coefficient": 10
+ },
+ {
+  "chapter": "MTE",
+  "code": "F000727",
+  "label": "Hémostase nasale pour épistaxis",
+  "letterCode": "KE",
+  "coefficient": 10
+ },
+ {
+  "chapter": "MTE",
+  "code": "F000728",
+  "label": "Turbinectomie unilatérale",
+  "letterCode": "KC",
+  "coefficient": 15
+ },
+ {
+  "chapter": "MTE",
+  "code": "F000729",
+  "label": "Résection de crête de cloison",
+  "letterCode": "KC",
+  "coefficient": 15
+ },
+ {
+  "chapter": "MTE",
+  "code": "F000730",
+  "label": "Résection ou reposition de la cloison à visée réparatrice",
+  "letterCode": "KC",
+  "coefficient": 60
+ },
+ {
+  "chapter": "MTE",
+  "code": "F000731",
+  "label": "Traitement d'une synéchie nasale",
+  "letterCode": "KC",
+  "coefficient": 10
+ },
+ {
+  "chapter": "MTE",
+  "code": "F000732",
+  "label": "Traitement d'une oblitération choanale membraneuse unilatérale",
+  "letterCode": "KC",
+  "coefficient": 20
+ },
+ {
+  "chapter": "MTE",
+  "code": "F000733",
+  "label": "Traitement d'une oblitération choanale osseuse",
+  "letterCode": "KC",
+  "coefficient": 100
+ },
+ {
+  "chapter": "MTE",
+  "code": "F000734",
+  "label": "Traitement d'un hématome ou abcès de la cloison",
+  "letterCode": "KC",
+  "coefficient": 10
+ },
+ {
+  "chapter": "MTE",
+  "code": "F000737",
+  "label": "Ponction isolée du sinus maxillaire",
+  "letterCode": "KE",
+  "coefficient": 10
+ },
+ {
+  "chapter": "MTE",
+  "code": "F000739",
+  "label": "Trépano-ponction du sinus frontal",
+  "letterCode": "KE",
+  "coefficient": 15
+ },
+ {
+  "chapter": "MTE",
+  "code": "F000743",
+  "label": "Traitement chirurgical d'un ostéome ethmoïdo-frontal",
+  "letterCode": "KC",
+  "coefficient": 100
+ },
+ {
+  "chapter": "MTE",
+  "code": "F000745",
+  "label": "Traitement chirurgical d'une tumeur maligne des sinus",
+  "letterCode": "KC",
+  "coefficient": 180
+ },
+ {
+  "chapter": "MTE",
+  "code": "B000755",
+  "label": "Réfection partielle d'une lèvre détruite par tumeur ou traumatisme",
+  "letterCode": "KC",
+  "coefficient": 80
+ },
+ {
+  "chapter": "MTE",
+  "code": "B000764",
+  "label": "Excision et suture d'une bride fibreuse ou du frein hypertrophié",
+  "letterCode": "KC",
+  "coefficient": 10
+ },
+ {
+  "chapter": "MTE",
+  "code": "B000766",
+  "label": "Glossectomie partielle correctrice",
+  "letterCode": "KC",
+  "coefficient": 60
+ },
+ {
+  "chapter": "MTE",
+  "code": "B000768",
+  "label": "Excision par voie buccale d'un kyste du plancher de la bouche",
+  "letterCode": "KC",
+  "coefficient": 40
+ },
+ {
+  "chapter": "MTE",
+  "code": "B000770",
+  "label": "Amygdalectomie par dissection chez l'adulte ou l'enfant",
+  "letterCode": "KC",
+  "coefficient": 40
+ },
+ {
+  "chapter": "MTE",
+  "code": "B000773",
+  "label": "Ablation d'un polype choanal",
+  "letterCode": "KC",
+  "coefficient": 20
+ },
+ {
+  "chapter": "MTE",
+  "code": "B000774",
+  "label": "Incision d'un abcés simple de l'amygdale",
+  "letterCode": "KC",
+  "coefficient": 10
+ },
+ {
+  "chapter": "MTE",
+  "code": "B000775",
+  "label": "Incision d'un phlegmon péri-amygdalien ou rétro-pharyngien",
+  "letterCode": "KC",
+  "coefficient": 20
+ },
+ {
+  "chapter": "MTE",
+  "code": "B000776",
+  "label": "Ouverture par voie cervicale d'un abcès latéro-pharyngien",
+  "letterCode": "KC",
+  "coefficient": 50
+ },
+ {
+  "chapter": "MTE",
+  "code": "B000777",
+  "label": "Pharyngotomie",
+  "letterCode": "KC",
+  "coefficient": 100
+ },
+ {
+  "chapter": "MTE",
+  "code": "B000778",
+  "label": "Réparation d'un pharyngostome sans lambeau pédiculé",
+  "letterCode": "KC",
+  "coefficient": 50
+ },
+ {
+  "chapter": "MTE",
+  "code": "B000781",
+  "label": "Véloplastie (fermeture de la fente vélaire)",
+  "letterCode": "KC",
+  "coefficient": 70
+ },
+ {
+  "chapter": "MTE",
+  "code": "B000783",
+  "label": "Traitement chirurgical par voie buccale d'une lithiase salivaire",
+  "letterCode": "KC",
+  "coefficient": 20
+ },
+ {
+  "chapter": "MTE",
+  "code": "B000786",
+  "label": "Traitement opératoire d'une fistule salivaire cutanée",
+  "letterCode": "KC",
+  "coefficient": 50
+ },
+ {
+  "chapter": "MTE",
+  "code": "B000796",
+  "label": "Exérèse d'une tumeur bénigne de la bouche",
+  "letterCode": "KC",
+  "coefficient": 20
+ },
+ {
+  "chapter": "MTE",
+  "code": "B000799",
+  "label": "Glossectomie partielle",
+  "letterCode": "KC",
+  "coefficient": 50
+ },
+ {
+  "chapter": "MTE",
+  "code": "M000821",
+  "label": "Camphopexie transnasale",
+  "letterCode": "KC",
+  "coefficient": 100
+ },
+ {
+  "chapter": "MTE",
+  "code": "M000836",
+  "label": "Endoprothèse de reconstitution du maxillaire, de la mandibule",
+  "letterCode": "KC",
+  "coefficient": 120
+ },
+ {
+  "chapter": "MTE",
+  "code": "D000863",
+  "label": "Résection de capuchon muqueux d'une dent de sagesse",
+  "letterCode": "D",
+  "coefficient": 15
+ },
+ {
+  "chapter": "MTE",
+  "code": "D000864",
+  "label": "Incision d'abcès et drainage",
+  "letterCode": "D",
+  "coefficient": 6
+ },
+ {
+  "chapter": "MTE",
+  "code": "D000887",
+  "label": "Régularisation localisée d'une crête alvéolaire",
+  "letterCode": "D",
+  "coefficient": 8
+ },
+ {
+  "chapter": "MTE",
+  "code": "D000888",
+  "label": "Régularisation étendue de la crête alvéolaire (y compris suture)",
+  "letterCode": "D",
+  "coefficient": 15
+ },
+ {
+  "chapter": "MTE",
+  "code": "D000896",
+  "label": "Désinsertion musculaire vestibulaire partielle",
+  "letterCode": "KC",
+  "coefficient": 40
+ },
+ {
+  "chapter": "MTE",
+  "code": "D000897",
+  "label": "Désinsertion musculaire étendue à tout le vestibule",
+  "letterCode": "KC",
+  "coefficient": 60
+ },
+ {
+  "chapter": "MTE",
+  "code": "D000899",
+  "label": "Approfondissement d'un vestibule par greffe cutanée",
+  "letterCode": "KC",
+  "coefficient": 50
+ },
+ {
+  "chapter": "MTE",
+  "code": "D000909",
+  "label": "Ligature métallique dans les parodontopathies",
+  "letterCode": "D",
+  "coefficient": 10
+ },
+ {
+  "chapter": "MTE",
+  "code": "D000910",
+  "label": "Attelle métallique dans les parodontopathies",
+  "letterCode": "D",
+  "coefficient": 40
+ },
+ {
+  "chapter": "MTE",
+  "code": "D000913",
+  "label": "Frénectomie (excision du frein labial)",
+  "letterCode": "D",
+  "coefficient": 50
+ },
+ {
+  "chapter": "MTE",
+  "code": "D000914",
+  "label": "Couronne pédodontique préformée",
+  "letterCode": "D",
+  "coefficient": 30
+ },
+ {
+  "chapter": "MTE",
+  "code": "D000915",
+  "label": "Résine de scellement des puits et fissures (séalents)",
+  "letterCode": "D",
+  "coefficient": 15
+ },
+ {
+  "chapter": "MTE",
+  "code": "D000917",
+  "label": "Application topique de fluor par gouttière thermoformée",
+  "letterCode": "D",
+  "coefficient": 35
+ },
+ {
+  "chapter": "MTE",
+  "code": "D000918",
+  "label": "Mainteneur d'espace fixe",
+  "letterCode": "D",
+  "coefficient": 35
+ },
+ {
+  "chapter": "MTE",
+  "code": "D000919",
+  "label": "Appareillage fixe pour blocage d'éruption",
+  "letterCode": "D",
+  "coefficient": 50
+ },
+ {
+  "chapter": "MTE",
+  "code": "D000920",
+  "label": "Guide d'éruption",
+  "letterCode": "D",
+  "coefficient": 50
+ },
+ {
+  "chapter": "MTE",
+  "code": "D000921",
+  "label": "Appareil d'interception mobile",
+  "letterCode": "D",
+  "coefficient": 150
+ },
+ {
+  "chapter": "MTE",
+  "code": "D000923",
+  "label": "Analyse céphalométrique (en supplément)",
+  "letterCode": "D",
+  "coefficient": 5
+ },
+ {
+  "chapter": "MTE",
+  "code": "D000945",
+  "label": "Réparation de fracture sur la plaque base en matière plastique",
+  "letterCode": "D",
+  "coefficient": 15
+ },
+ {
+  "chapter": "MTE",
+  "code": "D000951",
+  "label": "Rebasage",
+  "letterCode": "D",
+  "coefficient": 25
+ },
+ {
+  "chapter": "MTE",
+  "code": "D000952",
+  "label": "Prothèse avec attachement (par élément)",
+  "letterCode": "D",
+  "coefficient": 20
+ },
+ {
+  "chapter": "MTE",
+  "code": "D000954",
+  "label": "Couronne dentaire et élément de bridge en alliage non précieux",
+  "letterCode": "D",
+  "coefficient": 50
+ },
+ {
+  "chapter": "MTE",
+  "code": "D000955",
+  "label": "Dent à tenon ne faisant pas intervenir une technique de coulée",
+  "letterCode": "D",
+  "coefficient": 40
+ },
+ {
+  "chapter": "MTE",
+  "code": "D000956",
+  "label": "Dent à tenon radiculaire faisant intervenir une technique de coulée",
+  "letterCode": "D",
+  "coefficient": 50
+ },
+ {
+  "chapter": "MTE",
+  "code": "D000958",
+  "label": "Reconstitution coulée de moignon",
+  "letterCode": "D",
+  "coefficient": 50
+ },
+ {
+  "chapter": "MTE",
+  "code": "P000965",
+  "label": "Prothèse de recouvrement pour correction de l'articulé (gouttières)",
+  "letterCode": "KC",
+  "coefficient": 60
+ },
+ {
+  "chapter": "MTE",
+  "code": "P000968",
+  "label": "Appareillage par appui péri crânien",
+  "letterCode": "KC",
+  "coefficient": 60
+ },
+ {
+  "chapter": "MTE",
+  "code": "P000971",
+  "label": "Appareil de distension des cicatrices vicieuses",
+  "letterCode": "KC",
+  "coefficient": 80
+ },
+ {
+  "chapter": "MTE",
+  "code": "P000974",
+  "label": "Moulage facial",
+  "letterCode": "KC",
+  "coefficient": 20
+ },
+ {
+  "chapter": "MCU",
+  "code": "T000976",
+  "label": "Incision et drainage d'un adénophlegmon cervico-facial",
+  "letterCode": "KC",
+  "coefficient": 20
+ },
+ {
+  "chapter": "MCU",
+  "code": "T000977",
+  "label": "Traitement opératoire du torticolis par ténotomie sous-cutanée",
+  "letterCode": "KC",
+  "coefficient": 15
+ },
+ {
+  "chapter": "MCU",
+  "code": "T000979",
+  "label": "Scalénotomie",
+  "letterCode": "KC",
+  "coefficient": 40
+ },
+ {
+  "chapter": "MCU",
+  "code": "T000980",
+  "label": "Ablation de fistules et gros kystes congénitaux",
+  "letterCode": "KC",
+  "coefficient": 80
+ },
+ {
+  "chapter": "MCU",
+  "code": "L000983",
+  "label": "Epluchage du larynx sous laryngoscopie en suspension",
+  "letterCode": "KE",
+  "coefficient": 40
+ },
+ {
+  "chapter": "MCU",
+  "code": "L000984",
+  "label": "Nasofibrolaryngoscopie aux optiques",
+  "letterCode": "KE",
+  "coefficient": 15
+ },
+ {
+  "chapter": "MCU",
+  "code": "L000985",
+  "label": "Supplément pour biopsie(s) éventuelle(s)",
+  "letterCode": "KE",
+  "coefficient": 5
+ },
+ {
+  "chapter": "MCU",
+  "code": "L000987",
+  "label": "Dilatation laryngée, par séance",
+  "letterCode": "KE",
+  "coefficient": 10
+ },
+ {
+  "chapter": "MCU",
+  "code": "L000988",
+  "label": "Cryothérapie ou laser des papillomes endolaryngés",
+  "letterCode": "KE",
+  "coefficient": 10
+ },
+ {
+  "chapter": "MCU",
+  "code": "L000990",
+  "label": "Ablation d'un polype du larynx par les voies naturelles",
+  "letterCode": "KC",
+  "coefficient": 40
+ },
+ {
+  "chapter": "MCU",
+  "code": "L000991",
+  "label": "Extraction d'un corps étranger de l'hypopharynx ou du larynx",
+  "letterCode": "KC",
+  "coefficient": 20
+ },
+ {
+  "chapter": "MCU",
+  "code": "L000992",
+  "label": "Tubage du larynx pour obstruction laryngée",
+  "letterCode": "KC",
+  "coefficient": 40
+ },
+ {
+  "chapter": "MCU",
+  "code": "L000994",
+  "label": "Cordotomie",
+  "letterCode": "KC",
+  "coefficient": 60
+ },
+ {
+  "chapter": "MCU",
+  "code": "L000995",
+  "label": "Laryngectomie partielle (CHEP, CHP, Tucker, sus glottique)",
+  "letterCode": "KC",
+  "coefficient": 100
+ },
+ {
+  "chapter": "MCU",
+  "code": "L000996",
+  "label": "Laryngectomie totale ou sus-glottique",
+  "letterCode": "KC",
+  "coefficient": 150
+ },
+ {
+  "chapter": "MCU",
+  "code": "L000998",
+  "label": "Pharyngo-laryngectomie totale avec curage ganglionnaire bilatéral",
+  "letterCode": "KC",
+  "coefficient": 250
+ },
+ {
+  "chapter": "MCU",
+  "code": "C000999",
+  "label": "Hémithyroïdectomie partielle",
+  "letterCode": "KC",
+  "coefficient": 60
+ },
+ {
+  "chapter": "MCU",
+  "code": "C001000",
+  "label": "Hémithyroïdectomie totale",
+  "letterCode": "KC",
+  "coefficient": 80
+ },
+ {
+  "chapter": "MCU",
+  "code": "C001001",
+  "label": "Thyroïdectomie totale",
+  "letterCode": "KC",
+  "coefficient": 120
+ },
+ {
+  "chapter": "MCU",
+  "code": "C001002",
+  "label": "Thyroïdectomie totale avec évidement ganglionnaire",
+  "letterCode": "KC",
+  "coefficient": 150
+ },
+ {
+  "chapter": "MCU",
+  "code": "C001003",
+  "label": "Parathyroïdectomie unilatérale",
+  "letterCode": "KC",
+  "coefficient": 100
+ },
+ {
+  "chapter": "MCU",
+  "code": "C001004",
+  "label": "Cytoponction thyroïdienne",
+  "letterCode": "KC",
+  "coefficient": 10
+ },
+ {
+  "chapter": "MCU",
+  "code": "T001005",
+  "label": "Sclérose de varices oesophagiennes",
+  "letterCode": "KC",
+  "coefficient": 50
+ },
+ {
+  "chapter": "MCU",
+  "code": "T001008",
+  "label": "Prothèse endo-oesophagienne sous contrôle endoscopique",
+  "letterCode": "KC",
+  "coefficient": 80
+ },
+ {
+  "chapter": "MCU",
+  "code": "T001009",
+  "label": "Diverticulectomie Cervicale ou thoracique",
+  "letterCode": "KC",
+  "coefficient": 100
+ },
+ {
+  "chapter": "MCU",
+  "code": "T001010",
+  "label": "Déconnexion azygopectorale (Schigura)",
+  "letterCode": "KC",
+  "coefficient": 100
+ },
+ {
+  "chapter": "MCU",
+  "code": "T001011",
+  "label": "Traitement d'une plaie de l'oesophage",
+  "letterCode": "KC",
+  "coefficient": 120
+ },
+ {
+  "chapter": "MCU",
+  "code": "T001013",
+  "label": "Oesophagectomie sans rétablissement de la continuité",
+  "letterCode": "KC",
+  "coefficient": 150
+ },
+ {
+  "chapter": "MCU",
+  "code": "T001015",
+  "label": "Oesophagoplastie gastrique ou colique isolée",
+  "letterCode": "KC",
+  "coefficient": 250
+ },
+ {
+  "chapter": "MCU",
+  "code": "T001016",
+  "label": "Enucléation d'une tumeur bénigne de l'oesophage",
+  "letterCode": "KC",
+  "coefficient": 200
+ },
+ {
+  "chapter": "MCU",
+  "code": "T001017",
+  "label": "Cure de reflux gastro-oesophagien ou méga oesophage",
+  "letterCode": "KC",
+  "coefficient": 200
+ },
+ {
+  "chapter": "MCU",
+  "code": "T001022",
+  "label": "Ponction transtrachéale",
+  "letterCode": "KC",
+  "coefficient": 50
+ },
+ {
+  "chapter": "MCU",
+  "code": "T001023",
+  "label": "Dilatation pour sténose trachéale",
+  "letterCode": "KC",
+  "coefficient": 60
+ },
+ {
+  "chapter": "MCU",
+  "code": "T001024",
+  "label": "Dilatation trachéale par séance",
+  "letterCode": "KC",
+  "coefficient": 10
+ },
+ {
+  "chapter": "MCU",
+  "code": "T001027",
+  "label": "Fistulisation dirigée pour perforation oesophagienne",
+  "letterCode": "KC",
+  "coefficient": 150
+ },
+ {
+  "chapter": "MCU",
+  "code": "T001030",
+  "label": "Cure chirurgicale d'une atrésie de l'oesophage",
+  "letterCode": "KC",
+  "coefficient": 250
+ },
+ {
+  "chapter": "MTH",
+  "code": "S001083",
+  "label": "Galactographie",
+  "letterCode": "KE",
+  "coefficient": 15
+ },
+ {
+  "chapter": "MTH",
+  "code": "S001084",
+  "label": "Drainage d'un abcès profond du sein",
+  "letterCode": "KC",
+  "coefficient": 20
+ },
+ {
+  "chapter": "MTH",
+  "code": "S001085",
+  "label": "Plastie d'un sein pour hypertrophie",
+  "letterCode": "KC",
+  "coefficient": 100
+ },
+ {
+  "chapter": "MTH",
+  "code": "S001086",
+  "label": "Ablation d'une tumeur bénigne du sein",
+  "letterCode": "KC",
+  "coefficient": 30
+ },
+ {
+  "chapter": "MTH",
+  "code": "S001087",
+  "label": "Ablation de tumeurs bénignes multiples du sein",
+  "letterCode": "KC",
+  "coefficient": 50
+ },
+ {
+  "chapter": "MTH",
+  "code": "S001088",
+  "label": "Mastectomie partielle ou totale",
+  "letterCode": "KC",
+  "coefficient": 50
+ },
+ {
+  "chapter": "MTH",
+  "code": "S001094",
+  "label": "Reconstruction de la plaque aréolo-mamelonnaire",
+  "letterCode": "KC",
+  "coefficient": 60
+ },
+ {
+  "chapter": "MTH",
+  "code": "S001095",
+  "label": "Traitement chirurgical de l'ombilication du mamelon",
+  "letterCode": "KC",
+  "coefficient": 30
+ },
+ {
+  "chapter": "MTH",
+  "code": "P001103",
+  "label": "Résection totale ou partielle d'une côte (sauf la première)",
+  "letterCode": "KC",
+  "coefficient": 30
+ },
+ {
+  "chapter": "MTH",
+  "code": "P001104",
+  "label": "Résection totale ou partielle de la première côte",
+  "letterCode": "KC",
+  "coefficient": 60
+ },
+ {
+  "chapter": "MTH",
+  "code": "P001106",
+  "label": "Myoplastie étendue avec mobilisations musculaires multiples",
+  "letterCode": "KC",
+  "coefficient": 180
+ },
+ {
+  "chapter": "MTH",
+  "code": "P001107",
+  "label": "Création d'une cavité pariétale pour pneumothorax ou plombage",
+  "letterCode": "KC",
+  "coefficient": 100
+ },
+ {
+  "chapter": "MTH",
+  "code": "P001108",
+  "label": "Drainage thoracique",
+  "letterCode": "KC",
+  "coefficient": 30
+ },
+ {
+  "chapter": "MTH",
+  "code": "P001110",
+  "label": "Spirographie complète sans mesure du volume résiduel",
+  "letterCode": "KE",
+  "coefficient": 20
+ },
+ {
+  "chapter": "MTH",
+  "code": "P001112",
+  "label": "Pléthysmographie : mesure de la compliance thoraco-pulmonaire",
+  "letterCode": "KE",
+  "coefficient": 30
+ },
+ {
+  "chapter": "MTH",
+  "code": "P001113",
+  "label": "Tests de bronchodilatation ou de réversibilité",
+  "letterCode": "KE",
+  "coefficient": 30
+ },
+ {
+  "chapter": "MTH",
+  "code": "P001114",
+  "label": "Test de provocation bronchique non spécifique à la métacholine",
+  "letterCode": "KE",
+  "coefficient": 40
+ },
+ {
+  "chapter": "MTH",
+  "code": "P001117",
+  "label": "Test de marche de 6 minutes",
+  "letterCode": "KE",
+  "coefficient": 40
+ },
+ {
+  "chapter": "MTH",
+  "code": "P001118",
+  "label": "Mesure de la force musculaire par dynamométrie isocinétique",
+  "letterCode": "KE",
+  "coefficient": 70
+ },
+ {
+  "chapter": "MTH",
+  "code": "P001119",
+  "label": "Capacité de transfert du CO en apnée ou en état stable",
+  "letterCode": "KE",
+  "coefficient": 20
+ },
+ {
+  "chapter": "MTH",
+  "code": "P001120",
+  "label": "Monitoring du VEMS et du DEP (one-flow)",
+  "letterCode": "KE",
+  "coefficient": 60
+ },
+ {
+  "chapter": "MTH",
+  "code": "P001121",
+  "label": "Pression d'occlusion, PIMAX, PEMAX",
+  "letterCode": "KE",
+  "coefficient": 40
+ },
+ {
+  "chapter": "MTH",
+  "code": "P001122",
+  "label": "Pression transdiaphragmatique",
+  "letterCode": "KE",
+  "coefficient": 40
+ },
+ {
+  "chapter": "MTH",
+  "code": "P001123",
+  "label": "Stimulation magnétique du diaphragme",
+  "letterCode": "KE",
+  "coefficient": 25
+ },
+ {
+  "chapter": "MTH",
+  "code": "P001124",
+  "label": "Rhinomanométrie",
+  "letterCode": "KE",
+  "coefficient": 40
+ },
+ {
+  "chapter": "MTH",
+  "code": "P001125",
+  "label": "Test de provocation nasale par allergènes spécifiques",
+  "letterCode": "KE",
+  "coefficient": 30
+ },
+ {
+  "chapter": "MTH",
+  "code": "P001127",
+  "label": "La pression négative expiratoire (Nep)",
+  "letterCode": "KE",
+  "coefficient": 40
+ },
+ {
+  "chapter": "MTH",
+  "code": "P001131",
+  "label": "Pleurocathéter",
+  "letterCode": "KC",
+  "coefficient": 25
+ },
+ {
+  "chapter": "MTH",
+  "code": "P001132",
+  "label": "Thoracoscopie à but diagnostic ou thérapeutique",
+  "letterCode": "KC",
+  "coefficient": 50
+ },
+ {
+  "chapter": "MTH",
+  "code": "P001133",
+  "label": "Fibroscopie",
+  "letterCode": "KE",
+  "coefficient": 30
+ },
+ {
+  "chapter": "MTH",
+  "code": "P001135",
+  "label": "Cryothérapie trachéobronchique",
+  "letterCode": "KE",
+  "coefficient": 100
+ },
+ {
+  "chapter": "MTH",
+  "code": "P001136",
+  "label": "Thermocoagulation trachéobronchique",
+  "letterCode": "KE",
+  "coefficient": 100
+ },
+ {
+  "chapter": "MTH",
+  "code": "P001137",
+  "label": "Echoendoscopie trachéobronchique",
+  "letterCode": "KE",
+  "coefficient": 60
+ },
+ {
+  "chapter": "MTH",
+  "code": "P001138",
+  "label": "Bronchographie de contraste unilatérale",
+  "letterCode": "KE",
+  "coefficient": 50
+ },
+ {
+  "chapter": "MTH",
+  "code": "P001139",
+  "label": "Lavage bronchoalvéolaire",
+  "letterCode": "KE",
+  "coefficient": 55
+ },
+ {
+  "chapter": "MTH",
+  "code": "P001140",
+  "label": "Mise en route d'une ventilation non invasive au masque",
+  "letterCode": "KE",
+  "coefficient": 20
+ },
+ {
+  "chapter": "MTH",
+  "code": "P001141",
+  "label": "Mise en route d'une CPAP ou surveillance",
+  "letterCode": "KE",
+  "coefficient": 20
+ },
+ {
+  "chapter": "MTH",
+  "code": "P001142",
+  "label": "Décortication pleurale",
+  "letterCode": "KC",
+  "coefficient": 150
+ },
+ {
+  "chapter": "MTH",
+  "code": "P001143",
+  "label": "Ablation d'un segment ou d'un poumon",
+  "letterCode": "KC",
+  "coefficient": 150
+ },
+ {
+  "chapter": "MTH",
+  "code": "P001148",
+  "label": "Création, insufflation ou exsufflation de pneumothorax",
+  "letterCode": "KC",
+  "coefficient": 10
+ },
+ {
+  "chapter": "MTH",
+  "code": "P001149",
+  "label": "Ponction de la plèvre à but diagnostic ou thérapeutique",
+  "letterCode": "KE",
+  "coefficient": 5
+ },
+ {
+  "chapter": "MTH",
+  "code": "P001150",
+  "label": "Pleuroscopie à but diagnostic ou thérapeutique",
+  "letterCode": "KC",
+  "coefficient": 40
+ },
+ {
+  "chapter": "MTH",
+  "code": "P001152",
+  "label": "Ponction évacuatrice de la plèvre (avec ou sans lavage)",
+  "letterCode": "KE",
+  "coefficient": 12
+ },
+ {
+  "chapter": "MTH",
+  "code": "P001153",
+  "label": "Ponction biopsie de la plèvre avec évacuation pleurale",
+  "letterCode": "KE",
+  "coefficient": 15
+ },
+ {
+  "chapter": "MTH",
+  "code": "P001154",
+  "label": "Aspiration ou drainage endocavitaire",
+  "letterCode": "KE",
+  "coefficient": 20
+ },
+ {
+  "chapter": "MTH",
+  "code": "P001155",
+  "label": "Pleurotomie simple",
+  "letterCode": "KC",
+  "coefficient": 20
+ },
+ {
+  "chapter": "MTH",
+  "code": "P001156",
+  "label": "Pleurotomie avec résection costale",
+  "letterCode": "KC",
+  "coefficient": 30
+ },
+ {
+  "chapter": "MTH",
+  "code": "P001157",
+  "label": "Pneumotomie, spéléotomie, en un ou plusieurs temps",
+  "letterCode": "KC",
+  "coefficient": 100
+ },
+ {
+  "chapter": "MTH",
+  "code": "P001158",
+  "label": "Thoracotomie (exploratrice)",
+  "letterCode": "KC",
+  "coefficient": 100
+ },
+ {
+  "chapter": "MTH",
+  "code": "P001160",
+  "label": "Traitement par thoracotomie des lésions pariétales et pulmonaires",
+  "letterCode": "KC",
+  "coefficient": 150
+ },
+ {
+  "chapter": "MTH",
+  "code": "P001162",
+  "label": "Exérèse de malformations congénitales",
+  "letterCode": "KC",
+  "coefficient": 150
+ },
+ {
+  "chapter": "MTH",
+  "code": "P001163",
+  "label": "Exérèse de kyste hydatique par thoracotomie",
+  "letterCode": "KC",
+  "coefficient": 150
+ },
+ {
+  "chapter": "MTH",
+  "code": "M001164",
+  "label": "Pneumomédiastin (clichés radiographiques non compris)",
+  "letterCode": "KC",
+  "coefficient": 30
+ },
+ {
+  "chapter": "MTH",
+  "code": "M001170",
+  "label": "Cautérisation au laser par voie endoscopique",
+  "letterCode": "KE",
+  "coefficient": 100
+ },
+ {
+  "chapter": "MTH",
+  "code": "M001171",
+  "label": "Traitement chirurgical des lésions médiastinales",
+  "letterCode": "KC",
+  "coefficient": 150
+ },
+ {
+  "chapter": "MTH",
+  "code": "C001179",
+  "label": "Electrocardiogramme comportant 12 dérivations",
+  "letterCode": "KE",
+  "coefficient": 6
+ },
+ {
+  "chapter": "MTH",
+  "code": "C001181",
+  "label": "Epreuve d'effort sous ECG",
+  "letterCode": "KE",
+  "coefficient": 40
+ },
+ {
+  "chapter": "MTH",
+  "code": "C001184",
+  "label": "Holter tensionnel",
+  "letterCode": "KE",
+  "coefficient": 60
+ },
+ {
+  "chapter": "MTH",
+  "code": "C001198",
+  "label": "Angioplastie endoluminale ou valvulaire",
+  "letterCode": "KE",
+  "coefficient": 200
+ },
+ {
+  "chapter": "MTH",
+  "code": "C001202",
+  "label": "Mesure de la pression veineuse périphérique",
+  "letterCode": "KC",
+  "coefficient": 8
+ },
+ {
+  "chapter": "MTH",
+  "code": "C001203",
+  "label": "Pléthysmo-vasculaire",
+  "letterCode": "KC",
+  "coefficient": 40
+ },
+ {
+  "chapter": "MTH",
+  "code": "C001204",
+  "label": "Capillaroscopie",
+  "letterCode": "KE",
+  "coefficient": 40
+ },
+ {
+  "chapter": "MTH",
+  "code": "C001205",
+  "label": "Ponction du péricarde",
+  "letterCode": "KE",
+  "coefficient": 15
+ },
+ {
+  "chapter": "MTH",
+  "code": "C001206",
+  "label": "Suture d'une ou plusieurs plaies du coeur ou du péricarde",
+  "letterCode": "KC",
+  "coefficient": 200
+ },
+ {
+  "chapter": "MTH",
+  "code": "C001207",
+  "label": "Péricardectomie",
+  "letterCode": "KC",
+  "coefficient": 250
+ },
+ {
+  "chapter": "MTH",
+  "code": "C001209",
+  "label": "Changement de boîtier d'un stimulateur électrosystolique",
+  "letterCode": "KC",
+  "coefficient": 50
+ },
+ {
+  "chapter": "MTH",
+  "code": "C001212",
+  "label": "Pour une deuxième lésion, en supplément",
+  "letterCode": "KC",
+  "coefficient": 100
+ },
+ {
+  "chapter": "MAB",
+  "code": "D001215",
+  "label": "Réalisation d'un pneumopéritoine non suivi de laparoscopie",
+  "letterCode": "KC",
+  "coefficient": 10
+ },
+ {
+  "chapter": "MAB",
+  "code": "D001216",
+  "label": "Réalisation d'un rétro pneumopéritoine",
+  "letterCode": "KC",
+  "coefficient": 15
+ },
+ {
+  "chapter": "MAB",
+  "code": "P001227",
+  "label": "Ponction de l'abdomen",
+  "letterCode": "KE",
+  "coefficient": 10
+ },
+ {
+  "chapter": "MAB",
+  "code": "P001228",
+  "label": "Traitement chirurgical simple des hernies et des éventrations",
+  "letterCode": "KC",
+  "coefficient": 50
+ },
+ {
+  "chapter": "MAB",
+  "code": "P001234",
+  "label": "Lipectomie antérieure (Cette cotation n'est pas cumulable avec les",
+  "letterCode": "KC",
+  "coefficient": 80
+ },
+ {
+  "chapter": "MAB",
+  "code": "P001240",
+  "label": "Lavage gastrique",
+  "letterCode": "KE",
+  "coefficient": 10
+ },
+ {
+  "chapter": "MAB",
+  "code": "P001241",
+  "label": "Tubages gastriques et duodénaux pour étude biologique",
+  "letterCode": "KE",
+  "coefficient": 20
+ },
+ {
+  "chapter": "MAB",
+  "code": "P001242",
+  "label": "Fibroscopie oeso-gastro-duodénale",
+  "letterCode": "KE",
+  "coefficient": 30
+ },
+ {
+  "chapter": "MAB",
+  "code": "P001243",
+  "label": "Fibroscopie oeso-gastro-jéjunale avec biopsie",
+  "letterCode": "KE",
+  "coefficient": 40
+ },
+ {
+  "chapter": "MAB",
+  "code": "P001244",
+  "label": "Fibroscopie avec polypectomie",
+  "letterCode": "KE",
+  "coefficient": 50
+ },
+ {
+  "chapter": "MAB",
+  "code": "P001245",
+  "label": "Cautérisation au laser par voie endoscopique",
+  "letterCode": "KE",
+  "coefficient": 100
+ },
+ {
+  "chapter": "MAB",
+  "code": "P001246",
+  "label": "Biopsie du grêle (y compris le contrôle radioscopique)",
+  "letterCode": "KE",
+  "coefficient": 50
+ },
+ {
+  "chapter": "MAB",
+  "code": "P001247",
+  "label": "Transit du grêle par intubation",
+  "letterCode": "KE",
+  "coefficient": 40
+ },
+ {
+  "chapter": "MAB",
+  "code": "P001248",
+  "label": "Changement de sonde à demeure (type gastrostomie)",
+  "letterCode": "KE",
+  "coefficient": 5
+ },
+ {
+  "chapter": "MAB",
+  "code": "P001251",
+  "label": "Ponction évacuatrice d'ascite",
+  "letterCode": "KE",
+  "coefficient": 10
+ },
+ {
+  "chapter": "MAB",
+  "code": "P001252",
+  "label": "Cathétérisme de la veine ombilicale",
+  "letterCode": "KE",
+  "coefficient": 50
+ },
+ {
+  "chapter": "MAB",
+  "code": "P001253",
+  "label": "Pose d'un cathéter permanent pour dialyse péritonéale",
+  "letterCode": "KC",
+  "coefficient": 30
+ },
+ {
+  "chapter": "MAB",
+  "code": "E001258",
+  "label": "Stomie ( gastrostomie, jéjunostomie)",
+  "letterCode": "KC",
+  "coefficient": 80
+ },
+ {
+  "chapter": "MAB",
+  "code": "E001259",
+  "label": "Fermeture de Stomie",
+  "letterCode": "KC",
+  "coefficient": 80
+ },
+ {
+  "chapter": "MAB",
+  "code": "E001260",
+  "label": "Gastrectomie totale",
+  "letterCode": "KC",
+  "coefficient": 200
+ },
+ {
+  "chapter": "MAB",
+  "code": "E001262",
+  "label": "Traitement chirurgical des fistules cutanées des viscères creux",
+  "letterCode": "KC",
+  "coefficient": 100
+ },
+ {
+  "chapter": "MAB",
+  "code": "E001264",
+  "label": "Traitement de la sténose hypertrophique du pylore",
+  "letterCode": "KC",
+  "coefficient": 80
+ },
+ {
+  "chapter": "MAB",
+  "code": "E001265",
+  "label": "Résection segmentaire du grêle",
+  "letterCode": "KC",
+  "coefficient": 100
+ },
+ {
+  "chapter": "MAB",
+  "code": "E001267",
+  "label": "Section de bride par laparotomie",
+  "letterCode": "KC",
+  "coefficient": 80
+ },
+ {
+  "chapter": "MAB",
+  "code": "E001268",
+  "label": "Entérolyse",
+  "letterCode": "KC",
+  "coefficient": 100
+ },
+ {
+  "chapter": "MAB",
+  "code": "E001274",
+  "label": "Ablation du diverticule de Meckel",
+  "letterCode": "KC",
+  "coefficient": 60
+ },
+ {
+  "chapter": "MAB",
+  "code": "E001277",
+  "label": "Colectomie totale (avec stomie)",
+  "letterCode": "KC",
+  "coefficient": 250
+ },
+ {
+  "chapter": "MAB",
+  "code": "F001287",
+  "label": "Ponction en vue d'une splénoportographie",
+  "letterCode": "KE",
+  "coefficient": 40
+ },
+ {
+  "chapter": "MAB",
+  "code": "F001288",
+  "label": "Cholangiographie trans-hépatique (CTH)",
+  "letterCode": "KE",
+  "coefficient": 60
+ },
+ {
+  "chapter": "MAB",
+  "code": "F001230",
+  "label": "CPRE avec sphinctérotomie",
+  "letterCode": "KE",
+  "coefficient": 100
+ },
+ {
+  "chapter": "MAB",
+  "code": "F001239",
+  "label": "Chirurgie transduodénale de la papille et de l'ampoule de water",
+  "letterCode": "KC",
+  "coefficient": 100
+ },
+ {
+  "chapter": "MAB",
+  "code": "F001240",
+  "label": "Drainage d'un abcès du foie",
+  "letterCode": "KC",
+  "coefficient": 60
+ },
+ {
+  "chapter": "MAB",
+  "code": "F001241",
+  "label": "Traitement par laparotomie de kyste hydatique du foie",
+  "letterCode": "KC",
+  "coefficient": 100
+ },
+ {
+  "chapter": "MAB",
+  "code": "F001245",
+  "label": "Résection segmentaire du foie",
+  "letterCode": "KC",
+  "coefficient": 120
+ },
+ {
+  "chapter": "MAB",
+  "code": "F001246",
+  "label": "Hépatectomie réglée",
+  "letterCode": "KC",
+  "coefficient": 250
+ },
+ {
+  "chapter": "MAB",
+  "code": "F001250",
+  "label": "Toute anastomose chirurgicale entre le système porte et le",
+  "letterCode": "KC",
+  "coefficient": 250
+ },
+ {
+  "chapter": "MAB",
+  "code": "F001252",
+  "label": "Transplantation hépatique",
+  "letterCode": "KC",
+  "coefficient": 400
+ },
+ {
+  "chapter": "MAB",
+  "code": "F001253",
+  "label": "Dérivation antalgique du plexus coeliaque",
+  "letterCode": "KC",
+  "coefficient": 150
+ },
+ {
+  "chapter": "MAB",
+  "code": "F001254",
+  "label": "Spleno-pancréatectomie plus ou moins élargie",
+  "letterCode": "KC",
+  "coefficient": 200
+ },
+ {
+  "chapter": "MAB",
+  "code": "F001256",
+  "label": "Pancréatectomie médiane",
+  "letterCode": "KC",
+  "coefficient": 250
+ },
+ {
+  "chapter": "MAB",
+  "code": "F001257",
+  "label": "Pancréatectomie totale",
+  "letterCode": "KC",
+  "coefficient": 300
+ },
+ {
+  "chapter": "MAB",
+  "code": "F001259",
+  "label": "Traitement d'une pancréatite nécrosante par déquestrectomie",
+  "letterCode": "KC",
+  "coefficient": 250
+ },
+ {
+  "chapter": "MAB",
+  "code": "R001260",
+  "label": "Ponction biopsie de la rate",
+  "letterCode": "KC",
+  "coefficient": 10
+ },
+ {
+  "chapter": "MAB",
+  "code": "R001261",
+  "label": "Traitement chirurgical des lésions de la rate",
+  "letterCode": "KC",
+  "coefficient": 100
+ },
+ {
+  "chapter": "MAB",
+  "code": "R001263",
+  "label": "Splénectomie totale",
+  "letterCode": "KC",
+  "coefficient": 120
+ },
+ {
+  "chapter": "MAB",
+  "code": "R001264",
+  "label": "Splénectomie partielle",
+  "letterCode": "KC",
+  "coefficient": 150
+ },
+ {
+  "chapter": "MAB",
+  "code": "R001265",
+  "label": "Anuscopie",
+  "letterCode": "KE",
+  "coefficient": 10
+ },
+ {
+  "chapter": "MAB",
+  "code": "R001266",
+  "label": "Anuscopie + biopsie",
+  "letterCode": "KE",
+  "coefficient": 15
+ },
+ {
+  "chapter": "MAB",
+  "code": "R001276",
+  "label": "Résection d'un prolapsus rectal",
+  "letterCode": "KC",
+  "coefficient": 60
+ },
+ {
+  "chapter": "MAB",
+  "code": "R001277",
+  "label": "Traitement des prolapsus rectaux par voie haute et basse",
+  "letterCode": "KC",
+  "coefficient": 100
+ },
+ {
+  "chapter": "MAB",
+  "code": "R001285",
+  "label": "Sphinctéroplastie avec anoplastie muqueuse",
+  "letterCode": "KE",
+  "coefficient": 50
+ },
+ {
+  "chapter": "MAU",
+  "code": "H001334",
+  "label": "Création d'une fistule artério-veineuse par anastomose directe",
+  "letterCode": "KC",
+  "coefficient": 100
+ },
+ {
+  "chapter": "MAU",
+  "code": "H001336",
+  "label": "Pose de cathéter double à port prolongé avec tunnelisation",
+  "letterCode": "KC",
+  "coefficient": 50
+ },
+ {
+  "chapter": "MAU",
+  "code": "H001337",
+  "label": "Désobstruction des fistules artério-veineuses",
+  "letterCode": "KC",
+  "coefficient": 50
+ },
+ {
+  "chapter": "MAU",
+  "code": "H001338",
+  "label": "Pose d'un cathéter veineux pour hémodialyse",
+  "letterCode": "KE",
+  "coefficient": 20
+ },
+ {
+  "chapter": "MAU",
+  "code": "H001340",
+  "label": "Lombotomie exploratrice",
+  "letterCode": "KC",
+  "coefficient": 50
+ },
+ {
+  "chapter": "MAU",
+  "code": "H001341",
+  "label": "Incision et drainage d'un phlegmon péri-néphrétique",
+  "letterCode": "KC",
+  "coefficient": 60
+ },
+ {
+  "chapter": "MAU",
+  "code": "H001342",
+  "label": "Néphropexie, ou biopsie rénale par lombotomie, ou décapsulation",
+  "letterCode": "KC",
+  "coefficient": 60
+ },
+ {
+  "chapter": "MAU",
+  "code": "H001345",
+  "label": "Néphrectomie",
+  "letterCode": "KC",
+  "coefficient": 100
+ },
+ {
+  "chapter": "MAU",
+  "code": "H001346",
+  "label": "Néphrectomie élargie",
+  "letterCode": "KC",
+  "coefficient": 120
+ },
+ {
+  "chapter": "MAU",
+  "code": "H001350",
+  "label": "Néphrolithotomie avec ou sans néphrostomie",
+  "letterCode": "KC",
+  "coefficient": 120
+ },
+ {
+  "chapter": "MAU",
+  "code": "U001357",
+  "label": "Urétérotomie lombaire, urétérolyse",
+  "letterCode": "KC",
+  "coefficient": 80
+ },
+ {
+  "chapter": "MAU",
+  "code": "U001358",
+  "label": "Urétérostomie cutanée",
+  "letterCode": "KC",
+  "coefficient": 80
+ },
+ {
+  "chapter": "MAU",
+  "code": "U001359",
+  "label": "Urétérotomie pelvienne, urétérectomie secondaire totale",
+  "letterCode": "KC",
+  "coefficient": 100
+ },
+ {
+  "chapter": "MAU",
+  "code": "U001360",
+  "label": "Urétéro-lithotomie itérative, en supplément",
+  "letterCode": "KC",
+  "coefficient": 20
+ },
+ {
+  "chapter": "MAU",
+  "code": "U001361",
+  "label": "Abouchement d'un uretère dans l'intestin en place",
+  "letterCode": "KC",
+  "coefficient": 100
+ },
+ {
+  "chapter": "MAU",
+  "code": "U001364",
+  "label": "Urétérostomie cutanée transintestinale",
+  "letterCode": "KC",
+  "coefficient": 200
+ },
+ {
+  "chapter": "MAU",
+  "code": "U001365",
+  "label": "Réalisation d'un dispositif anti-reflux vésico-urétéral",
+  "letterCode": "KC",
+  "coefficient": 100
+ },
+ {
+  "chapter": "MAU",
+  "code": "V001367",
+  "label": "Cathétérisme pour rétention d'urine",
+  "letterCode": "KE",
+  "coefficient": 5
+ },
+ {
+  "chapter": "MAU",
+  "code": "V001368",
+  "label": "Pose de sonde vésicale à demeure",
+  "letterCode": "KE",
+  "coefficient": 5
+ },
+ {
+  "chapter": "MAU",
+  "code": "V001369",
+  "label": "Changement de sonde à demeure (type cystostomie)",
+  "letterCode": "KE",
+  "coefficient": 5
+ },
+ {
+  "chapter": "MAU",
+  "code": "V001370",
+  "label": "Ponction sus-pubienne pour cystographie",
+  "letterCode": "KE",
+  "coefficient": 15
+ },
+ {
+  "chapter": "MAU",
+  "code": "V001371",
+  "label": "Cystotomie, cystostomie sus-pubienne, lithotritie",
+  "letterCode": "KC",
+  "coefficient": 60
+ },
+ {
+  "chapter": "MAU",
+  "code": "V001377",
+  "label": "Exérèse des diverticules vésicaux avec ou sans résection du col",
+  "letterCode": "KC",
+  "coefficient": 150
+ },
+ {
+  "chapter": "MAU",
+  "code": "V001379",
+  "label": "Intervention pour récidive, en supplément",
+  "letterCode": "KC",
+  "coefficient": 20
+ },
+ {
+  "chapter": "MAU",
+  "code": "V001380",
+  "label": "Fermeture de fistule vésico-cutanée",
+  "letterCode": "KC",
+  "coefficient": 40
+ },
+ {
+  "chapter": "MAU",
+  "code": "V001387",
+  "label": "Entéro-cystoplastie ou urétéro-cystoplastie",
+  "letterCode": "KC",
+  "coefficient": 250
+ },
+ {
+  "chapter": "MAU",
+  "code": "V001388",
+  "label": "Taille vésicale pour curiethérapie (curiethérapie non comprise)",
+  "letterCode": "KC",
+  "coefficient": 60
+ },
+ {
+  "chapter": "MAU",
+  "code": "V001389",
+  "label": "Suture de plaie ou de rupture de vessie, par laparotomie",
+  "letterCode": "KC",
+  "coefficient": 60
+ },
+ {
+  "chapter": "MAU",
+  "code": "V001390",
+  "label": "Résection d'un kyste ou d'une fistule de l'ouraque",
+  "letterCode": "KC",
+  "coefficient": 60
+ },
+ {
+  "chapter": "MAU",
+  "code": "U001396",
+  "label": "Méatostomie",
+  "letterCode": "KC",
+  "coefficient": 20
+ },
+ {
+  "chapter": "MAU",
+  "code": "U001397",
+  "label": "Urétrotomie interne",
+  "letterCode": "KC",
+  "coefficient": 20
+ },
+ {
+  "chapter": "MAU",
+  "code": "U001403",
+  "label": "Reconstitution de l'urètre (ensemble du traitement)",
+  "letterCode": "KC",
+  "coefficient": 120
+ },
+ {
+  "chapter": "MGM",
+  "code": "V001409",
+  "label": "Réduction sanglante du paraphimosis",
+  "letterCode": "KC",
+  "coefficient": 10
+ },
+ {
+  "chapter": "MGM",
+  "code": "V001410",
+  "label": "Section ou plastie chirurgicale du frein",
+  "letterCode": "KC",
+  "coefficient": 10
+ },
+ {
+  "chapter": "MGM",
+  "code": "V001411",
+  "label": "Traitement chirurgical du priapisme",
+  "letterCode": "KC",
+  "coefficient": 20
+ },
+ {
+  "chapter": "MGM",
+  "code": "V001414",
+  "label": "Traitement de l'hypospadias balanique",
+  "letterCode": "KC",
+  "coefficient": 60
+ },
+ {
+  "chapter": "MGM",
+  "code": "V001416",
+  "label": "Traitement de l'hypospadias périnéal ou pénien",
+  "letterCode": "KC",
+  "coefficient": 100
+ },
+ {
+  "chapter": "MGM",
+  "code": "V001418",
+  "label": "Traitement de l'épispadias",
+  "letterCode": "KC",
+  "coefficient": 100
+ },
+ {
+  "chapter": "MGM",
+  "code": "V001419",
+  "label": "Traitement de l'épispadias : chaque retouche ultérieure",
+  "letterCode": "KC",
+  "coefficient": 40
+ },
+ {
+  "chapter": "MGM",
+  "code": "V001420",
+  "label": "Amputation partielle de la verge",
+  "letterCode": "KC",
+  "coefficient": 60
+ },
+ {
+  "chapter": "MGM",
+  "code": "V001422",
+  "label": "Circoncision",
+  "letterCode": "KC",
+  "coefficient": 20
+ },
+ {
+  "chapter": "MGM",
+  "code": "P001423",
+  "label": "Ponction biopsie de la prostate",
+  "letterCode": "KE",
+  "coefficient": 20
+ },
+ {
+  "chapter": "MGM",
+  "code": "P001424",
+  "label": "Incision d'un abcès de la prostate par voie périnéale",
+  "letterCode": "KC",
+  "coefficient": 50
+ },
+ {
+  "chapter": "MGM",
+  "code": "P001428",
+  "label": "Ablation des vésicules séminales chez l'adulte",
+  "letterCode": "KC",
+  "coefficient": 120
+ },
+ {
+  "chapter": "MGM",
+  "code": "B001429",
+  "label": "Chirurgie isolée des deux canaux déférents",
+  "letterCode": "KC",
+  "coefficient": 30
+ },
+ {
+  "chapter": "MGM",
+  "code": "B001433",
+  "label": "Cure opératoire du kyste du cordon ou de l'hydrocèle",
+  "letterCode": "KC",
+  "coefficient": 40
+ },
+ {
+  "chapter": "MGM",
+  "code": "B001437",
+  "label": "Pose ou ablation d'une prothèse de testicule , par abord inguinal",
+  "letterCode": "KC",
+  "coefficient": 40
+ },
+ {
+  "chapter": "MGM",
+  "code": "B001438",
+  "label": "Suture de rupture de testicule",
+  "letterCode": "KC",
+  "coefficient": 60
+ },
+ {
+  "chapter": "MGM",
+  "code": "B001439",
+  "label": "Détorsion manuelle du cordon spermatique",
+  "letterCode": "KC",
+  "coefficient": 20
+ },
+ {
+  "chapter": "MGM",
+  "code": "B001440",
+  "label": "Orchidopexie, par abord scrotal",
+  "letterCode": "KC",
+  "coefficient": 30
+ },
+ {
+  "chapter": "MGM",
+  "code": "B001441",
+  "label": "Orchidectomie pour cryptorchidie abdominale",
+  "letterCode": "KC",
+  "coefficient": 80
+ },
+ {
+  "chapter": "MGF",
+  "code": "O001443",
+  "label": "Ponction transvaginale du Douglas",
+  "letterCode": "KE",
+  "coefficient": 10
+ },
+ {
+  "chapter": "MGF",
+  "code": "O001445",
+  "label": "Pose ou retrait d'un dispositif intra-utérin",
+  "letterCode": "KE",
+  "coefficient": 20
+ },
+ {
+  "chapter": "MGF",
+  "code": "O001446",
+  "label": "Colposcopie avec ou sans prélèvement pour examen histologique",
+  "letterCode": "KE",
+  "coefficient": 10
+ },
+ {
+  "chapter": "MGF",
+  "code": "O001447",
+  "label": "Biopsie du col",
+  "letterCode": "KE",
+  "coefficient": 5
+ },
+ {
+  "chapter": "MGF",
+  "code": "O001448",
+  "label": "Chirurgie des lésions bénignes de l'hymen et de la vulve",
+  "letterCode": "KC",
+  "coefficient": 20
+ },
+ {
+  "chapter": "MGF",
+  "code": "O001452",
+  "label": "Amputation ou conisation du col",
+  "letterCode": "KC",
+  "coefficient": 40
+ },
+ {
+  "chapter": "MGF",
+  "code": "O001453",
+  "label": "Opération pour atrésie ou aplasie du vagin",
+  "letterCode": "KC",
+  "coefficient": 70
+ },
+ {
+  "chapter": "MGF",
+  "code": "O001454",
+  "label": "Hystérectomie vaginale",
+  "letterCode": "KC",
+  "coefficient": 100
+ },
+ {
+  "chapter": "MGF",
+  "code": "O001459",
+  "label": "Triple opération type Manchester",
+  "letterCode": "KC",
+  "coefficient": 100
+ },
+ {
+  "chapter": "MGF",
+  "code": "O001461",
+  "label": "Hystérectomie totale",
+  "letterCode": "KC",
+  "coefficient": 100
+ },
+ {
+  "chapter": "MGF",
+  "code": "O001462",
+  "label": "Annexectomie uni ou bilatérale, quelle que soit la technique",
+  "letterCode": "KC",
+  "coefficient": 80
+ },
+ {
+  "chapter": "MGF",
+  "code": "O001465",
+  "label": "Cellulo-adénectomie abdominale isolée",
+  "letterCode": "KC",
+  "coefficient": 100
+ },
+ {
+  "chapter": "MGF",
+  "code": "O001466",
+  "label": "Colpo-Hystérectomie élargie avec cystectomie",
+  "letterCode": "KC",
+  "coefficient": 250
+ },
+ {
+  "chapter": "MGF",
+  "code": "O001467",
+  "label": "Eviscération pelvienne totale élargie avec ou sans périnéectomie",
+  "letterCode": "KC",
+  "coefficient": 300
+ },
+ {
+  "chapter": "MGF",
+  "code": "O001468",
+  "label": "Interventions pour prolapsus",
+  "letterCode": "KC",
+  "coefficient": 120
+ },
+ {
+  "chapter": "MGF",
+  "code": "O001469",
+  "label": "Interventions pour aplasie vaginale avec transplantation intestinale",
+  "letterCode": "KC",
+  "coefficient": 150
+ },
+ {
+  "chapter": "MGF",
+  "code": "O001470",
+  "label": "Hystéroscopie à visée diagnostique",
+  "letterCode": "KE",
+  "coefficient": 20
+ },
+ {
+  "chapter": "MGF",
+  "code": "G001472",
+  "label": "Amnioscopie",
+  "letterCode": "KE",
+  "coefficient": 10
+ },
+ {
+  "chapter": "MGF",
+  "code": "G001474",
+  "label": "Cerclage du col",
+  "letterCode": "KE",
+  "coefficient": 30
+ },
+ {
+  "chapter": "MGF",
+  "code": "G001476",
+  "label": "Réduction embryonnaire sous échoguidage",
+  "letterCode": "KC",
+  "coefficient": 40
+ },
+ {
+  "chapter": "MGF",
+  "code": "G001481",
+  "label": "Accouchement par le siège",
+  "letterCode": "KC",
+  "coefficient": 90
+ },
+ {
+  "chapter": "MGF",
+  "code": "G001483",
+  "label": "Césarienne suivie de myomectomie",
+  "letterCode": "KC",
+  "coefficient": 100
+ },
+ {
+  "chapter": "MGF",
+  "code": "G001484",
+  "label": "Traitement par coeliotomie de la rupture utérine",
+  "letterCode": "KC",
+  "coefficient": 100
+ },
+ {
+  "chapter": "MGF",
+  "code": "P001492",
+  "label": "Insémination artificielle quelle que soit la technique",
+  "letterCode": "KE",
+  "coefficient": 20
+ },
+ {
+  "chapter": "MGF",
+  "code": "P001494",
+  "label": "Transfert d'embryons dans l'utérus",
+  "letterCode": "KC",
+  "coefficient": 20
+ },
+ {
+  "chapter": "MGF",
+  "code": "D001495",
+  "label": "Amniocentèse",
+  "letterCode": "KC",
+  "coefficient": 15
+ },
+ {
+  "chapter": "MGF",
+  "code": "D001496",
+  "label": "Biopsie de trophoblaste",
+  "letterCode": "KC",
+  "coefficient": 25
+ },
+ {
+  "chapter": "MGF",
+  "code": "D001497",
+  "label": "Amnio infusion-Amnio drainage",
+  "letterCode": "KC",
+  "coefficient": 30
+ },
+ {
+  "chapter": "MGF",
+  "code": "D001498",
+  "label": "Prélèvements foetaux (quel que soit le nombre de prélèvements)",
+  "letterCode": "KC",
+  "coefficient": 40
+ },
+ {
+  "chapter": "MPR",
+  "code": "D001514",
+  "label": "Alcoolisation (muscle et nerf)",
+  "letterCode": "KE",
+  "coefficient": 6
+ },
+ {
+  "chapter": "MPR",
+  "code": "R001516",
+  "label": "Régional",
+  "letterCode": "KE",
+  "coefficient": 4
+ },
+ {
+  "chapter": "MPR",
+  "code": "R001517",
+  "label": "Général",
+  "letterCode": "KE",
+  "coefficient": 8
+ },
+ {
+  "chapter": "MPR",
+  "code": "R001519",
+  "label": "Deux membres avec les ceintures correspondantes",
+  "letterCode": "KE",
+  "coefficient": 18
+ },
+ {
+  "chapter": "MPR",
+  "code": "R001520",
+  "label": "Un segment distal (main et poignet)",
+  "letterCode": "KE",
+  "coefficient": 10
+ },
+ {
+  "chapter": "MPR",
+  "code": "R001521",
+  "label": "Rééducation d'une atteinte rachidienne sans lésion neurologique",
+  "letterCode": "KE",
+  "coefficient": 15
+ },
+ {
+  "chapter": "MPR",
+  "code": "R001524",
+  "label": "Atteinte centrale ou périphérique d'un membre",
+  "letterCode": "KE",
+  "coefficient": 15
+ },
+ {
+  "chapter": "MPR",
+  "code": "R001536",
+  "label": "Réadaptation à l'effort cardiovasculaire et respiratoire",
+  "letterCode": "KE",
+  "coefficient": 18
+ },
+ {
+  "chapter": "MPR",
+  "code": "R001537",
+  "label": "Un membre, le tronc, le cou ou le visage",
+  "letterCode": "KE",
+  "coefficient": 15
+ },
+ {
+  "chapter": "MPR",
+  "code": "R001538",
+  "label": "Atteintes multiples",
+  "letterCode": "KE",
+  "coefficient": 20
+ },
+ {
+  "chapter": "MPR",
+  "code": "R001542",
+  "label": "Hydro massage (douche, bain)",
+  "letterCode": "KE",
+  "coefficient": 3
+ },
+ {
+  "chapter": "MPR",
+  "code": "R001543",
+  "label": "Rééducation en piscine",
+  "letterCode": "KE",
+  "coefficient": 5
+ },
+ {
+  "chapter": "MPR",
+  "code": "R001544",
+  "label": "Traction vertébrale (mécanique, électrique)",
+  "letterCode": "KE",
+  "coefficient": 6
+ },
+ {
+  "chapter": "MPR",
+  "code": "R001545",
+  "label": "Rééducation sur appareil d'isocinétisme",
+  "letterCode": "KE",
+  "coefficient": 8
+ },
+ {
+  "chapter": "MPS",
+  "code": "A001551",
+  "label": "Electroconvulsivothérapie effectuée par le pédopsychiatre et",
+  "letterCode": "KE",
+  "coefficient": 18
+ },
+ {
+  "chapter": "MPS",
+  "code": "A001561",
+  "label": "Evaluation de la mémoire et des fonctions supérieures par un ou",
+  "letterCode": "KE",
+  "coefficient": 25
+ },
+ {
+  "chapter": "MDI",
+  "code": "C001594",
+  "label": "Insufflation de trompe (voies respiratoires)",
+  "letterCode": "KE",
+  "coefficient": 5
+ },
+ {
+  "chapter": "MDI",
+  "code": "C001595",
+  "label": "Insufflation tubo tympanique",
+  "letterCode": "KE",
+  "coefficient": 5
+ },
+ {
+  "chapter": "MDI",
+  "code": "C001596",
+  "label": "Irrigation vaginale",
+  "letterCode": "KE",
+  "coefficient": 4
+ },
+ {
+  "chapter": "MDI",
+  "code": "C001600",
+  "label": "Méthode de déplacement par Proëtz : voies respiratoires",
+  "letterCode": "KE",
+  "coefficient": 3
+ },
+ {
+  "chapter": "MDI",
+  "code": "P001610",
+  "label": "Examen échographique mammaire (unilatéral ou bilatéral)",
+  "letterCode": "KE",
+  "coefficient": 20
+ },
+ {
+  "chapter": "MDI",
+  "code": "P001611",
+  "label": "Examen échographique d'un organe superficiel ou thoracique",
+  "letterCode": "KE",
+  "coefficient": 20
+ },
+ {
+  "chapter": "MDI",
+  "code": "P001630",
+  "label": "Supplément pour doppler obstétrical",
+  "letterCode": "KE",
+  "coefficient": 10
+ },
+ {
+  "chapter": "MDI",
+  "code": "P001634",
+  "label": "Examen par Doppler continu isolé",
+  "letterCode": "KE",
+  "coefficient": 15
+ },
+ {
+  "chapter": "MDI",
+  "code": "P001635",
+  "label": "IRM",
+  "letterCode": "KE",
+  "coefficient": 250
+ },
+ {
+  "chapter": "PSC",
+  "code": "P001639",
+  "label": "Batterie pour l'examen psychologique de l'enfant Kauffman (K-ABC)",
+  "letterCode": "AMP",
+  "coefficient": 16
+ },
+ {
+  "chapter": "PSC",
+  "code": "P001641",
+  "label": "Echelle différentielle d'efficience intellectuelle (EDEI)",
+  "letterCode": "AMP",
+  "coefficient": 16
+ },
+ {
+  "chapter": "PSC",
+  "code": "P001642",
+  "label": "Test progressive matrice de Raven : PM 38, PM 47, test D 48",
+  "letterCode": "AMP",
+  "coefficient": 8
+ },
+ {
+  "chapter": "PSC",
+  "code": "P001643",
+  "label": "Test des cubes de Kohn",
+  "letterCode": "AMP",
+  "coefficient": 4
+ },
+ {
+  "chapter": "PSC",
+  "code": "P001644",
+  "label": "Test de l'intelligence de CATTELL : échelle 2 et 3",
+  "letterCode": "AMP",
+  "coefficient": 8
+ },
+ {
+  "chapter": "PSC",
+  "code": "P001645",
+  "label": "Test de vocabulaire",
+  "letterCode": "AMP",
+  "coefficient": 4
+ },
+ {
+  "chapter": "PSC",
+  "code": "P001646",
+  "label": "Inventaire Piagetien",
+  "letterCode": "AMP",
+  "coefficient": 8
+ },
+ {
+  "chapter": "PSC",
+  "code": "P001647",
+  "label": "Construction et utilisation du nombre",
+  "letterCode": "AMP",
+  "coefficient": 8
+ },
+ {
+  "chapter": "PSC",
+  "code": "P001648",
+  "label": "Développement des contenants de la pensée",
+  "letterCode": "AMP",
+  "coefficient": 8
+ },
+ {
+  "chapter": "PSC",
+  "code": "P001650",
+  "label": "Inventaire de développement de Gesell",
+  "letterCode": "AMP",
+  "coefficient": 15
+ },
+ {
+  "chapter": "PSC",
+  "code": "P001651",
+  "label": "Echelle de coordination motrice de Charlop-Atwell",
+  "letterCode": "AMP",
+  "coefficient": 15
+ },
+ {
+  "chapter": "PSC",
+  "code": "P001652",
+  "label": "Echelle de développement moteur de Lincoln-Oseretsky",
+  "letterCode": "AMP",
+  "coefficient": 15
+ },
+ {
+  "chapter": "PSC",
+  "code": "P001656",
+  "label": "Langage oral, langage écrit, mémoire, attention : L2MA",
+  "letterCode": "AMP",
+  "coefficient": 15
+ },
+ {
+  "chapter": "PSC",
+  "code": "P001657",
+  "label": "Test pour l'examen de l'aphasie",
+  "letterCode": "AMP",
+  "coefficient": 15
+ },
+ {
+  "chapter": "PSC",
+  "code": "P001658",
+  "label": "Echelle clinique de mémoire pour enfant",
+  "letterCode": "AMP",
+  "coefficient": 15
+ },
+ {
+  "chapter": "PSC",
+  "code": "P001660",
+  "label": "Echelle clinique de mémoire MEM-III",
+  "letterCode": "AMP",
+  "coefficient": 15
+ },
+ {
+  "chapter": "PSC",
+  "code": "P001661",
+  "label": "Test d'appariement d'images",
+  "letterCode": "AMP",
+  "coefficient": 5
+ },
+ {
+  "chapter": "PSC",
+  "code": "P001662",
+  "label": "Test d'attention sélective de Stroop",
+  "letterCode": "AMP",
+  "coefficient": 5
+ },
+ {
+  "chapter": "PSC",
+  "code": "P001663",
+  "label": "Test d'évaluation des troubles de l'attention ADD",
+  "letterCode": "AMP",
+  "coefficient": 15
+ },
+ {
+  "chapter": "PSC",
+  "code": "P001664",
+  "label": "Test d'attention concentrée D2",
+  "letterCode": "AMP",
+  "coefficient": 15
+ },
+ {
+  "chapter": "PSC",
+  "code": "P001665",
+  "label": "Test de la figure complexe de Rey",
+  "letterCode": "AMP",
+  "coefficient": 3
+ },
+ {
+  "chapter": "PSC",
+  "code": "P001666",
+  "label": "Test de développement de la perception visuelle",
+  "letterCode": "AMP",
+  "coefficient": 15
+ },
+ {
+  "chapter": "PSC",
+  "code": "P001667",
+  "label": "Test de structure visuelle de Bender",
+  "letterCode": "AMP",
+  "coefficient": 5
+ },
+ {
+  "chapter": "PSC",
+  "code": "P001668",
+  "label": "Test de rétention visuelle de Benton",
+  "letterCode": "AMP",
+  "coefficient": 5
+ },
+ {
+  "chapter": "PSC",
+  "code": "P001669",
+  "label": "Test de praxie constructive tridimentionnelle PRA",
+  "letterCode": "AMP",
+  "coefficient": 15
+ },
+ {
+  "chapter": "PSC",
+  "code": "P001672",
+  "label": "Thématic apperception test TAT",
+  "letterCode": "AMP",
+  "coefficient": 20
+ },
+ {
+  "chapter": "PSC",
+  "code": "P001673",
+  "label": "Test \"patte noire\" PN",
+  "letterCode": "AMP",
+  "coefficient": 20
+ },
+ {
+  "chapter": "PSC",
+  "code": "P001674",
+  "label": "Test de Rorschach",
+  "letterCode": "AMP",
+  "coefficient": 20
+ },
+ {
+  "chapter": "PSC",
+  "code": "P001675",
+  "label": "Test Z de Zulliger",
+  "letterCode": "AMP",
+  "coefficient": 15
+ },
+ {
+  "chapter": "PSC",
+  "code": "P001676",
+  "label": "Hand test",
+  "letterCode": "AMP",
+  "coefficient": 15
+ },
+ {
+  "chapter": "PSC",
+  "code": "P001677",
+  "label": "Test de frustration de Rosenzweig",
+  "letterCode": "AMP",
+  "coefficient": 15
+ },
+ {
+  "chapter": "PSC",
+  "code": "P001678",
+  "label": "Sceno test",
+  "letterCode": "AMP",
+  "coefficient": 20
+ },
+ {
+  "chapter": "SAF",
+  "code": "O001682",
+  "label": "Accouchement gémellaire",
+  "letterCode": "SF",
+  "coefficient": 25
+ },
+ {
+  "chapter": "POR",
+  "code": "O001685",
+  "label": "Bilan fonctionnel de la phonation",
+  "letterCode": "AMO",
+  "coefficient": 12
+ },
+ {
+  "chapter": "POR",
+  "code": "O001686",
+  "label": "Bilan phonétique du langage",
+  "letterCode": "AMO",
+  "coefficient": 12
+ },
+ {
+  "chapter": "POR",
+  "code": "O001688",
+  "label": "Bilan de la pathologie du langage oral ou écrit",
+  "letterCode": "AMO",
+  "coefficient": 12
+ },
+ {
+  "chapter": "POR",
+  "code": "O001704",
+  "label": "Bégaiement avec trouble du langage et de la parole",
+  "letterCode": "AMO",
+  "coefficient": 12
+ },
+ {
+  "chapter": "PPR",
+  "code": "R001712",
+  "label": "régional",
+  "letterCode": "AMK",
+  "coefficient": 4
+ },
+ {
+  "chapter": "PPR",
+  "code": "R001713",
+  "label": "général",
+  "letterCode": "AMK",
+  "coefficient": 8
+ },
+ {
+  "chapter": "PPR",
+  "code": "R001715",
+  "label": "Deux membres avec les ceintures correspondantes",
+  "letterCode": "AMK",
+  "coefficient": 18
+ },
+ {
+  "chapter": "PPR",
+  "code": "R001716",
+  "label": "Un segment distal (main et poignet)",
+  "letterCode": "AMK",
+  "coefficient": 10
+ },
+ {
+  "chapter": "PPR",
+  "code": "R001717",
+  "label": "Rééducation d'une atteinte rachidienne sans lésion neurologique",
+  "letterCode": "AMK",
+  "coefficient": 15
+ },
+ {
+  "chapter": "PPR",
+  "code": "R001720",
+  "label": "Atteinte centrale ou périphérique d'un membre",
+  "letterCode": "AMK",
+  "coefficient": 15
+ },
+ {
+  "chapter": "PPR",
+  "code": "R001722",
+  "label": "Atteinte centrale ou périphérique de deux membres et plus en",
+  "letterCode": "AMK",
+  "coefficient": 15
+ },
+ {
+  "chapter": "PPR",
+  "code": "R001723",
+  "label": "Paralysie faciale",
+  "letterCode": "AMK",
+  "coefficient": 10
+ },
+ {
+  "chapter": "PPR",
+  "code": "R001733",
+  "label": "Réadaptation à l'effort cardiovasculaire et respiratoire",
+  "letterCode": "AMK",
+  "coefficient": 18
+ },
+ {
+  "chapter": "PPR",
+  "code": "R001734",
+  "label": "Un membre, le tronc, le cou ou le visage",
+  "letterCode": "AMK",
+  "coefficient": 15
+ },
+ {
+  "chapter": "PPR",
+  "code": "R001735",
+  "label": "Atteintes multiples",
+  "letterCode": "AMK",
+  "coefficient": 20
+ },
+ {
+  "chapter": "PPR",
+  "code": "R001737",
+  "label": "Hydro massage (douche, bain)",
+  "letterCode": "AMK",
+  "coefficient": 3
+ },
+ {
+  "chapter": "PPR",
+  "code": "R001738",
+  "label": "Rééducation en piscine",
+  "letterCode": "AMK",
+  "coefficient": 5
+ },
+ {
+  "chapter": "PPI",
+  "code": "S001739",
+  "label": "Injection SC, I.M, intradermique",
+  "letterCode": "AMI",
+  "coefficient": 1
+ },
+ {
+  "chapter": "PPI",
+  "code": "S001740",
+  "label": "Injection IV isolée",
+  "letterCode": "AMI",
+  "coefficient": 2
+ },
+ {
+  "chapter": "PPI",
+  "code": "S001741",
+  "label": "Injection goutte à goutte rectale ou SC",
+  "letterCode": "AMI",
+  "coefficient": 2
+ },
+ {
+  "chapter": "PPI",
+  "code": "S001742",
+  "label": "Injection IV directe en série, par injection",
+  "letterCode": "AMI",
+  "coefficient": 1
+ },
+ {
+  "chapter": "PPI",
+  "code": "S001743",
+  "label": "Injection IV chez un enfant de moins de cinq ans",
+  "letterCode": "AMI",
+  "coefficient": 3
+ },
+ {
+  "chapter": "PPI",
+  "code": "S001744",
+  "label": "Injection vaginale",
+  "letterCode": "AMI",
+  "coefficient": 2
+ },
+ {
+  "chapter": "PPI",
+  "code": "S001746",
+  "label": "Prélèvement de sang veineux supérieur à 3 prélèvements",
+  "letterCode": "AMI",
+  "coefficient": 4
+ },
+ {
+  "chapter": "PPI",
+  "code": "S001747",
+  "label": "Perfusion intraveineuse",
+  "letterCode": "AMI",
+  "coefficient": 5
+ },
+ {
+  "chapter": "PPI",
+  "code": "S001748",
+  "label": "Aérosol",
+  "letterCode": "AMI",
+  "coefficient": 2
+ },
+ {
+  "chapter": "PPI",
+  "code": "S001749",
+  "label": "Alimentation par sonde",
+  "letterCode": "AMI",
+  "coefficient": 2
+ },
+ {
+  "chapter": "PPI",
+  "code": "S001750",
+  "label": "Pansement petit",
+  "letterCode": "AMI",
+  "coefficient": 1
+ },
+ {
+  "chapter": "PPI",
+  "code": "S001752",
+  "label": "Pansement grand avec sonde, canule",
+  "letterCode": "AMI",
+  "coefficient": 2
+ },
+ {
+  "chapter": "PPI",
+  "code": "S001755",
+  "label": "Lavage d'estomac",
+  "letterCode": "AMI",
+  "coefficient": 3
+ },
+ {
+  "chapter": "PPI",
+  "code": "S001756",
+  "label": "Lavage vésical",
+  "letterCode": "AMI",
+  "coefficient": 3
+ },
+ {
+  "chapter": "PPI",
+  "code": "S001757",
+  "label": "Lavement évacuateur ou médicamenteux",
+  "letterCode": "AMI",
+  "coefficient": 3
+ },
+ {
+  "chapter": "PPI",
+  "code": "S001764",
+  "label": "Cathétérisme urétral",
+  "letterCode": "AMI",
+  "coefficient": 3
+ },
+ {
+  "chapter": "PPI",
+  "code": "S001765",
+  "label": "Changement de sonde urinaire à demeure",
+  "letterCode": "AMI",
+  "coefficient": 3
+ },
+ {
+  "chapter": "PPI",
+  "code": "S001769",
+  "label": "Instillation et/ou lavage vésical (sonde en place)",
+  "letterCode": "AMI",
+  "coefficient": 2
+ },
+ {
+  "chapter": "PPI",
+  "code": "S001770",
+  "label": "Pose isolée d'un étui pénien, une fois par vingt-quatre heures",
+  "letterCode": "AMI",
+  "coefficient": 1
+ },
+ {
+  "chapter": "PPI",
+  "code": "S001772",
+  "label": "Pose de sonde gastrique",
+  "letterCode": "AMI",
+  "coefficient": 3
+ },
+ {
+  "chapter": "PPI",
+  "code": "S001774",
+  "label": "Pansement de stomie",
+  "letterCode": "AMI",
+  "coefficient": 3
+ },
+ {
+  "chapter": "PPI",
+  "code": "S001787",
+  "label": "Lavement évacuateur + Extraction de fécalome",
+  "letterCode": "AMI",
+  "coefficient": 2
+ },
+ {
+  "chapter": "MRD",
+  "code": "S001797",
+  "label": "Membre Supérieur Entier -2 Incidences",
+  "letterCode": "Rd",
+  "coefficient": 25
+ },
+ {
+  "chapter": "MRD",
+  "code": "S001798",
+  "label": "Epaule F",
+  "letterCode": "Rd",
+  "coefficient": 12
+ },
+ {
+  "chapter": "MRD",
+  "code": "S001799",
+  "label": "Epaule F + P",
+  "letterCode": "Rd",
+  "coefficient": 17
+ },
+ {
+  "chapter": "MRD",
+  "code": "S001800",
+  "label": "Clavicule",
+  "letterCode": "Rd",
+  "coefficient": 12
+ },
+ {
+  "chapter": "MRD",
+  "code": "S001801",
+  "label": "Omoplate F",
+  "letterCode": "Rd",
+  "coefficient": 12
+ },
+ {
+  "chapter": "MRD",
+  "code": "S001802",
+  "label": "Omoplate F + P",
+  "letterCode": "Rd",
+  "coefficient": 17
+ },
+ {
+  "chapter": "MRD",
+  "code": "S001803",
+  "label": "Humérus F+P",
+  "letterCode": "Rd",
+  "coefficient": 17
+ },
+ {
+  "chapter": "MRD",
+  "code": "S001804",
+  "label": "Coude F+P",
+  "letterCode": "Rd",
+  "coefficient": 17
+ },
+ {
+  "chapter": "MRD",
+  "code": "S001805",
+  "label": "Avant-bras F+P",
+  "letterCode": "Rd",
+  "coefficient": 17
+ },
+ {
+  "chapter": "MRD",
+  "code": "S001806",
+  "label": "Poignet F+P",
+  "letterCode": "Rd",
+  "coefficient": 12
+ },
+ {
+  "chapter": "MRD",
+  "code": "S001807",
+  "label": "Main F+P",
+  "letterCode": "Rd",
+  "coefficient": 12
+ },
+ {
+  "chapter": "MRD",
+  "code": "S001808",
+  "label": "Doigt F+P",
+  "letterCode": "Rd",
+  "coefficient": 12
+ },
+ {
+  "chapter": "MRD",
+  "code": "S001809",
+  "label": "Scaphoïde (2 incidendes)",
+  "letterCode": "Rd",
+  "coefficient": 17
+ },
+ {
+  "chapter": "MRD",
+  "code": "S001810",
+  "label": "Main F/P + Scaphoïde",
+  "letterCode": "Rd",
+  "coefficient": 20
+ },
+ {
+  "chapter": "MRD",
+  "code": "S001811",
+  "label": "Bassin, hanche, articulations sacro-iliaques",
+  "letterCode": "Rd",
+  "coefficient": 12
+ },
+ {
+  "chapter": "MRD",
+  "code": "S001812",
+  "label": "Hanche F+P",
+  "letterCode": "Rd",
+  "coefficient": 17
+ },
+ {
+  "chapter": "MRD",
+  "code": "S001813",
+  "label": "Hanche + 2 x 3/4",
+  "letterCode": "Rd",
+  "coefficient": 22
+ },
+ {
+  "chapter": "MRD",
+  "code": "S001814",
+  "label": "Fémur F+P",
+  "letterCode": "Rd",
+  "coefficient": 17
+ },
+ {
+  "chapter": "MRD",
+  "code": "S001815",
+  "label": "Genou F+P",
+  "letterCode": "Rd",
+  "coefficient": 12
+ },
+ {
+  "chapter": "MRD",
+  "code": "S001816",
+  "label": "Jambe F+P",
+  "letterCode": "Rd",
+  "coefficient": 17
+ },
+ {
+  "chapter": "MRD",
+  "code": "S001817",
+  "label": "Pied F+P",
+  "letterCode": "Rd",
+  "coefficient": 12
+ },
+ {
+  "chapter": "MRD",
+  "code": "S001818",
+  "label": "Talon F+P",
+  "letterCode": "Rd",
+  "coefficient": 10
+ },
+ {
+  "chapter": "MRD",
+  "code": "S001819",
+  "label": "Cheville F+P",
+  "letterCode": "Rd",
+  "coefficient": 12
+ },
+ {
+  "chapter": "MRD",
+  "code": "S001820",
+  "label": "Orteil",
+  "letterCode": "Rd",
+  "coefficient": 10
+ },
+ {
+  "chapter": "MRD",
+  "code": "S001821",
+  "label": "Axiales 2 genoux 2 incidences",
+  "letterCode": "Rd",
+  "coefficient": 22
+ },
+ {
+  "chapter": "MRD",
+  "code": "S001822",
+  "label": "Gonométrie (Règle de Bell Thomson) Adultes",
+  "letterCode": "Rd",
+  "coefficient": 35
+ },
+ {
+  "chapter": "MRD",
+  "code": "S001823",
+  "label": "Gonométrie (Règle de Bell Thomson) Enfants",
+  "letterCode": "Rd",
+  "coefficient": 24
+ },
+ {
+  "chapter": "MRD",
+  "code": "S001824",
+  "label": "Radiomensuration comparative des membres",
+  "letterCode": "Rd",
+  "coefficient": 24
+ },
+ {
+  "chapter": "MRD",
+  "code": "S001827",
+  "label": "Maxillaire défilé, os propres du nez",
+  "letterCode": "Rd",
+  "coefficient": 12
+ },
+ {
+  "chapter": "MRD",
+  "code": "S001828",
+  "label": "Dent par technique intrabuccale, film occusal ou rétro-alvéolaire,",
+  "letterCode": "Rd",
+  "coefficient": 6
+ },
+ {
+  "chapter": "MRD",
+  "code": "S001831",
+  "label": "Articulation Temporo-Maxillaire (2 cotés)",
+  "letterCode": "Rd",
+  "coefficient": 17
+ },
+ {
+  "chapter": "MRD",
+  "code": "S001832",
+  "label": "Cavum",
+  "letterCode": "Rd",
+  "coefficient": 12
+ },
+ {
+  "chapter": "MRD",
+  "code": "S001833",
+  "label": "Larynx F ou P",
+  "letterCode": "Rd",
+  "coefficient": 12
+ },
+ {
+  "chapter": "MRD",
+  "code": "S001834",
+  "label": "Larynx F + P",
+  "letterCode": "Rd",
+  "coefficient": 17
+ },
+ {
+  "chapter": "MRD",
+  "code": "S001838",
+  "label": "Rachis Cervical F + P",
+  "letterCode": "Rd",
+  "coefficient": 17
+ },
+ {
+  "chapter": "MRD",
+  "code": "S001839",
+  "label": "Rachis Cervical F + P + 2 x 3/4",
+  "letterCode": "Rd",
+  "coefficient": 22
+ },
+ {
+  "chapter": "MRD",
+  "code": "S001840",
+  "label": "Rachis Cervical F + P + dynamique",
+  "letterCode": "Rd",
+  "coefficient": 22
+ },
+ {
+  "chapter": "MRD",
+  "code": "S001841",
+  "label": "Rachis Dorsal F + P",
+  "letterCode": "Rd",
+  "coefficient": 17
+ },
+ {
+  "chapter": "MRD",
+  "code": "S001842",
+  "label": "Rachis lombaire F + P",
+  "letterCode": "Rd",
+  "coefficient": 17
+ },
+ {
+  "chapter": "MRD",
+  "code": "S001843",
+  "label": "Rachis entier Enfant",
+  "letterCode": "Rd",
+  "coefficient": 24
+ },
+ {
+  "chapter": "MRD",
+  "code": "S001844",
+  "label": "Sacrum F + P",
+  "letterCode": "Rd",
+  "coefficient": 17
+ },
+ {
+  "chapter": "MRD",
+  "code": "S001845",
+  "label": "Charnière cervico-occipitale F + P",
+  "letterCode": "Rd",
+  "coefficient": 17
+ },
+ {
+  "chapter": "MRD",
+  "code": "S001846",
+  "label": "Rachis lombaire F + P + L5-S1 F + P",
+  "letterCode": "Rd",
+  "coefficient": 25
+ },
+ {
+  "chapter": "MRD",
+  "code": "S001847",
+  "label": "Rachis lombaire F + P + 3/4 droit+gauche",
+  "letterCode": "Rd",
+  "coefficient": 25
+ },
+ {
+  "chapter": "MRD",
+  "code": "S001848",
+  "label": "Rachis lombaire F + P + Etude dynamique",
+  "letterCode": "Rd",
+  "coefficient": 25
+ },
+ {
+  "chapter": "MRD",
+  "code": "S001852",
+  "label": "Ostéodensitomètrie",
+  "letterCode": "Rd",
+  "coefficient": 40
+ },
+ {
+  "chapter": "MRD",
+  "code": "V001853",
+  "label": "Laryngographie-pharyngographie",
+  "letterCode": "Rd",
+  "coefficient": 30
+ },
+ {
+  "chapter": "MRD",
+  "code": "V001856",
+  "label": "Examen radiologique des poumons avec opacification bronchique",
+  "letterCode": "Rd",
+  "coefficient": 25
+ },
+ {
+  "chapter": "MRD",
+  "code": "V001858",
+  "label": "Abdomen sans préparation (face)",
+  "letterCode": "Rd",
+  "coefficient": 13
+ },
+ {
+  "chapter": "MRD",
+  "code": "V001861",
+  "label": "Transit Oesophagien",
+  "letterCode": "Rd",
+  "coefficient": 25
+ },
+ {
+  "chapter": "MRD",
+  "code": "V001863",
+  "label": "Examen radiologique du colon",
+  "letterCode": "Rd",
+  "coefficient": 55
+ },
+ {
+  "chapter": "MRD",
+  "code": "V001864",
+  "label": "Transit du grêle",
+  "letterCode": "Rd",
+  "coefficient": 55
+ },
+ {
+  "chapter": "MRD",
+  "code": "V001865",
+  "label": "Défécographie",
+  "letterCode": "Rd",
+  "coefficient": 45
+ },
+ {
+  "chapter": "MRD",
+  "code": "V001866",
+  "label": "Fistulographie (F + P) sans tenir compte de l'injection",
+  "letterCode": "Rd",
+  "coefficient": 18
+ },
+ {
+  "chapter": "MRD",
+  "code": "V001867",
+  "label": "Cholangiographie par le drain",
+  "letterCode": "Rd",
+  "coefficient": 18
+ },
+ {
+  "chapter": "MRD",
+  "code": "V001868",
+  "label": "Examen sans préparation",
+  "letterCode": "Rd",
+  "coefficient": 13
+ },
+ {
+  "chapter": "MRD",
+  "code": "V001869",
+  "label": "Urographie IV , sans étude mictionnelle (y compris ASP)",
+  "letterCode": "Rd",
+  "coefficient": 55
+ },
+ {
+  "chapter": "MRD",
+  "code": "V001873",
+  "label": "Pyélographie retro ou antégrade",
+  "letterCode": "Rd",
+  "coefficient": 18
+ },
+ {
+  "chapter": "MRD",
+  "code": "V001875",
+  "label": "Mammographie unilatérale",
+  "letterCode": "Rd",
+  "coefficient": 25
+ },
+ {
+  "chapter": "MRD",
+  "code": "V001876",
+  "label": "Hystérosalpingographie sans l'injection",
+  "letterCode": "Rd",
+  "coefficient": 35
+ },
+ {
+  "chapter": "MRD",
+  "code": "V001877",
+  "label": "Radiopelvimétrie",
+  "letterCode": "Rd",
+  "coefficient": 30
+ },
+ {
+  "chapter": "MRD",
+  "code": "V001878",
+  "label": "Génitographie externe, colpocystographie sans l'injection",
+  "letterCode": "Rd",
+  "coefficient": 30
+ },
+ {
+  "chapter": "MRD",
+  "code": "V001879",
+  "label": "Contenu utérin",
+  "letterCode": "Rd",
+  "coefficient": 16
+ },
+ {
+  "chapter": "MRD",
+  "code": "V001880",
+  "label": "Galactographie sans l'injection",
+  "letterCode": "Rd",
+  "coefficient": 20
+ },
+ {
+  "chapter": "MRD",
+  "code": "V001881",
+  "label": "Myélographie",
+  "letterCode": "Rd",
+  "coefficient": 60
+ },
+ {
+  "chapter": "MRD",
+  "code": "V001882",
+  "label": "Discographie d'un ou plusieurs disques",
+  "letterCode": "Rd",
+  "coefficient": 50
+ },
+ {
+  "chapter": "MRD",
+  "code": "V001883",
+  "label": "Sacco-radiculographie",
+  "letterCode": "Rd",
+  "coefficient": 55
+ },
+ {
+  "chapter": "MRD",
+  "code": "V001884",
+  "label": "Examen crânien (4 axes) Rd 150",
+  "letterCode": "KE",
+  "coefficient": 105
+ },
+ {
+  "chapter": "MRD",
+  "code": "V001885",
+  "label": "Examen crânien (sélectif) Rd 200",
+  "letterCode": "KE",
+  "coefficient": 125
+ },
+ {
+  "chapter": "MRD",
+  "code": "V001886",
+  "label": "Examen viscéral (global) Rd 100",
+  "letterCode": "KE",
+  "coefficient": 50
+ },
+ {
+  "chapter": "MRD",
+  "code": "V001887",
+  "label": "Examen viscéral (sélectif) Rd 150",
+  "letterCode": "KE",
+  "coefficient": 75
+ },
+ {
+  "chapter": "MRD",
+  "code": "V001888",
+  "label": "Examen périphérique (global) Rd 100",
+  "letterCode": "KE",
+  "coefficient": 50
+ },
+ {
+  "chapter": "MRD",
+  "code": "V001889",
+  "label": "Examen périphérique (sélectif) Rd 150",
+  "letterCode": "KE",
+  "coefficient": 75
+ },
+ {
+  "chapter": "MRD",
+  "code": "V001890",
+  "label": "Phlébographie (1 membre) Rd 80",
+  "letterCode": "KE",
+  "coefficient": 25
+ },
+ {
+  "chapter": "MRD",
+  "code": "V001891",
+  "label": "Phlébographie (2 membres) Rd 100",
+  "letterCode": "KE",
+  "coefficient": 15
+ },
+ {
+  "chapter": "MRD",
+  "code": "V001892",
+  "label": "Cavographie Rd 80",
+  "letterCode": "KE",
+  "coefficient": 25
+ },
+ {
+  "chapter": "MRD",
+  "code": "V001893",
+  "label": "Sialographie",
+  "letterCode": "Rd",
+  "coefficient": 25
+ },
+ {
+  "chapter": "MRD",
+  "code": "V001895",
+  "label": "Repérage des corps étrangers, par les méthodes géométriques",
+  "letterCode": "Rd",
+  "coefficient": 30
+ },
+ {
+  "chapter": "MRD",
+  "code": "V001896",
+  "label": "Arthrographie quelque soit l'articulation",
+  "letterCode": "Rd",
+  "coefficient": 20
+ },
+ {
+  "chapter": "MRT",
+  "code": "H001921",
+  "label": "Etude dosimétrique 2D",
+  "letterCode": "Rt",
+  "coefficient": 40
+ },
+ {
+  "chapter": "MRT",
+  "code": "H001924",
+  "label": "Contention individuelle",
+  "letterCode": "Rt",
+  "coefficient": 30
+ },
+ {
+  "chapter": "MRT",
+  "code": "H001925",
+  "label": "Usage de caches personnalisées",
+  "letterCode": "Rt",
+  "coefficient": 30
+ },
+ {
+  "chapter": "MRT",
+  "code": "H001926",
+  "label": "Utilisation de collimateurs multilames",
+  "letterCode": "Rt",
+  "coefficient": 50
+ },
+ {
+  "chapter": "MRT",
+  "code": "H001927",
+  "label": "Utilisation de contrôle de qualité par imagerie portale",
+  "letterCode": "Rt",
+  "coefficient": 30
+ },
+ {
+  "chapter": "MRT",
+  "code": "C001950",
+  "label": "Forfait de base",
+  "letterCode": "Rt",
+  "coefficient": 30
+ },
+ {
+  "chapter": "MRT",
+  "code": "C001953",
+  "label": "Acte d'implantation non radioactive",
+  "letterCode": "Rt",
+  "coefficient": 250
+ },
+ {
+  "chapter": "MRT",
+  "code": "C001959",
+  "label": "Dosimétrie (forfaitaire)",
+  "letterCode": "Rt",
+  "coefficient": 250
+ },
+ {
+  "chapter": "MRT",
+  "code": "C001960",
+  "label": "Acte d'implantation non radioactive",
+  "letterCode": "Rt",
+  "coefficient": 250
+ },
+ {
+  "chapter": "MRT",
+  "code": "C001963",
+  "label": "Forfait de base",
+  "letterCode": "Rt",
+  "coefficient": 30
+ },
+ {
+  "chapter": "BAP",
+  "code": "C001990",
+  "label": "Suppléments pour inclusion en paraffine",
+  "letterCode": "P",
+  "coefficient": 70
+ },
+ {
+  "chapter": "BAP",
+  "code": "H002012",
+  "label": "Examen du placenta complet avec cordon et membranes",
+  "letterCode": "P",
+  "coefficient": 300
+ },
+ {
+  "chapter": "BAP",
+  "code": "H002013",
+  "label": "Examen du placenta complet avec cordon, membranes et fœtus",
+  "letterCode": "P",
+  "coefficient": 450
+ },
+ {
+  "chapter": "BAP",
+  "code": "H002014",
+  "label": "Examen nécropsique",
+  "letterCode": "P",
+  "coefficient": 600
+ },
+ {
+  "chapter": "BAP",
+  "code": "H002020",
+  "label": "Immunofluorescence : par anticorps",
+  "letterCode": "P",
+  "coefficient": 100
+ },
+ {
+  "chapter": "BAP",
+  "code": "H002022",
+  "label": "Phénotypage cellulaire par cytométrie de flux : par anticorps",
+  "letterCode": "P",
+  "coefficient": 350
+ },
+ {
+  "chapter": "BAP",
+  "code": "H002023",
+  "label": "Analyse du cycle cellulaire par cytométrie",
+  "letterCode": "P",
+  "coefficient": 700
+ },
+ {
+  "chapter": "BAP",
+  "code": "H002024",
+  "label": "Microscopie électronique",
+  "letterCode": "P",
+  "coefficient": 1900
+ },
+ {
+  "chapter": "BMB",
+  "code": "B002026",
+  "label": "Leucocyturie",
+  "letterCode": "B",
+  "coefficient": 15
+ },
+ {
+  "chapter": "BMB",
+  "code": "B002027",
+  "label": "HLM (compte d’Addis)",
+  "letterCode": "B",
+  "coefficient": 25
+ },
+ {
+  "chapter": "BMB",
+  "code": "B002032",
+  "label": "Chez l’homme (prélèvement urétral)",
+  "letterCode": "B",
+  "coefficient": 80
+ },
+ {
+  "chapter": "BMB",
+  "code": "B002036",
+  "label": "Examen cytologique (Numération et formule leucocytaires)",
+  "letterCode": "B",
+  "coefficient": 20
+ },
+ {
+  "chapter": "BMB",
+  "code": "B002047",
+  "label": "Antibiogramme (4 antibiotiques au moins)",
+  "letterCode": "B",
+  "coefficient": 100
+ },
+ {
+  "chapter": "BMB",
+  "code": "B002051",
+  "label": "Isolement de leptospires par cultures sur milieux spéciaux",
+  "letterCode": "B",
+  "coefficient": 80
+ },
+ {
+  "chapter": "BMB",
+  "code": "B002052",
+  "label": "Isolement et numération de Mycoplasmes avec antibiogramme",
+  "letterCode": "B",
+  "coefficient": 120
+ },
+ {
+  "chapter": "BMB",
+  "code": "B002054",
+  "label": "Recherche directe de Chlamydiae par technique immunologique",
+  "letterCode": "B",
+  "coefficient": 100
+ },
+ {
+  "chapter": "BMB",
+  "code": "B002056",
+  "label": "Recherche et identification d’Hélicobacter",
+  "letterCode": "B",
+  "coefficient": 120
+ },
+ {
+  "chapter": "BMB",
+  "code": "B002057",
+  "label": "Recherche et identification de Legionella",
+  "letterCode": "B",
+  "coefficient": 120
+ },
+ {
+  "chapter": "BMB",
+  "code": "B002060",
+  "label": "Toxinotypie botulique",
+  "letterCode": "B",
+  "coefficient": 250
+ },
+ {
+  "chapter": "BMB",
+  "code": "B002062",
+  "label": "Etude du pouvoir bactéricide d’antibiotiques et de leur association",
+  "letterCode": "B",
+  "coefficient": 250
+ },
+ {
+  "chapter": "BMB",
+  "code": "B002063",
+  "label": "Recherche de bactéries multirésistantes",
+  "letterCode": "B",
+  "coefficient": 80
+ },
+ {
+  "chapter": "BMB",
+  "code": "S002064",
+  "label": "Antistreptolysine O (ASLO)",
+  "letterCode": "B",
+  "coefficient": 40
+ },
+ {
+  "chapter": "BMB",
+  "code": "S002065",
+  "label": "Antistreptodornase (ASDOR)",
+  "letterCode": "B",
+  "coefficient": 60
+ },
+ {
+  "chapter": "BMB",
+  "code": "S002066",
+  "label": "Antistreptokinase (ASK)",
+  "letterCode": "B",
+  "coefficient": 40
+ },
+ {
+  "chapter": "BMB",
+  "code": "S002073",
+  "label": "Hélicobacter pylori (EIA)",
+  "letterCode": "B",
+  "coefficient": 150
+ },
+ {
+  "chapter": "BMB",
+  "code": "S002074",
+  "label": "Legionellose (IFI ; EIA)",
+  "letterCode": "B",
+  "coefficient": 150
+ },
+ {
+  "chapter": "BMB",
+  "code": "S002075",
+  "label": "Leptospiroses",
+  "letterCode": "B",
+  "coefficient": 150
+ },
+ {
+  "chapter": "BMB",
+  "code": "S002079",
+  "label": "Rickettsioses (IFI) par espèce",
+  "letterCode": "B",
+  "coefficient": 100
+ },
+ {
+  "chapter": "BMB",
+  "code": "S002080",
+  "label": "Salmonelloses : Sérodiagnostic de Widal",
+  "letterCode": "B",
+  "coefficient": 50
+ },
+ {
+  "chapter": "BMB",
+  "code": "S002082",
+  "label": "Maladie des griffes du chat (IFI et/ou EIA)",
+  "letterCode": "B",
+  "coefficient": 150
+ },
+ {
+  "chapter": "BMB",
+  "code": "S002083",
+  "label": "Yersinioses (Agg 8 antigènes)",
+  "letterCode": "B",
+  "coefficient": 120
+ },
+ {
+  "chapter": "BMB",
+  "code": "V002089",
+  "label": "Recherche de virus par agglutination de particules sensibilisées",
+  "letterCode": "B",
+  "coefficient": 300
+ },
+ {
+  "chapter": "BMB",
+  "code": "V002103",
+  "label": "Antigénémie CMV (PP 65)",
+  "letterCode": "B",
+  "coefficient": 250
+ },
+ {
+  "chapter": "BMB",
+  "code": "V002105",
+  "label": "Génotypage HCV",
+  "letterCode": "B",
+  "coefficient": 600
+ },
+ {
+  "chapter": "BMB",
+  "code": "V002106",
+  "label": "Détermination de la charge virale (qualitative+quantitative)",
+  "letterCode": "B",
+  "coefficient": 750
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002168",
+  "label": "ACETYLCHOLINESTERASE",
+  "letterCode": "B",
+  "coefficient": 50
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002169",
+  "label": "ACIDE ACETOACETIQUE",
+  "letterCode": "B",
+  "coefficient": 120
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002170",
+  "label": "ACIDE BETA HYDROXYBUTYRIQUE",
+  "letterCode": "B",
+  "coefficient": 120
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002171",
+  "label": "ACIDE LACTIQUE",
+  "letterCode": "B",
+  "coefficient": 120
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002172",
+  "label": "ACIDE OXALIQUE",
+  "letterCode": "B",
+  "coefficient": 120
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002173",
+  "label": "ACIDE PHYTANIQUE CPG",
+  "letterCode": "B",
+  "coefficient": 200
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002174",
+  "label": "ACIDE PIPECOLIQUE CPG + CCM",
+  "letterCode": "B",
+  "coefficient": 200
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002175",
+  "label": "ACIDE PYRUVIQUE",
+  "letterCode": "B",
+  "coefficient": 120
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002176",
+  "label": "ACIDE URIQUE",
+  "letterCode": "B",
+  "coefficient": 20
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002177",
+  "label": "ACIDES AMINES : dosage CEI",
+  "letterCode": "B",
+  "coefficient": 400
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002178",
+  "label": "ACIDES AMINES : analyse CCM",
+  "letterCode": "B",
+  "coefficient": 50
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002179",
+  "label": "ACIDES GRAS TOTAUX: dosage et fractionnement CPG",
+  "letterCode": "B",
+  "coefficient": 200
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002180",
+  "label": "ACIDES GRAS NON ESTERIFIES (AGNE)",
+  "letterCode": "B",
+  "coefficient": 50
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002181",
+  "label": "ACIDES GRAS A TRES LONGUES CHAINES (CCM+CPG)",
+  "letterCode": "B",
+  "coefficient": 250
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002182",
+  "label": "ACIDES ORGANIQUES (GC-MS)",
+  "letterCode": "B",
+  "coefficient": 200
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002183",
+  "label": "ACTH : HORMONE ADRENOCORTICOTROPE",
+  "letterCode": "B",
+  "coefficient": 200
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002184",
+  "label": "ADH : HORMONE ANTIDIURETIQUE",
+  "letterCode": "B",
+  "coefficient": 300
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002185",
+  "label": "ADRENALINE + NORADRENALINE + DOPAMINE CEI",
+  "letterCode": "B",
+  "coefficient": 200
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002186",
+  "label": "ADRENALINE + NORADRENALINE + DOPAMINE HPLC",
+  "letterCode": "B",
+  "coefficient": 300
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002187",
+  "label": "ALANINE AMINOTRANSFERASE (ALAT)",
+  "letterCode": "B",
+  "coefficient": 25
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002190",
+  "label": "ALDOLASE",
+  "letterCode": "B",
+  "coefficient": 50
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002191",
+  "label": "ALDOSTERONE",
+  "letterCode": "B",
+  "coefficient": 300
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002192",
+  "label": "ALPHA-FOETO PROTEINE (AFP)",
+  "letterCode": "B",
+  "coefficient": 150
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002193",
+  "label": "ALPHA 1 ANTITRYPSINE (AAT)",
+  "letterCode": "B",
+  "coefficient": 80
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002194",
+  "label": "AAT : PHENOTYPAGE",
+  "letterCode": "B",
+  "coefficient": 150
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002195",
+  "label": "AMMONIAQUE",
+  "letterCode": "B",
+  "coefficient": 80
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002196",
+  "label": "AMP. CYCLIQUE",
+  "letterCode": "B",
+  "coefficient": 300
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002197",
+  "label": "AMYLASE",
+  "letterCode": "B",
+  "coefficient": 60
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002198",
+  "label": "ANDROSTENEDIOL",
+  "letterCode": "B",
+  "coefficient": 300
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002199",
+  "label": "ANDROSTENEDIONE (DELTA-4)",
+  "letterCode": "B",
+  "coefficient": 200
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002200",
+  "label": "ANGIOTENSINE II",
+  "letterCode": "B",
+  "coefficient": 300
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002212",
+  "label": "ASPARTATE AMINOTRANSFERASE (ASAT)",
+  "letterCode": "B",
+  "coefficient": 25
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002213",
+  "label": "BETA 2 MICROGLOBULINE",
+  "letterCode": "B",
+  "coefficient": 150
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002214",
+  "label": "BICARBONATES OU CO2 TOTAL (réserve alcaline)",
+  "letterCode": "B",
+  "coefficient": 20
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002218",
+  "label": "CALCITONINE",
+  "letterCode": "B",
+  "coefficient": 250
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002219",
+  "label": "CALCIUM",
+  "letterCode": "B",
+  "coefficient": 25
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002220",
+  "label": "CALCIUM IONISE",
+  "letterCode": "B",
+  "coefficient": 50
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002221",
+  "label": "CARNITINE Libre + totale (RIA)",
+  "letterCode": "B",
+  "coefficient": 400
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002222",
+  "label": "CAROTENE",
+  "letterCode": "B",
+  "coefficient": 200
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002223",
+  "label": "CERULEOPLASMINE",
+  "letterCode": "B",
+  "coefficient": 80
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002224",
+  "label": "CHLORE",
+  "letterCode": "B",
+  "coefficient": 20
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002231",
+  "label": "CITRATE",
+  "letterCode": "B",
+  "coefficient": 150
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002232",
+  "label": "COMPLEMENT C3",
+  "letterCode": "B",
+  "coefficient": 80
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002233",
+  "label": "COMPLEMENT C4",
+  "letterCode": "B",
+  "coefficient": 80
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002234",
+  "label": "CORTICOSTERONE",
+  "letterCode": "B",
+  "coefficient": 300
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002235",
+  "label": "CORTISOL",
+  "letterCode": "B",
+  "coefficient": 150
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002236",
+  "label": "CORTISONE",
+  "letterCode": "B",
+  "coefficient": 300
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002237",
+  "label": "CREATINE KINASE (CK)",
+  "letterCode": "B",
+  "coefficient": 50
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002238",
+  "label": "CREATINE KINASE MB (CK-MB)",
+  "letterCode": "B",
+  "coefficient": 60
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002239",
+  "label": "CREATINE KINASE MB MASSE",
+  "letterCode": "B",
+  "coefficient": 80
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002240",
+  "label": "CREATININE",
+  "letterCode": "B",
+  "coefficient": 15
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002241",
+  "label": "CRP : DOSAGE",
+  "letterCode": "B",
+  "coefficient": 80
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002246",
+  "label": "CYCLOSPORINE",
+  "letterCode": "B",
+  "coefficient": 180
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002247",
+  "label": "DEHYDROEPIANDROSTERONE (DHEA)",
+  "letterCode": "B",
+  "coefficient": 200
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002248",
+  "label": "DEHYDROEPIANDROSTERONE SULFATE (DHEAS)",
+  "letterCode": "B",
+  "coefficient": 150
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002249",
+  "label": "DESOXYCORTICOSTERONE (DOC)",
+  "letterCode": "B",
+  "coefficient": 300
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002250",
+  "label": "DESOXYCORTISOL -11",
+  "letterCode": "B",
+  "coefficient": 300
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002251",
+  "label": "DESOXYCORTISOL -21",
+  "letterCode": "B",
+  "coefficient": 300
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002252",
+  "label": "DESOXYPYRIDINOLINE ET PEPTIDES ASSOCIES",
+  "letterCode": "B",
+  "coefficient": 200
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002253",
+  "label": "DIHYDROTESTOSTERONE (DHT)",
+  "letterCode": "B",
+  "coefficient": 300
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002254",
+  "label": "DIPHOSPHOGLYCERATE-2-3 (DPG)",
+  "letterCode": "B",
+  "coefficient": 150
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002255",
+  "label": "ELECTROHORESE HEMOGLOBINE",
+  "letterCode": "B",
+  "coefficient": 80
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002256",
+  "label": "ELECTROPHORESE DES LIPOPROTEINES",
+  "letterCode": "B",
+  "coefficient": 80
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002257",
+  "label": "ELECTROPHORESE DES PROTEINES SERIQUES",
+  "letterCode": "B",
+  "coefficient": 80
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002258",
+  "label": "ENZYME DE CONVERSION",
+  "letterCode": "B",
+  "coefficient": 150
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002259",
+  "label": "ERYTHROPOIETINE",
+  "letterCode": "B",
+  "coefficient": 200
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002260",
+  "label": "ESTRADIOL",
+  "letterCode": "B",
+  "coefficient": 150
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002261",
+  "label": "ESTRIOL",
+  "letterCode": "B",
+  "coefficient": 300
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002262",
+  "label": "ESTRONE",
+  "letterCode": "B",
+  "coefficient": 300
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002263",
+  "label": "FER + capacité de fixation et coefficient de saturation",
+  "letterCode": "B",
+  "coefficient": 70
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002264",
+  "label": "FERRITINE",
+  "letterCode": "B",
+  "coefficient": 150
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002265",
+  "label": "FIBRINOGENE",
+  "letterCode": "B",
+  "coefficient": 20
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002266",
+  "label": "FIBRONECTINE",
+  "letterCode": "B",
+  "coefficient": 150
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002267",
+  "label": "FOLATES GLOBULAIRES",
+  "letterCode": "B",
+  "coefficient": 120
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002268",
+  "label": "FOLATES SERIQUES",
+  "letterCode": "B",
+  "coefficient": 120
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002269",
+  "label": "FRUCTOSAMINE",
+  "letterCode": "B",
+  "coefficient": 80
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002270",
+  "label": "FSH : HORMONE FOLLICULOSTIMULANTE",
+  "letterCode": "B",
+  "coefficient": 120
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002271",
+  "label": "GALACTOSE",
+  "letterCode": "B",
+  "coefficient": 150
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002272",
+  "label": "GALACTOSE 1 PHOSPHATE URIDYLE TRANSFERASE",
+  "letterCode": "B",
+  "coefficient": 200
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002273",
+  "label": "GAMMA GLUTAMYL TRANSFERASE (GGT)",
+  "letterCode": "B",
+  "coefficient": 50
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002274",
+  "label": "GASTRINE",
+  "letterCode": "B",
+  "coefficient": 300
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002275",
+  "label": "GAZ DU SANG",
+  "letterCode": "B",
+  "coefficient": 120
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002276",
+  "label": "GH (STH) : HORMONE SOMATOTROPE",
+  "letterCode": "B",
+  "coefficient": 150
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002277",
+  "label": "GLUCAGON",
+  "letterCode": "B",
+  "coefficient": 300
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002278",
+  "label": "GLUCOSE -6-PHOSPHATE DESHYDROGENASE (G6PD)",
+  "letterCode": "B",
+  "coefficient": 60
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002279",
+  "label": "GLUCOSE",
+  "letterCode": "B",
+  "coefficient": 15
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002280",
+  "label": "GLUCOSE POST-PRANDIAL",
+  "letterCode": "B",
+  "coefficient": 15
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002281",
+  "label": "GLUTATHION PEROXYDASE",
+  "letterCode": "B",
+  "coefficient": 120
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002282",
+  "label": "GLUTATHION REDUCTASE",
+  "letterCode": "B",
+  "coefficient": 120
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002283",
+  "label": "GLYCOPROTEINE ACIDE GPA (OROSOMUCOIDE)",
+  "letterCode": "B",
+  "coefficient": 80
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002284",
+  "label": "GMP CYCLIQUE",
+  "letterCode": "B",
+  "coefficient": 150
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002285",
+  "label": "GONADOLIBERINE (LH-RH)",
+  "letterCode": "B",
+  "coefficient": 300
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002286",
+  "label": "HAPTOGLOBINE",
+  "letterCode": "B",
+  "coefficient": 80
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002287",
+  "label": "HEMOGLOBINE A2 CEI",
+  "letterCode": "B",
+  "coefficient": 60
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002288",
+  "label": "HEMOGLOBINE F : dosage",
+  "letterCode": "B",
+  "coefficient": 20
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002289",
+  "label": "HEMOGLOBINE GLYQUEE (Hb A1c)",
+  "letterCode": "B",
+  "coefficient": 100
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002290",
+  "label": "HEMOGLOBINE S : test de solubilité",
+  "letterCode": "B",
+  "coefficient": 30
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002291",
+  "label": "HOMOCYSTEINE LIBRE ET TOTALE (HPLC OU EIA)",
+  "letterCode": "B",
+  "coefficient": 200
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002297",
+  "label": "IMMUNOGLOBULINES A (IgA)",
+  "letterCode": "B",
+  "coefficient": 80
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002299",
+  "label": "IMMUNOGLOBULINES E TOTALES",
+  "letterCode": "B",
+  "coefficient": 120
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002300",
+  "label": "IMMUNOGLOBULINES G (IgG)",
+  "letterCode": "B",
+  "coefficient": 80
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002301",
+  "label": "IMMUNOGLOBULINES M (IgM)",
+  "letterCode": "B",
+  "coefficient": 80
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002302",
+  "label": "INSULINE",
+  "letterCode": "B",
+  "coefficient": 200
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002303",
+  "label": "INHIBINE",
+  "letterCode": "B",
+  "coefficient": 300
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002304",
+  "label": "INSULINE LIKE GROWTH FACTOR IGF1",
+  "letterCode": "B",
+  "coefficient": 300
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002306",
+  "label": "IONOGRAMME :Na + K + Cl + Réserve alcaline + Protides",
+  "letterCode": "B",
+  "coefficient": 100
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002307",
+  "label": "ISOELECTROFOCALISATION DE L'HEMOGLOBINE",
+  "letterCode": "B",
+  "coefficient": 200
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002308",
+  "label": "LH : HORMONE LUTEINISANTE",
+  "letterCode": "B",
+  "coefficient": 50
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002309",
+  "label": "LACTATE DESHYDROGENASE (LDH)",
+  "letterCode": "B",
+  "coefficient": 100
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002311",
+  "label": "LACTATE DESHYDROGENASE 1 ( HBDH )",
+  "letterCode": "B",
+  "coefficient": 50
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002312",
+  "label": "LEPTINE (RIA)",
+  "letterCode": "B",
+  "coefficient": 300
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002313",
+  "label": "LIPASE",
+  "letterCode": "B",
+  "coefficient": 80
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002314",
+  "label": "LIPOPROTEINE a (Lpa)",
+  "letterCode": "B",
+  "coefficient": 100
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002315",
+  "label": "LITHIUM",
+  "letterCode": "B",
+  "coefficient": 25
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002316",
+  "label": "LITHIUM GLOBULAIRE",
+  "letterCode": "B",
+  "coefficient": 30
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002317",
+  "label": "MAGNESIUM GLOBULAIRE",
+  "letterCode": "B",
+  "coefficient": 30
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002318",
+  "label": "MAGNESIUM PLASMATIQUE",
+  "letterCode": "B",
+  "coefficient": 25
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002319",
+  "label": "MAGNESIUM IONISE",
+  "letterCode": "B",
+  "coefficient": 50
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002320",
+  "label": "METHEMOGLOBINE",
+  "letterCode": "B",
+  "coefficient": 30
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002321",
+  "label": "METHOXY-AMINES (CEI)",
+  "letterCode": "B",
+  "coefficient": 200
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002322",
+  "label": "METHOXY-AMINES (HPLC)",
+  "letterCode": "B",
+  "coefficient": 300
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002323",
+  "label": "MYOGLOBINE",
+  "letterCode": "B",
+  "coefficient": 80
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002324",
+  "label": "NEURON SPECIFIC ENOLASE",
+  "letterCode": "B",
+  "coefficient": 250
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002325",
+  "label": "NICKEL",
+  "letterCode": "B",
+  "coefficient": 100
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002326",
+  "label": "NUCLEOTIDASE 5",
+  "letterCode": "B",
+  "coefficient": 60
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002327",
+  "label": "OROSOMUCOÏDE",
+  "letterCode": "B",
+  "coefficient": 80
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002328",
+  "label": "OSMOLARITE PAR OSMOMETRE",
+  "letterCode": "B",
+  "coefficient": 50
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002329",
+  "label": "OSTEOCALCINE",
+  "letterCode": "B",
+  "coefficient": 300
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002330",
+  "label": "PARATHORMONE (PTH)",
+  "letterCode": "B",
+  "coefficient": 200
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002331",
+  "label": "PEPTIDE C",
+  "letterCode": "B",
+  "coefficient": 200
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002332",
+  "label": "PEPTIDE INHIBITEUR DE LA GASTRINE (GIP)",
+  "letterCode": "B",
+  "coefficient": 300
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002333",
+  "label": "PEPTIDE VASOACTIF INTESTINAL (VIP)",
+  "letterCode": "B",
+  "coefficient": 300
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002334",
+  "label": "PHENYL ALANINE PAR FLUORIMETRE",
+  "letterCode": "B",
+  "coefficient": 50
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002338",
+  "label": "PHOSPHATASES ACIDES TOTALES",
+  "letterCode": "B",
+  "coefficient": 25
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002339",
+  "label": "PHOSPHATASES ALCALINES",
+  "letterCode": "B",
+  "coefficient": 25
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002340",
+  "label": "PHOSPHATASE ALCALINE OSSEUSE",
+  "letterCode": "B",
+  "coefficient": 180
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002341",
+  "label": "PHOSPHOLIPIDES",
+  "letterCode": "B",
+  "coefficient": 50
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002342",
+  "label": "PHOSPHORE",
+  "letterCode": "B",
+  "coefficient": 25
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002343",
+  "label": "POTASSIUM",
+  "letterCode": "B",
+  "coefficient": 25
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002344",
+  "label": "PREALBUMINE",
+  "letterCode": "B",
+  "coefficient": 80
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002345",
+  "label": "PREGNENOLONE",
+  "letterCode": "B",
+  "coefficient": 250
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002346",
+  "label": "PREGNENOLONE 17-0H",
+  "letterCode": "B",
+  "coefficient": 250
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002347",
+  "label": "PROGESTERONE",
+  "letterCode": "B",
+  "coefficient": 150
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002348",
+  "label": "PROGESTERONE17-OH",
+  "letterCode": "B",
+  "coefficient": 200
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002349",
+  "label": "PROLACTINE",
+  "letterCode": "B",
+  "coefficient": 120
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002350",
+  "label": "PROSTAGLANDINES CHACUNE",
+  "letterCode": "B",
+  "coefficient": 300
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002351",
+  "label": "PROTEINE C REACTIVE (CRP) : test au latex",
+  "letterCode": "B",
+  "coefficient": 10
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002354",
+  "label": "PROTEINES TOTALES",
+  "letterCode": "B",
+  "coefficient": 15
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002355",
+  "label": "PROTOPORPHYRINE ERYTHROCYTAIRE",
+  "letterCode": "B",
+  "coefficient": 150
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002356",
+  "label": "PYRUVATE KINASE",
+  "letterCode": "B",
+  "coefficient": 80
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002357",
+  "label": "RENINE",
+  "letterCode": "B",
+  "coefficient": 300
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002358",
+  "label": "RETINOL BINDING PROTEIN (RBP)",
+  "letterCode": "B",
+  "coefficient": 120
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002359",
+  "label": "SEROTONINE",
+  "letterCode": "B",
+  "coefficient": 250
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002362",
+  "label": "SEPARATION LEUCOCYTES POUR DOSAGE ENZYMATIQUE",
+  "letterCode": "B",
+  "coefficient": 100
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002363",
+  "label": "SODIUM",
+  "letterCode": "B",
+  "coefficient": 60
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002364",
+  "label": "SOUS UNITE ALPHA (FSH, LH, HCG, TSH)",
+  "letterCode": "B",
+  "coefficient": 25
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002365",
+  "label": "STATUT ANTIOXYDANT TOTAL",
+  "letterCode": "B",
+  "coefficient": 300
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002366",
+  "label": "SUPEROXYDE DISMUTASE (SOD)",
+  "letterCode": "B",
+  "coefficient": 100
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002367",
+  "label": "SUSCEPTIBILITE DES LDL A L'OXYDATION",
+  "letterCode": "B",
+  "coefficient": 200
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002368",
+  "label": "SUSCEPTIBILITE DES MEMBRANES A L'OXYDATION",
+  "letterCode": "B",
+  "coefficient": 60
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002371",
+  "label": "THYROCALCITONINE",
+  "letterCode": "B",
+  "coefficient": 250
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002372",
+  "label": "THYROGLOBULINE",
+  "letterCode": "B",
+  "coefficient": 300
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002373",
+  "label": "THYROXIN BINDING PREALBUMIN (TBPA)",
+  "letterCode": "B",
+  "coefficient": 200
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002374",
+  "label": "THYROXINE LIBRE (FT4)",
+  "letterCode": "B",
+  "coefficient": 120
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002375",
+  "label": "THYROXINE TOTALE (T4)",
+  "letterCode": "B",
+  "coefficient": 100
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002376",
+  "label": "TRANSCORTINE(CBG)",
+  "letterCode": "B",
+  "coefficient": 200
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002377",
+  "label": "TRANSFERRINE",
+  "letterCode": "B",
+  "coefficient": 80
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002378",
+  "label": "TRIGLYCERIDES",
+  "letterCode": "B",
+  "coefficient": 35
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002379",
+  "label": "TRIGLYCERIDES MEMRANAIRES",
+  "letterCode": "B",
+  "coefficient": 40
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002380",
+  "label": "TRIIODOTHYRONINE LIBRE (FT3)",
+  "letterCode": "B",
+  "coefficient": 120
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002381",
+  "label": "TRIIODOTHYRONINE TOTALE (T3)",
+  "letterCode": "B",
+  "coefficient": 100
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002382",
+  "label": "TRYPSINE",
+  "letterCode": "B",
+  "coefficient": 150
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002383",
+  "label": "TROPONINE I*",
+  "letterCode": "B",
+  "coefficient": 150
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002384",
+  "label": "TROPONINE T*",
+  "letterCode": "B",
+  "coefficient": 150
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002385",
+  "label": "TSH : HORMONE THYREOSTIMULANTE",
+  "letterCode": "B",
+  "coefficient": 120
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002386",
+  "label": "UREE",
+  "letterCode": "B",
+  "coefficient": 15
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002387",
+  "label": "VITAMINE A",
+  "letterCode": "B",
+  "coefficient": 200
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002388",
+  "label": "VITAMINE B 12",
+  "letterCode": "B",
+  "coefficient": 120
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002389",
+  "label": "VITAMINE C",
+  "letterCode": "B",
+  "coefficient": 200
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002390",
+  "label": "VITAMINE D : dérivés dihydroxylés 1,25 (di-OH 1,25-D3)",
+  "letterCode": "B",
+  "coefficient": 300
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002391",
+  "label": "VITAMINE D : dérivés dihyroxylés 24,25 (di-OH24,25-D3)",
+  "letterCode": "B",
+  "coefficient": 300
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002392",
+  "label": "VITAMINE D : 25 OHD3",
+  "letterCode": "B",
+  "coefficient": 300
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002393",
+  "label": "VITAMINE E",
+  "letterCode": "B",
+  "coefficient": 200
+ },
+ {
+  "chapter": "BBC",
+  "code": "U002395",
+  "label": "ACIDES AMINES : dosage CEI",
+  "letterCode": "B",
+  "coefficient": 400
+ },
+ {
+  "chapter": "BBC",
+  "code": "U002396",
+  "label": "ACIDE DELTA AMINO-LEVULINIQUE (ALA) HPLC",
+  "letterCode": "B",
+  "coefficient": 200
+ },
+ {
+  "chapter": "BBC",
+  "code": "U002398",
+  "label": "ACIDE HIPPURIQUE",
+  "letterCode": "B",
+  "coefficient": 200
+ },
+ {
+  "chapter": "BBC",
+  "code": "U002404",
+  "label": "ACIDE MERCAPTURIQUE",
+  "letterCode": "B",
+  "coefficient": 200
+ },
+ {
+  "chapter": "BBC",
+  "code": "U002407",
+  "label": "ACIDE OROTIQUE (GC-MS)",
+  "letterCode": "B",
+  "coefficient": 200
+ },
+ {
+  "chapter": "BBC",
+  "code": "U002408",
+  "label": "ACIDE OXALIQUE",
+  "letterCode": "B",
+  "coefficient": 120
+ },
+ {
+  "chapter": "BBC",
+  "code": "U002409",
+  "label": "ACIDE SIALIQUE",
+  "letterCode": "B",
+  "coefficient": 100
+ },
+ {
+  "chapter": "BBC",
+  "code": "U002410",
+  "label": "ACIDE TRANSMUCONIQUE",
+  "letterCode": "B",
+  "coefficient": 200
+ },
+ {
+  "chapter": "BBC",
+  "code": "U002411",
+  "label": "ACIDE URIQUE",
+  "letterCode": "B",
+  "coefficient": 20
+ },
+ {
+  "chapter": "BBC",
+  "code": "U002417",
+  "label": "AMP, CYCLIQUE",
+  "letterCode": "B",
+  "coefficient": 300
+ },
+ {
+  "chapter": "BBC",
+  "code": "U002418",
+  "label": "AMYLASE",
+  "letterCode": "B",
+  "coefficient": 60
+ },
+ {
+  "chapter": "BBC",
+  "code": "U002419",
+  "label": "ANDROSTANEDIOL",
+  "letterCode": "B",
+  "coefficient": 300
+ },
+ {
+  "chapter": "BBC",
+  "code": "U002420",
+  "label": "ANDROSTENEDIOL",
+  "letterCode": "B",
+  "coefficient": 300
+ },
+ {
+  "chapter": "BBC",
+  "code": "U002421",
+  "label": "BETA 2 MICROGLOBULINE",
+  "letterCode": "B",
+  "coefficient": 150
+ },
+ {
+  "chapter": "BBC",
+  "code": "U002422",
+  "label": "CALCIUM",
+  "letterCode": "B",
+  "coefficient": 70
+ },
+ {
+  "chapter": "BBC",
+  "code": "U002423",
+  "label": "CETOSTEROIDES -17",
+  "letterCode": "B",
+  "coefficient": 25
+ },
+ {
+  "chapter": "BBC",
+  "code": "U002427",
+  "label": "CHLORE",
+  "letterCode": "B",
+  "coefficient": 20
+ },
+ {
+  "chapter": "BBC",
+  "code": "U002428",
+  "label": "CITRATE",
+  "letterCode": "B",
+  "coefficient": 150
+ },
+ {
+  "chapter": "BBC",
+  "code": "U002429",
+  "label": "CORTISOL",
+  "letterCode": "B",
+  "coefficient": 200
+ },
+ {
+  "chapter": "BBC",
+  "code": "U002430",
+  "label": "CREATINE",
+  "letterCode": "B",
+  "coefficient": 25
+ },
+ {
+  "chapter": "BBC",
+  "code": "U002431",
+  "label": "CREATININE",
+  "letterCode": "B",
+  "coefficient": 15
+ },
+ {
+  "chapter": "BBC",
+  "code": "U002432",
+  "label": "CRISTALLURIE : Ex, sédiment urinaire en lumière polarisée",
+  "letterCode": "B",
+  "coefficient": 40
+ },
+ {
+  "chapter": "BBC",
+  "code": "U002433",
+  "label": "CUIVRE SAA",
+  "letterCode": "B",
+  "coefficient": 100
+ },
+ {
+  "chapter": "BBC",
+  "code": "U002435",
+  "label": "ELECTROPHORESE DES PROTEINES",
+  "letterCode": "B",
+  "coefficient": 150
+ },
+ {
+  "chapter": "BBC",
+  "code": "U002436",
+  "label": "GALACTOSE",
+  "letterCode": "B",
+  "coefficient": 150
+ },
+ {
+  "chapter": "BBC",
+  "code": "U002437",
+  "label": "GLUCOSE : dosage",
+  "letterCode": "B",
+  "coefficient": 15
+ },
+ {
+  "chapter": "BBC",
+  "code": "U002438",
+  "label": "HYDROXY-17- CORTICOSTEROIDES",
+  "letterCode": "B",
+  "coefficient": 70
+ },
+ {
+  "chapter": "BBC",
+  "code": "U002439",
+  "label": "HYDROXYPROLINE",
+  "letterCode": "B",
+  "coefficient": 100
+ },
+ {
+  "chapter": "BBC",
+  "code": "U002442",
+  "label": "IONOGRAMME : Na + K",
+  "letterCode": "B",
+  "coefficient": 50
+ },
+ {
+  "chapter": "BBC",
+  "code": "U002443",
+  "label": "MAGNESIUM URINAIRE",
+  "letterCode": "B",
+  "coefficient": 25
+ },
+ {
+  "chapter": "BBC",
+  "code": "U002444",
+  "label": "MELITURIE CCM",
+  "letterCode": "B",
+  "coefficient": 60
+ },
+ {
+  "chapter": "BBC",
+  "code": "U002445",
+  "label": "METANEPHRINES CEI",
+  "letterCode": "B",
+  "coefficient": 200
+ },
+ {
+  "chapter": "BBC",
+  "code": "U002446",
+  "label": "METANEPHRINES HPLC",
+  "letterCode": "B",
+  "coefficient": 300
+ },
+ {
+  "chapter": "BBC",
+  "code": "U002447",
+  "label": "MICROALBUMINURIE",
+  "letterCode": "B",
+  "coefficient": 80
+ },
+ {
+  "chapter": "BBC",
+  "code": "U002451",
+  "label": "OLIGOSACCHARIDES CCM",
+  "letterCode": "B",
+  "coefficient": 50
+ },
+ {
+  "chapter": "BBC",
+  "code": "U002452",
+  "label": "OSMOLARITE PAR OSMOMETRE",
+  "letterCode": "B",
+  "coefficient": 50
+ },
+ {
+  "chapter": "BBC",
+  "code": "U002453",
+  "label": "PHENOL",
+  "letterCode": "B",
+  "coefficient": 200
+ },
+ {
+  "chapter": "BBC",
+  "code": "U002454",
+  "label": "PHOSPHATES",
+  "letterCode": "B",
+  "coefficient": 25
+ },
+ {
+  "chapter": "BBC",
+  "code": "U002455",
+  "label": "PORPHOBILINOGENE ( PBG) : dosage",
+  "letterCode": "B",
+  "coefficient": 150
+ },
+ {
+  "chapter": "BBC",
+  "code": "U002456",
+  "label": "PBG : recherche",
+  "letterCode": "B",
+  "coefficient": 15
+ },
+ {
+  "chapter": "BBC",
+  "code": "U002457",
+  "label": "PORPHYRINES",
+  "letterCode": "B",
+  "coefficient": 80
+ },
+ {
+  "chapter": "BBC",
+  "code": "U002459",
+  "label": "POTASSIUM",
+  "letterCode": "B",
+  "coefficient": 25
+ },
+ {
+  "chapter": "BBC",
+  "code": "U002460",
+  "label": "PREGNANETRIOL",
+  "letterCode": "B",
+  "coefficient": 180
+ },
+ {
+  "chapter": "BBC",
+  "code": "U002461",
+  "label": "PROTEINURIE : dosage",
+  "letterCode": "B",
+  "coefficient": 15
+ },
+ {
+  "chapter": "BBC",
+  "code": "U002462",
+  "label": "PROTEINURIE DE BENCE JONES : PAR IMMUNOFIXATION",
+  "letterCode": "B",
+  "coefficient": 250
+ },
+ {
+  "chapter": "BBC",
+  "code": "U002465",
+  "label": "REACTION DNPH (acides alpha cétoniques)",
+  "letterCode": "B",
+  "coefficient": 10
+ },
+ {
+  "chapter": "BBC",
+  "code": "U002466",
+  "label": "REACTION PERCHLORURE FERRIQUE (acide phénylpyruvique)",
+  "letterCode": "B",
+  "coefficient": 10
+ },
+ {
+  "chapter": "BBC",
+  "code": "U002467",
+  "label": "RECHERCHE DE SULFITES",
+  "letterCode": "B",
+  "coefficient": 20
+ },
+ {
+  "chapter": "BBC",
+  "code": "U002468",
+  "label": "RECHERCHE DE SUCRES REDUCTEURS",
+  "letterCode": "B",
+  "coefficient": 25
+ },
+ {
+  "chapter": "BBC",
+  "code": "U002469",
+  "label": "SEDIMENT : microscope standard",
+  "letterCode": "B",
+  "coefficient": 15
+ },
+ {
+  "chapter": "BBC",
+  "code": "U002470",
+  "label": "SODIUM",
+  "letterCode": "B",
+  "coefficient": 25
+ },
+ {
+  "chapter": "BBC",
+  "code": "U002471",
+  "label": "UREE",
+  "letterCode": "B",
+  "coefficient": 15
+ },
+ {
+  "chapter": "BBC",
+  "code": "L002472",
+  "label": "ACIDE LACTIQUE",
+  "letterCode": "B",
+  "coefficient": 120
+ },
+ {
+  "chapter": "BBC",
+  "code": "L002473",
+  "label": "ALBUMINE IMMUNOCHIMIE",
+  "letterCode": "B",
+  "coefficient": 80
+ },
+ {
+  "chapter": "BBC",
+  "code": "L002474",
+  "label": "AMMONIAQUE",
+  "letterCode": "B",
+  "coefficient": 60
+ },
+ {
+  "chapter": "BBC",
+  "code": "L002475",
+  "label": "CARNITINE",
+  "letterCode": "B",
+  "coefficient": 150
+ },
+ {
+  "chapter": "BBC",
+  "code": "L002476",
+  "label": "CHLORE",
+  "letterCode": "B",
+  "coefficient": 20
+ },
+ {
+  "chapter": "BBC",
+  "code": "L002477",
+  "label": "ELECTROPHORESE DES PROTEINES",
+  "letterCode": "B",
+  "coefficient": 180
+ },
+ {
+  "chapter": "BBC",
+  "code": "L002480",
+  "label": "IMMUNOGLOBULINES A",
+  "letterCode": "B",
+  "coefficient": 80
+ },
+ {
+  "chapter": "BBC",
+  "code": "L002481",
+  "label": "IMMUNOGLOBULINES G",
+  "letterCode": "B",
+  "coefficient": 80
+ },
+ {
+  "chapter": "BBC",
+  "code": "L002482",
+  "label": "IMMUNOGLOBULINES M",
+  "letterCode": "B",
+  "coefficient": 80
+ },
+ {
+  "chapter": "BBC",
+  "code": "L002483",
+  "label": "ISOELECTROFOCALISATION DES PROTEINES",
+  "letterCode": "B",
+  "coefficient": 250
+ },
+ {
+  "chapter": "BBC",
+  "code": "L002484",
+  "label": "PROTEINES",
+  "letterCode": "B",
+  "coefficient": 15
+ },
+ {
+  "chapter": "BBC",
+  "code": "L002485",
+  "label": "PROTEINES+GLUCOSE+CHLORE",
+  "letterCode": "B",
+  "coefficient": 40
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002487",
+  "label": "TEST A LA SUEUR : dosage des chlorures",
+  "letterCode": "B",
+  "coefficient": 50
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002488",
+  "label": "TEST A LA NINHYDRINE",
+  "letterCode": "B",
+  "coefficient": 30
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002489",
+  "label": "TEST A LA PILOCARPINE",
+  "letterCode": "B",
+  "coefficient": 120
+ },
+ {
+  "chapter": "BBC",
+  "code": "E002490",
+  "label": "AMYLASE",
+  "letterCode": "B",
+  "coefficient": 60
+ },
+ {
+  "chapter": "BBC",
+  "code": "E002491",
+  "label": "CHOLESTEROL",
+  "letterCode": "B",
+  "coefficient": 20
+ },
+ {
+  "chapter": "BBC",
+  "code": "E002492",
+  "label": "ELECTROPHORESE LIPOPROTEINES",
+  "letterCode": "B",
+  "coefficient": 80
+ },
+ {
+  "chapter": "BBC",
+  "code": "E002493",
+  "label": "FIBRONECTINE",
+  "letterCode": "B",
+  "coefficient": 100
+ },
+ {
+  "chapter": "BBC",
+  "code": "E002494",
+  "label": "PROTEINES",
+  "letterCode": "B",
+  "coefficient": 20
+ },
+ {
+  "chapter": "BBC",
+  "code": "E002495",
+  "label": "TRIGLYCERIDES",
+  "letterCode": "B",
+  "coefficient": 40
+ },
+ {
+  "chapter": "BBC",
+  "code": "A002496",
+  "label": "ACETYLCHOLINESTERASE : Dosage",
+  "letterCode": "B",
+  "coefficient": 50
+ },
+ {
+  "chapter": "BBC",
+  "code": "A002497",
+  "label": "ACIDES AMINES CEI",
+  "letterCode": "B",
+  "coefficient": 400
+ },
+ {
+  "chapter": "BBC",
+  "code": "A002498",
+  "label": "ACIDES ORGANIQUES CG-MS",
+  "letterCode": "B",
+  "coefficient": 200
+ },
+ {
+  "chapter": "BBC",
+  "code": "A002499",
+  "label": "ALPHA-FOETO PROTEINES",
+  "letterCode": "B",
+  "coefficient": 150
+ },
+ {
+  "chapter": "BBC",
+  "code": "A002500",
+  "label": "BILIRUBINE",
+  "letterCode": "B",
+  "coefficient": 50
+ },
+ {
+  "chapter": "BBC",
+  "code": "A002501",
+  "label": "LECITHINE / SPHINGOMYELINE",
+  "letterCode": "B",
+  "coefficient": 60
+ },
+ {
+  "chapter": "BBC",
+  "code": "A002502",
+  "label": "PALMITATE/STEARATE CPG",
+  "letterCode": "B",
+  "coefficient": 120
+ },
+ {
+  "chapter": "BBC",
+  "code": "A002503",
+  "label": "PHOSPHATASES ALCALINES",
+  "letterCode": "B",
+  "coefficient": 25
+ },
+ {
+  "chapter": "BBC",
+  "code": "A002504",
+  "label": "PHOSPHATIDYL GLYCEROL",
+  "letterCode": "B",
+  "coefficient": 120
+ },
+ {
+  "chapter": "BBC",
+  "code": "D002505",
+  "label": "CHIMISME GASTRIQUE",
+  "letterCode": "B",
+  "coefficient": 80
+ },
+ {
+  "chapter": "BBC",
+  "code": "D002506",
+  "label": "CORTISOL",
+  "letterCode": "B",
+  "coefficient": 150
+ },
+ {
+  "chapter": "BBC",
+  "code": "D002507",
+  "label": "CORTISONE",
+  "letterCode": "B",
+  "coefficient": 300
+ },
+ {
+  "chapter": "BBC",
+  "code": "D002508",
+  "label": "PROGESTERONE",
+  "letterCode": "B",
+  "coefficient": 150
+ },
+ {
+  "chapter": "BBC",
+  "code": "D002509",
+  "label": "PROGESTERONE 17-OH",
+  "letterCode": "B",
+  "coefficient": 200
+ },
+ {
+  "chapter": "BBC",
+  "code": "D002510",
+  "label": "TESTOSTERONE",
+  "letterCode": "B",
+  "coefficient": 150
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002511",
+  "label": "PORPHYRINES FECALES : fractionnement",
+  "letterCode": "B",
+  "coefficient": 50
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002512",
+  "label": "RECHERCHE DU SANG",
+  "letterCode": "B",
+  "coefficient": 30
+ },
+ {
+  "chapter": "BBC",
+  "code": "S002513",
+  "label": "CREATORRHEE",
+  "letterCode": "B",
+  "coefficient": 80
+ },
+ {
+  "chapter": "BBC",
+  "code": "F002519",
+  "label": "CLAIRANCE DE LA CREATININE",
+  "letterCode": "B",
+  "coefficient": 40
+ },
+ {
+  "chapter": "BBC",
+  "code": "F002520",
+  "label": "CLAIRANCE DE L'ALPHA 1 ANTITRYPSINE",
+  "letterCode": "B",
+  "coefficient": 200
+ },
+ {
+  "chapter": "BBC",
+  "code": "F002521",
+  "label": "CLAIRANCE DE L'UREE",
+  "letterCode": "B",
+  "coefficient": 40
+ },
+ {
+  "chapter": "BBC",
+  "code": "F002522",
+  "label": "EPREUVE A L'INSULINE :dosage du glucose",
+  "letterCode": "B",
+  "coefficient": 60
+ },
+ {
+  "chapter": "BBC",
+  "code": "F002524",
+  "label": "EPREUVE DE CONCENTRATION DES URINES",
+  "letterCode": "B",
+  "coefficient": 20
+ },
+ {
+  "chapter": "BBC",
+  "code": "F002525",
+  "label": "EPREUVE DE DILUTION DES URINES",
+  "letterCode": "B",
+  "coefficient": 20
+ },
+ {
+  "chapter": "BBC",
+  "code": "F002527",
+  "label": "HGPO SIMPLIFIEE : 2 dosages",
+  "letterCode": "B",
+  "coefficient": 30
+ },
+ {
+  "chapter": "BBC",
+  "code": "F002529",
+  "label": "CYCLE GLYCEMIE-LACTATE-PYRUVATE (2pts/repas) * 3 repas",
+  "letterCode": "B",
+  "coefficient": 250
+ },
+ {
+  "chapter": "BBC",
+  "code": "F002530",
+  "label": "CYCLE AMMONIEMIE (2pts/repas) * 3 repas",
+  "letterCode": "B",
+  "coefficient": 60
+ },
+ {
+  "chapter": "BBC",
+  "code": "F002543",
+  "label": "TEST AU D-XYLOSE",
+  "letterCode": "B",
+  "coefficient": 60
+ },
+ {
+  "chapter": "BGE",
+  "code": "O002580",
+  "label": "Caryotype sur sang en banding",
+  "letterCode": "B",
+  "coefficient": 400
+ },
+ {
+  "chapter": "BGE",
+  "code": "O002581",
+  "label": "Caryotype sur sang en haute résolution",
+  "letterCode": "B",
+  "coefficient": 650
+ },
+ {
+  "chapter": "BGE",
+  "code": "O002582",
+  "label": "Caryotype sur moelle osseuse",
+  "letterCode": "B",
+  "coefficient": 900
+ },
+ {
+  "chapter": "BGE",
+  "code": "O002584",
+  "label": "Caryotype sur fibroblastes",
+  "letterCode": "B",
+  "coefficient": 1150
+ },
+ {
+  "chapter": "BGE",
+  "code": "O002585",
+  "label": "Caryotype sur tissus solides",
+  "letterCode": "B",
+  "coefficient": 1150
+ },
+ {
+  "chapter": "BGE",
+  "code": "O002587",
+  "label": "Culture cellulaire (autre que lymphocytes)",
+  "letterCode": "B",
+  "coefficient": 900
+ },
+ {
+  "chapter": "BGE",
+  "code": "O002588",
+  "label": "Hybridation in situ",
+  "letterCode": "B",
+  "coefficient": 900
+ },
+ {
+  "chapter": "BGE",
+  "code": "O002589",
+  "label": "Extraction ADN",
+  "letterCode": "B",
+  "coefficient": 350
+ },
+ {
+  "chapter": "BGE",
+  "code": "O002590",
+  "label": "Electrophorèse acétyl cholinestérase dans liquide amniotique",
+  "letterCode": "B",
+  "coefficient": 150
+ },
+ {
+  "chapter": "BGE",
+  "code": "O002591",
+  "label": "Préparation culot leucocytaire",
+  "letterCode": "B",
+  "coefficient": 40
+ },
+ {
+  "chapter": "BGE",
+  "code": "O002607",
+  "label": "Digestion enzymatique",
+  "letterCode": "B",
+  "coefficient": 225
+ },
+ {
+  "chapter": "BGE",
+  "code": "O002608",
+  "label": "Contrôle PCR sur gel d’agarose",
+  "letterCode": "B",
+  "coefficient": 70
+ },
+ {
+  "chapter": "BGE",
+  "code": "O002612",
+  "label": "Microsatellites/Allèle : 5 allèles",
+  "letterCode": "B",
+  "coefficient": 100
+ },
+ {
+  "chapter": "BGE",
+  "code": "O002613",
+  "label": "CF/OLA (Cystic Fibrosis/Oligonucleotide Ligation Assay)",
+  "letterCode": "B",
+  "coefficient": 570
+ },
+ {
+  "chapter": "BGE",
+  "code": "O002617",
+  "label": "Séquençage d’ADN / échantillon",
+  "letterCode": "B",
+  "coefficient": 1470
+ },
+ {
+  "chapter": "BGE",
+  "code": "O002618",
+  "label": "Analyse de fragments d'ADN (10 marqueurs pour reconnaissance)",
+  "letterCode": "B",
+  "coefficient": 1000
+ },
+ {
+  "chapter": "BHE",
+  "code": "C002619",
+  "label": "Adénogramme ou splénogramme par la coloration MGG",
+  "letterCode": "B",
+  "coefficient": 70
+ },
+ {
+  "chapter": "BHE",
+  "code": "H002621",
+  "label": "Fragilité capillaire",
+  "letterCode": "B",
+  "coefficient": 10
+ },
+ {
+  "chapter": "BHE",
+  "code": "H002623",
+  "label": "Consommation de la prothrombine",
+  "letterCode": "B",
+  "coefficient": 30
+ },
+ {
+  "chapter": "BHE",
+  "code": "H002625",
+  "label": "Temps de thrombine (TT)",
+  "letterCode": "B",
+  "coefficient": 15
+ },
+ {
+  "chapter": "BHE",
+  "code": "H002626",
+  "label": "Dosage du facteur de stabilisation de la fibrine(facteur XIII)",
+  "letterCode": "B",
+  "coefficient": 200
+ },
+ {
+  "chapter": "BHE",
+  "code": "H002628",
+  "label": "Temps de lyse des euglobulines (Von Kaulla)",
+  "letterCode": "B",
+  "coefficient": 60
+ },
+ {
+  "chapter": "BHE",
+  "code": "H002630",
+  "label": "Titrage des PDF",
+  "letterCode": "B",
+  "coefficient": 60
+ },
+ {
+  "chapter": "BHE",
+  "code": "H002635",
+  "label": "Dosage du facteur anti-hémophilique A (facteur VIII)",
+  "letterCode": "B",
+  "coefficient": 50
+ },
+ {
+  "chapter": "BHE",
+  "code": "H002636",
+  "label": "Dosage du facteur anti-hémophilique B (facteur IX)",
+  "letterCode": "B",
+  "coefficient": 50
+ },
+ {
+  "chapter": "BHE",
+  "code": "H002637",
+  "label": "Dosage du facteur XI",
+  "letterCode": "B",
+  "coefficient": 50
+ },
+ {
+  "chapter": "BHE",
+  "code": "H002638",
+  "label": "Dosage du facteur Hageman (facteur XII)",
+  "letterCode": "B",
+  "coefficient": 50
+ },
+ {
+  "chapter": "BHE",
+  "code": "H002639",
+  "label": "Dosage du facteur Willebrand antigène",
+  "letterCode": "B",
+  "coefficient": 80
+ },
+ {
+  "chapter": "BHE",
+  "code": "H002640",
+  "label": "Dosage de l'activité cofacteur de la ristocétine",
+  "letterCode": "B",
+  "coefficient": 80
+ },
+ {
+  "chapter": "BHE",
+  "code": "H002641",
+  "label": "Héparinémie anti-IIa (activité anti-thrombine)",
+  "letterCode": "B",
+  "coefficient": 40
+ },
+ {
+  "chapter": "BHE",
+  "code": "H002642",
+  "label": "Héparinémie anti-Xa",
+  "letterCode": "B",
+  "coefficient": 150
+ },
+ {
+  "chapter": "BHE",
+  "code": "H002644",
+  "label": "Dosage de la protéine S (activité, libre, totale) chacune",
+  "letterCode": "B",
+  "coefficient": 100
+ },
+ {
+  "chapter": "BHE",
+  "code": "H002648",
+  "label": "Etude des fonctions plaquettaires (adhésion, agrégation)",
+  "letterCode": "B",
+  "coefficient": 100
+ },
+ {
+  "chapter": "BHE",
+  "code": "H002649",
+  "label": "Résistance à la protéine C activée",
+  "letterCode": "B",
+  "coefficient": 120
+ },
+ {
+  "chapter": "BHE",
+  "code": "H002650",
+  "label": "Recherche d'un anticorps anti-facteur (titrage éventuel compris)",
+  "letterCode": "B",
+  "coefficient": 150
+ },
+ {
+  "chapter": "BHE",
+  "code": "H002654",
+  "label": "Alpha 2 antiplasmine",
+  "letterCode": "B",
+  "coefficient": 80
+ },
+ {
+  "chapter": "BHE",
+  "code": "H002656",
+  "label": "Recherche de la mutation Arg 506 ou facteur V de Leiden",
+  "letterCode": "B",
+  "coefficient": 400
+ },
+ {
+  "chapter": "BHE",
+  "code": "H002657",
+  "label": "Recherche de la mutation G du facteur II",
+  "letterCode": "B",
+  "coefficient": 400
+ },
+ {
+  "chapter": "BHE",
+  "code": "I002663",
+  "label": "Cross-match : Test de compatibilté majeur par TCI",
+  "letterCode": "B",
+  "coefficient": 40
+ },
+ {
+  "chapter": "BHE",
+  "code": "I002668",
+  "label": "Recherche d'hémolysines du système ABO",
+  "letterCode": "B",
+  "coefficient": 30
+ },
+ {
+  "chapter": "BHE",
+  "code": "I002670",
+  "label": "Génotypage des polynucléaires",
+  "letterCode": "B",
+  "coefficient": 400
+ },
+ {
+  "chapter": "BHE",
+  "code": "I002671",
+  "label": "Dépistage d'anticorps anti-polynucléaires (test direct)",
+  "letterCode": "B",
+  "coefficient": 100
+ },
+ {
+  "chapter": "BHE",
+  "code": "I002673",
+  "label": "Identification d'anticorps anti-polynucléaires",
+  "letterCode": "B",
+  "coefficient": 200
+ },
+ {
+  "chapter": "BHE",
+  "code": "I002674",
+  "label": "Numération des CD34 par cytométrie de flux",
+  "letterCode": "B",
+  "coefficient": 120
+ },
+ {
+  "chapter": "BHE",
+  "code": "I002675",
+  "label": "Immunophénotypage leucocytaire par marqueur",
+  "letterCode": "B",
+  "coefficient": 80
+ },
+ {
+  "chapter": "BHE",
+  "code": "I002677",
+  "label": "Phénotypage plaquettaire : le phénotype",
+  "letterCode": "B",
+  "coefficient": 70
+ },
+ {
+  "chapter": "BIM",
+  "code": "I002683",
+  "label": "Dosage des Immunoglobulines E (IgE) totales",
+  "letterCode": "B",
+  "coefficient": 120
+ },
+ {
+  "chapter": "BIM",
+  "code": "I002684",
+  "label": "Etude qualitative des IgE spécifiques mélangées",
+  "letterCode": "B",
+  "coefficient": 150
+ },
+ {
+  "chapter": "BIM",
+  "code": "I002685",
+  "label": "Etude semi-quantitative de multi allergènes séparés",
+  "letterCode": "B",
+  "coefficient": 400
+ },
+ {
+  "chapter": "BIM",
+  "code": "A002696",
+  "label": "Titrage des anticorps anti-ADN dénaturé",
+  "letterCode": "B",
+  "coefficient": 80
+ },
+ {
+  "chapter": "BIM",
+  "code": "A002697",
+  "label": "Titrage des anticorps antihistones",
+  "letterCode": "B",
+  "coefficient": 80
+ },
+ {
+  "chapter": "BIM",
+  "code": "A002698",
+  "label": "Titrage des auto anticorps anti phospholipides",
+  "letterCode": "B",
+  "coefficient": 120
+ },
+ {
+  "chapter": "BIM",
+  "code": "A002703",
+  "label": "Titrage des auto anticorps antikératine",
+  "letterCode": "B",
+  "coefficient": 100
+ },
+ {
+  "chapter": "BIM",
+  "code": "A002715",
+  "label": "Titrage des auto anticorps anti insuline utilisant un marqueur",
+  "letterCode": "B",
+  "coefficient": 200
+ },
+ {
+  "chapter": "BIM",
+  "code": "A002731",
+  "label": "Recherche et titrage d’autres autoanticorps",
+  "letterCode": "B",
+  "coefficient": 100
+ },
+ {
+  "chapter": "BIM",
+  "code": "P002739",
+  "label": "Cross-match des lymphocytes T et B",
+  "letterCode": "B",
+  "coefficient": 200
+ },
+ {
+  "chapter": "BIM",
+  "code": "P002740",
+  "label": "Phénotypage HLA classe II DP",
+  "letterCode": "B",
+  "coefficient": 300
+ },
+ {
+  "chapter": "BIM",
+  "code": "P002741",
+  "label": "Culture lymphocytaire mixte",
+  "letterCode": "B",
+  "coefficient": 300
+ },
+ {
+  "chapter": "BIM",
+  "code": "D002757",
+  "label": "Dosage des IgD dans le sang",
+  "letterCode": "B",
+  "coefficient": 80
+ },
+ {
+  "chapter": "BIM",
+  "code": "Y002783",
+  "label": "Titrage d’anticorps spécifiques après vaccination",
+  "letterCode": "B",
+  "coefficient": 100
+ },
+ {
+  "chapter": "BIM",
+  "code": "Y002784",
+  "label": "Dépistage des immun complexes circulants",
+  "letterCode": "B",
+  "coefficient": 100
+ },
+ {
+  "chapter": "BIM",
+  "code": "Y002785",
+  "label": "Recherche d’une cryoglobulinémie",
+  "letterCode": "B",
+  "coefficient": 40
+ },
+ {
+  "chapter": "BIM",
+  "code": "Y002786",
+  "label": "Typage d’une cryoglobulinémie",
+  "letterCode": "B",
+  "coefficient": 120
+ },
+ {
+  "chapter": "BIM",
+  "code": "Y002789",
+  "label": "Recherche et titrage d’hémagglutinines froides",
+  "letterCode": "B",
+  "coefficient": 40
+ },
+ {
+  "chapter": "BIM",
+  "code": "Y002790",
+  "label": "Recherche de spécificité d’une hémagglutinine froide B",
+  "letterCode": "B",
+  "coefficient": 40
+ },
+ {
+  "chapter": "BIM",
+  "code": "M002803",
+  "label": "Dosage de β HCG libre",
+  "letterCode": "B",
+  "coefficient": 150
+ },
+ {
+  "chapter": "BPR",
+  "code": "P002827",
+  "label": "Recherche de Cryptosporidium par coloration élective",
+  "letterCode": "B",
+  "coefficient": 60
+ },
+ {
+  "chapter": "BPR",
+  "code": "P002832",
+  "label": "Recherche de Trichomonas vaginalis dans les urines",
+  "letterCode": "B",
+  "coefficient": 15
+ },
+ {
+  "chapter": "BPR",
+  "code": "P002834",
+  "label": "Recherche des autres parasites du sang",
+  "letterCode": "B",
+  "coefficient": 50
+ },
+ {
+  "chapter": "BPR",
+  "code": "P002840",
+  "label": "Recherche de toxoplasmes par culture cellulaire",
+  "letterCode": "B",
+  "coefficient": 300
+ },
+ {
+  "chapter": "BPR",
+  "code": "P002841",
+  "label": "Recherche de parasites par technique d’amplification génique",
+  "letterCode": "B",
+  "coefficient": 400
+ },
+ {
+  "chapter": "BPR",
+  "code": "M002850",
+  "label": "Antifongigramme",
+  "letterCode": "B",
+  "coefficient": 80
+ },
+ {
+  "chapter": "BPR",
+  "code": "M002852",
+  "label": "Identification des grains de mycétome",
+  "letterCode": "B",
+  "coefficient": 70
+ },
+ {
+  "chapter": "BPR",
+  "code": "S002853",
+  "label": "Diagnostic sérologique",
+  "letterCode": "B",
+  "coefficient": 60
+ },
+ {
+  "chapter": "BPR",
+  "code": "S002854",
+  "label": "ELS/IEP (4 antigènes dont A.fumigatus)",
+  "letterCode": "B",
+  "coefficient": 120
+ },
+ {
+  "chapter": "BPR",
+  "code": "S002855",
+  "label": "HAI/EIA/IFI (A.fumigatus)",
+  "letterCode": "B",
+  "coefficient": 80
+ },
+ {
+  "chapter": "BPR",
+  "code": "S002856",
+  "label": "Détection des IGE anti A.fumigatus",
+  "letterCode": "B",
+  "coefficient": 180
+ },
+ {
+  "chapter": "BPR",
+  "code": "S002857",
+  "label": "Recherche d’antigènes solubles par EIA",
+  "letterCode": "B",
+  "coefficient": 200
+ },
+ {
+  "chapter": "BPR",
+  "code": "S002858",
+  "label": "Diagnostic Sérologique par au moins 2 techniques",
+  "letterCode": "B",
+  "coefficient": 80
+ },
+ {
+  "chapter": "BPR",
+  "code": "S002859",
+  "label": "Recherche d’antigènes solubles",
+  "letterCode": "B",
+  "coefficient": 50
+ },
+ {
+  "chapter": "BPR",
+  "code": "S002860",
+  "label": "Recherche d’antigènes solubles de Cryptococcus néoformans",
+  "letterCode": "B",
+  "coefficient": 80
+ },
+ {
+  "chapter": "BPR",
+  "code": "S002861",
+  "label": "Titrage en cas de réaction positive",
+  "letterCode": "B",
+  "coefficient": 150
+ },
+ {
+  "chapter": "BPR",
+  "code": "S002862",
+  "label": "Diagnostic sérologique par au moins 2 techniques",
+  "letterCode": "B",
+  "coefficient": 80
+ },
+ {
+  "chapter": "BPR",
+  "code": "S002863",
+  "label": "Diagnostic sérologique par au moins 2 techniques",
+  "letterCode": "B",
+  "coefficient": 80
+ },
+ {
+  "chapter": "BPR",
+  "code": "S002864",
+  "label": "Diagnostic sérologique",
+  "letterCode": "B",
+  "coefficient": 120
+ },
+ {
+  "chapter": "BPR",
+  "code": "S002865",
+  "label": "Diagnostic sérologique",
+  "letterCode": "B",
+  "coefficient": 60
+ },
+ {
+  "chapter": "BPR",
+  "code": "S002868",
+  "label": "Détection et titrage éventuel des IgA",
+  "letterCode": "B",
+  "coefficient": 80
+ },
+ {
+  "chapter": "BPR",
+  "code": "S002869",
+  "label": "Détermination de la charge immunitaire",
+  "letterCode": "B",
+  "coefficient": 80
+ },
+ {
+  "chapter": "BPR",
+  "code": "S002871",
+  "label": "Diagnostic sérologique par IFI ou EIA",
+  "letterCode": "B",
+  "coefficient": 120
+ },
+ {
+  "chapter": "BPR",
+  "code": "S002872",
+  "label": "Diagnostic sérologique",
+  "letterCode": "B",
+  "coefficient": 60
+ },
+ {
+  "chapter": "BPR",
+  "code": "S002874",
+  "label": "ACIDE MEPHENOLIQUE",
+  "letterCode": "B",
+  "coefficient": 200
+ },
+ {
+  "chapter": "BPR",
+  "code": "S002875",
+  "label": "ACIDE SALICYLIQUE",
+  "letterCode": "B",
+  "coefficient": 100
+ },
+ {
+  "chapter": "BPR",
+  "code": "S002876",
+  "label": "ACIDE VALPROIQUE",
+  "letterCode": "B",
+  "coefficient": 200
+ },
+ {
+  "chapter": "BPR",
+  "code": "S002879",
+  "label": "ALUMINIUM",
+  "letterCode": "B",
+  "coefficient": 100
+ },
+ {
+  "chapter": "BPR",
+  "code": "S002880",
+  "label": "AMIKACINE",
+  "letterCode": "B",
+  "coefficient": 200
+ },
+ {
+  "chapter": "BPR",
+  "code": "S002881",
+  "label": "ARSENIC",
+  "letterCode": "B",
+  "coefficient": 100
+ },
+ {
+  "chapter": "BPR",
+  "code": "S002882",
+  "label": "BARBITEMIE EMIT/CPG",
+  "letterCode": "B",
+  "coefficient": 200
+ },
+ {
+  "chapter": "BPR",
+  "code": "S002883",
+  "label": "CARBAMAZEPINE",
+  "letterCode": "B",
+  "coefficient": 200
+ },
+ {
+  "chapter": "BPR",
+  "code": "S002884",
+  "label": "CICLOSPORINE",
+  "letterCode": "B",
+  "coefficient": 200
+ },
+ {
+  "chapter": "BPR",
+  "code": "S002885",
+  "label": "DIGOXINE",
+  "letterCode": "B",
+  "coefficient": 200
+ },
+ {
+  "chapter": "BPR",
+  "code": "S002886",
+  "label": "GENTAMYCINE",
+  "letterCode": "B",
+  "coefficient": 200
+ },
+ {
+  "chapter": "BPR",
+  "code": "S002887",
+  "label": "INH",
+  "letterCode": "B",
+  "coefficient": 100
+ },
+ {
+  "chapter": "BPR",
+  "code": "S002888",
+  "label": "METHOTREXATE",
+  "letterCode": "B",
+  "coefficient": 200
+ },
+ {
+  "chapter": "BPR",
+  "code": "S002889",
+  "label": "MPEG",
+  "letterCode": "B",
+  "coefficient": 300
+ },
+ {
+  "chapter": "BPR",
+  "code": "S002890",
+  "label": "OXYDE DE CARBONE (CO)",
+  "letterCode": "B",
+  "coefficient": 50
+ },
+ {
+  "chapter": "BPR",
+  "code": "S002891",
+  "label": "PHENYTOINE",
+  "letterCode": "B",
+  "coefficient": 200
+ },
+ {
+  "chapter": "BPR",
+  "code": "S002892",
+  "label": "PLOMB",
+  "letterCode": "B",
+  "coefficient": 100
+ },
+ {
+  "chapter": "BPR",
+  "code": "S002893",
+  "label": "TACROLIMUS",
+  "letterCode": "B",
+  "coefficient": 300
+ },
+ {
+  "chapter": "BPR",
+  "code": "S002894",
+  "label": "THEOPHYLLINE",
+  "letterCode": "B",
+  "coefficient": 200
+ },
+ {
+  "chapter": "BPR",
+  "code": "S002895",
+  "label": "TOBRAMYCINE",
+  "letterCode": "B",
+  "coefficient": 200
+ },
+ {
+  "chapter": "BPR",
+  "code": "S002896",
+  "label": "VANCOMYCINE",
+  "letterCode": "B",
+  "coefficient": 200
+ },
+ {
+  "chapter": "BPR",
+  "code": "U002897",
+  "label": "ACIDE SALICYLIQUE",
+  "letterCode": "B",
+  "coefficient": 100
+ },
+ {
+  "chapter": "BPR",
+  "code": "U002898",
+  "label": "BARBITURIQUES",
+  "letterCode": "B",
+  "coefficient": 200
+ },
+ {
+  "chapter": "BPR",
+  "code": "U002899",
+  "label": "BENZODIAZEPINES : recherche",
+  "letterCode": "B",
+  "coefficient": 100
+ },
+ {
+  "chapter": "BPR",
+  "code": "U002900",
+  "label": "BENZODIAZEPINES : dosage",
+  "letterCode": "B",
+  "coefficient": 200
+ },
+ {
+  "chapter": "BPR",
+  "code": "U002901",
+  "label": "CYANURES",
+  "letterCode": "B",
+  "coefficient": 200
+ },
+ {
+  "chapter": "BPR",
+  "code": "U002902",
+  "label": "BROMURES",
+  "letterCode": "B",
+  "coefficient": 200
+ },
+ {
+  "chapter": "BPR",
+  "code": "U002903",
+  "label": "FLUORURES",
+  "letterCode": "B",
+  "coefficient": 200
+ },
+ {
+  "chapter": "BPR",
+  "code": "P002904",
+  "label": "DOSAGE DE MEDICAMENTS ET TOXIQUES PAR HPLC",
+  "letterCode": "B",
+  "coefficient": 300
+ },
+ {
+  "chapter": "BPR",
+  "code": "P002905",
+  "label": "DOSAGE DE MEDICAMENTS ET TOXIQUES PAR GC-MS",
+  "letterCode": "B",
+  "coefficient": 400
+ },
+ {
+  "chapter": "BRE",
+  "code": "S002909",
+  "label": "Spermogramme et spermocytogramme + MAR test",
+  "letterCode": "B",
+  "coefficient": 120
+ },
+ {
+  "chapter": "BRE",
+  "code": "S002924",
+  "label": "Coloration des spermatozoïdes au bleu d'aniline",
+  "letterCode": "B",
+  "coefficient": 50
+ },
+ {
+  "chapter": "BRE",
+  "code": "A002928",
+  "label": "Congélation des embryons par cycle",
+  "letterCode": "B",
+  "coefficient": 400
+ },
+ {
+  "chapter": "BRE",
+  "code": "A002930",
+  "label": "Congélation de sperme en vue d'une autoconservation",
+  "letterCode": "B",
+  "coefficient": 400
+ },
+ {
+  "chapter": "BMH",
+  "code": "O002932",
+  "label": "Prélèvement de sang veineux",
+  "letterCode": "B",
+  "coefficient": 2
+ },
+ {
+  "chapter": "BMH",
+  "code": "O002933",
+  "label": "Prélèvements multiples de sang veineux (au moins 4)",
+  "letterCode": "B",
+  "coefficient": 4
+ },
+ {
+  "chapter": "BMH",
+  "code": "O002938",
+  "label": "Prélèvement urétral",
+  "letterCode": "B",
+  "coefficient": 2
+ },
+ {
+  "chapter": "BMH",
+  "code": "O002939",
+  "label": "Tubage pour étude biologique du liquide gastrique",
+  "letterCode": "B",
+  "coefficient": 5
+ },
+ {
+  "chapter": "BMH",
+  "code": "O002940",
+  "label": "Prélèvement de sang artériel",
+  "letterCode": "B",
+  "coefficient": 2
+ },
+ {
+  "chapter": "BMH",
+  "code": "O002941",
+  "label": "Prélèvement de sang à domicile",
+  "letterCode": "B",
+  "coefficient": 5
+ }
+]
