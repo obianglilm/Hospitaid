@@ -1,59 +1,55 @@
-# HospitAid — Phase 2 (Fondations)
+# HospitAid — Phase 4 (application réelle, sans paiement)
 
-Plateforme de recherche d'examens médicaux et de tarifs CNAMGS pour Libreville, Gabon.
+Application de recherche d'examens médicaux et de tarifs CNAMGS pour Libreville, Gabon.
 
-## État actuel
+## Ce qui a changé par rapport à la Phase 2/3
 
-Ce squelette contient les fondations validées en Phase 1/2 :
+- **Recherche réelle** (`/simulateur`) : recherche par nom courant grâce aux synonymes
+  ajoutés sur ~210 actes (glycémie, NFS, échographie abdominale, VIH, paludisme...),
+  sélection multiple, calcul du ticket modérateur via l'API (`/api/search`, `/api/price`),
+  branché sur la vraie base de données (2690 actes techniques + 12 consultations/
+  prestations forfaitaires).
+- **Établissements réels** (`/etablissements`) : liste et fiche détaillée depuis la base
+  (CHUL, CHUO, CHU Jeanne Ebori, Laboratoire National de Santé Publique — tous non
+  vérifiés, à confirmer).
+- **Consultations et prestations forfaitaires** (`src/lib/tier-tariffs.ts`) : tarifs des
+  Annexes 2 et 3 saisis en dur (consultations, accouchement, journées d'hospitalisation),
+  car ils dépendent du niveau de l'établissement et non d'une lettre-clé.
+- **Espace admin minimal** (`/admin`) : marquer un acte ou un établissement comme
+  "Vérifié", ajouter un établissement. **Pas encore protégé par mot de passe** —
+  voir avertissement ci-dessous.
+- **Moteur de calcul** déplacé dans `src/lib/pricing-core.ts` (fonctions pures), avec
+  des tests qui reproduisent les valeurs exactes des tableaux des Annexes 2 et 3
+  (secteur public et privé, y compris le dépassement d'honoraires).
 
-- **Schéma Prisma complet** (`prisma/schema.prisma`) : établissements, examens,
-  nomenclature, lettres-clés (Annexe 1 CNAMGS), tarifs, règles de couverture,
-  paiement, accès, audit, imports.
-- **Authentification** (`src/lib/auth.ts`) : NextAuth (credentials), RBAC via
-  `role` dans la session.
-- **RBAC serveur** (`src/lib/rbac.ts`, `src/middleware.ts`) : le middleware
-  protège les pages `/admin` et `/mon-compte` ; `requireRole()` doit être
-  appelé dans CHAQUE route API sensible (le middleware seul ne suffit pas).
-- **Moteur de tarification** (`src/lib/pricing-engine.ts`) : implémente la
-  vraie formule du ticket modérateur telle que trouvée dans le document
-  officiel (Annexe 1) : `ticket modérateur = tarif facturé − (tarif
-  conventionné × taux de prise en charge CNAMGS)`. Gère le cas public
-  (tarif facturé = tarif conventionné) et le cas privé (dépassement
-  d'honoraires).
-- **Tests unitaires** (`src/lib/__tests__/`) : couvrent les 4 statuts CNAMGS
-  et reproduisent les exemples chiffrés du document officiel.
-- **Seed** (`prisma/seed.ts`) : valeurs officielles des 18 lettres-clés
-  (Annexe 1) et règles de couverture par défaut (80/90/100/0 %).
+## ⚠️ Sécurité — à faire avant toute mise en production réelle
 
-## Statut PAF
+L'authentification (NextAuth, RBAC) a été retirée temporairement pour accélérer cette
+phase. **`/admin` est donc accessible à quiconque connaît l'URL.** Avant d'ouvrir
+l'application à de vrais patients ou d'y stocker des données sensibles, il faut
+réintroduire une protection (mot de passe admin au minimum) sur cette page.
 
-**PAF = Particulier À ses Frais** (personne non assurée) — confirmé par le
-porteur de projet. Taux de prise en charge CNAMGS = 0 %, le patient règle
-la totalité du tarif facturé. Ce n'est pas un cas nommé dans le document
-Annexe 1 (qui ne couvre que les personnes assurées), mais la logique de
-calcul reste identique : `ticket modérateur = tarif facturé − 0 = tarif facturé`.
-
-## Installation
+## Installation locale
 
 ```bash
 npm install
-cp .env.example .env   # puis renseigner DATABASE_URL et NEXTAUTH_SECRET
-npx prisma migrate dev --name init
+cp .env.example .env   # renseigner DATABASE_URL
+npx prisma generate
+npx prisma db push
 npm run prisma:seed
 npm run dev
-```
-
-## Tests
-
-```bash
 npm test
 ```
 
-## Prochaines étapes (Phase 3)
+## Déploiement (Vercel + Neon, comme en Phase 2)
 
-- Import de la nomenclature CNAMGS depuis le PDF (extraction assistée +
-  relecture humaine obligatoire avant publication — voir Phase 1, section 5bis).
-- Saisie/vérification des établissements de Libreville (CHUL, CHUO, CHU
-  Jeanne Ebori...).
-- Association examens ↔ établissements avec tarifs (conventionné +
-  facturé le cas échéant) et statut de validation.
+Le script `vercel-build` exécute automatiquement `prisma db push` puis le seed à
+chaque déploiement — aucune commande manuelle nécessaire une fois les fichiers sur
+GitHub et les variables d'environnement configurées sur Vercel.
+
+## Prochaines étapes possibles
+
+- Sécuriser `/admin` (mot de passe ou vraie authentification).
+- Vérifier et compléter les coordonnées des établissements.
+- Étendre les synonymes à davantage d'actes (212/2690 actuellement).
+- Reprendre le système de paiement (Phase 6) quand vous serez prêt.
