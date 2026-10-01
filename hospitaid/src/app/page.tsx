@@ -1,47 +1,71 @@
+import Link from "next/link";
 import { prisma } from "@/lib/prisma";
 
 export const dynamic = "force-dynamic";
 
 export default async function Home() {
-  let lettresCount = 0;
-  let rulesCount = 0;
-  let facilitiesCount = 0;
-  let examsCount = 0;
+  let facilitiesCount = 0, examsCount = 0, verifiedCount = 0;
   let dbError: string | null = null;
-
   try {
-    lettresCount = await prisma.lettreCle.count();
-    rulesCount = await prisma.coverageRule.count();
-    facilitiesCount = await prisma.healthFacility.count();
-    examsCount = await prisma.exam.count();
+    [facilitiesCount, examsCount, verifiedCount] = await Promise.all([
+      prisma.healthFacility.count(),
+      prisma.exam.count(),
+      prisma.exam.count({ where: { status: "VERIFIE" } }),
+    ]);
   } catch (e) {
     dbError = e instanceof Error ? e.message : "Erreur de connexion à la base de données.";
   }
 
   return (
-    <main style={{ maxWidth: 480, margin: "0 auto", padding: "32px 20px", fontFamily: "system-ui, sans-serif" }}>
-      <h1 style={{ color: "#04578F", fontSize: 26, marginBottom: 4 }}>HospitAid</h1>
-      <p style={{ color: "#5B6672", marginTop: 0 }}>Parce que chaque patient compte.</p>
+    <main className="container">
+      <section className="hero">
+        <h1>Connaissez vos examens. Comprenez votre ticket modérateur.</h1>
+        <p>Choisissez vos examens, votre établissement et votre statut CNAMGS : voyez tout de suite ce qui reste à votre charge.</p>
+        <Link href="/simulateur" className="btn btn-white">Calculer mon ticket modérateur →</Link>
+      </section>
 
-      <div style={{ background: "#fff", border: "1px solid #E3E1DC", borderRadius: 12, padding: 18, marginTop: 20 }}>
-        <h2 style={{ fontSize: 16, marginTop: 0 }}>État du back-end (Phase 2-3)</h2>
-        {dbError ? (
-          <p style={{ color: "#E14547" }}>⚠️ Connexion à la base de données impossible : {dbError}</p>
-        ) : (
-          <>
-            <p style={{ margin: "6px 0" }}>✅ Application déployée avec succès</p>
-            <p style={{ margin: "6px 0" }}>✅ Connexion à la base de données OK</p>
-            <p style={{ margin: "6px 0" }}>✅ {lettresCount} lettres-clés chargées (Annexe 1 CNAMGS)</p>
-            <p style={{ margin: "6px 0" }}>✅ {rulesCount} règles de couverture par défaut chargées</p>
-            <p style={{ margin: "6px 0" }}>✅ {facilitiesCount} établissements chargés (non vérifiés)</p>
-            <p style={{ margin: "6px 0" }}>✅ {examsCount} actes de la nomenclature importés (à vérifier)</p>
-          </>
-        )}
+      <div className="tiles">
+        <Link href="/simulateur" className="tile"><span className="ic">🧮</span>Simulateur</Link>
+        <Link href="/etablissements" className="tile"><span className="ic">🏥</span>Établissements</Link>
+        <a href="#statuts" className="tile"><span className="ic">📋</span>Statuts</a>
       </div>
 
-      <p style={{ color: "#5B6672", fontSize: 13, marginTop: 20, lineHeight: 1.6 }}>
-        Les pages publiques (recherche, fiches examens, établissements) arrivent en Phase 4.
-      </p>
+      <section className="card" id="statuts">
+        <h2>Les statuts de prise en charge</h2>
+        <p className="muted" style={{ margin: "0 0 10px" }}>La part remboursée par la CNAMGS dépend de votre situation.</p>
+        <div className="stack">
+          {[
+            ["Exonéré", "Femme enceinte déclarée", "100 %"],
+            ["Plein", "Affection courante", "80 %"],
+            ["Plein — ALD", "Affection de longue durée", "90 %"],
+            ["PAF", "Particulier à ses frais (non assuré)", "0 %"],
+          ].map(([l, m, r]) => (
+            <div key={l} className="option" style={{ cursor: "default" }}>
+              <span>{l}<span className="meta">{m}</span></span>
+              <span className="badge">{r}</span>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {dbError ? (
+        <div className="notice">⚠️ Connexion à la base de données impossible : {dbError}</div>
+      ) : (
+        <section className="card">
+          <h2>Dans la base aujourd&apos;hui</h2>
+          <dl style={{ margin: "8px 0 0" }}>
+            <div className="spec-row"><dt>Actes de la nomenclature</dt><dd>{examsCount}</dd></div>
+            <div className="spec-row"><dt>dont vérifiés</dt><dd>{verifiedCount}</dd></div>
+            <div className="spec-row"><dt>Établissements</dt><dd>{facilitiesCount}</dd></div>
+          </dl>
+        </section>
+      )}
+
+      <div className="notice notice-blue">
+        Application en cours de validation : les tarifs et informations doivent être confirmés auprès
+        de l&apos;établissement et de la CNAMGS. Ils ne remplacent ni un avis médical ni une confirmation
+        administrative de prise en charge.
+      </div>
     </main>
   );
 }

@@ -15,19 +15,26 @@ Application de recherche d'examens médicaux et de tarifs CNAMGS pour Libreville
 - **Consultations et prestations forfaitaires** (`src/lib/tier-tariffs.ts`) : tarifs des
   Annexes 2 et 3 saisis en dur (consultations, accouchement, journées d'hospitalisation),
   car ils dépendent du niveau de l'établissement et non d'une lettre-clé.
-- **Espace admin minimal** (`/admin`) : marquer un acte ou un établissement comme
-  "Vérifié", ajouter un établissement. **Pas encore protégé par mot de passe** —
-  voir avertissement ci-dessous.
+- **Espace admin** (`/admin`, protégé par mot de passe) : marquer un acte ou un
+  établissement comme "Vérifié", ajouter un établissement.
+- **Interface aux couleurs du logo** (bleu, rouge, blanc), mobile d'abord, navigation
+  en bas d'écran ; le logo est dans `public/logo.jpg`.
 - **Moteur de calcul** déplacé dans `src/lib/pricing-core.ts` (fonctions pures), avec
   des tests qui reproduisent les valeurs exactes des tableaux des Annexes 2 et 3
   (secteur public et privé, y compris le dépassement d'honoraires).
 
-## ⚠️ Sécurité — à faire avant toute mise en production réelle
+## Sécurité de l'espace admin
 
-L'authentification (NextAuth, RBAC) a été retirée temporairement pour accélérer cette
-phase. **`/admin` est donc accessible à quiconque connaît l'URL.** Avant d'ouvrir
-l'application à de vrais patients ou d'y stocker des données sensibles, il faut
-réintroduire une protection (mot de passe admin au minimum) sur cette page.
+`/admin` est protégé par un mot de passe (`ADMIN_PASSWORD`) et une session signée
+(`ADMIN_SESSION_SECRET`, cookie HttpOnly valable 8 h). La protection est appliquée
+à deux niveaux : le middleware (`src/middleware.ts`) et chaque action serveur
+(`src/app/admin/actions.ts`). **Les deux variables doivent être définies sur Vercel**
+(Settings → Environment Variables), avec un mot de passe fort et un secret long et
+aléatoire (40 caractères ou plus), puis l'application redéployée.
+
+Limites connues : un seul mot de passe partagé (pas de comptes individuels), pas de
+limitation du nombre d'essais de connexion, pas de journal d'audit. À renforcer
+avant toute ouverture large au public.
 
 ## Installation locale
 
@@ -49,7 +56,8 @@ GitHub et les variables d'environnement configurées sur Vercel.
 
 ## Prochaines étapes possibles
 
-- Sécuriser `/admin` (mot de passe ou vraie authentification).
+- Comptes admin individuels + limitation des tentatives de connexion.
+- Pages légales (mentions légales, politique de confidentialité, contact).
 - Vérifier et compléter les coordonnées des établissements.
-- Étendre les synonymes à davantage d'actes (212/2690 actuellement).
+- Étendre les synonymes à davantage d'actes (256/2690 actuellement).
 - Reprendre le système de paiement (Phase 6) quand vous serez prêt.

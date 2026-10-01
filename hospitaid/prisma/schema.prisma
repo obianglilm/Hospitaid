@@ -65,6 +65,18 @@ enum FacilityStatus {
   ARCHIVED
 }
 
+// Niveau de tarification des consultations/prestations "autres" (Annexes 2 et 3
+// de la Nomenclature CNAMGS). Les actes techniques (lettre-clé × coefficient)
+// n'en dépendent pas — seules les consultations et prestations forfaitaires
+// (accouchement, journée d'hospitalisation...) varient selon ce niveau.
+enum PricingTier {
+  CHU_PUBLIC
+  HOPITAL_REGIONAL
+  CENTRE_SANTE
+  PRIVE_JOUR
+  PRIVE_NUIT
+}
+
 model FacilityType {
   id         String          @id @default(cuid())
   code       String          @unique // PUBLIC, PRIVATE, LAB, IMAGING, OTHER
@@ -78,6 +90,7 @@ model HealthFacility {
   shortName       String?
   typeId          String
   type            FacilityType   @relation(fields: [typeId], references: [id])
+  tier            PricingTier?   // niveau tarifaire pour consultations/prestations forfaitaires
   address         String?
   city            String         @default("Libreville")
   zone            String?
@@ -166,6 +179,7 @@ model Exam {
   lettreCleCode       String? // ex: "B", "KC" — pour les actes techniques uniquement
   lettreCle           LettreCle?        @relation(fields: [lettreCleCode], references: [code])
   coefficient         Int? // "cotation" du document — utilisé avec lettreCle.nationalValue
+  synonyms            String[]          @default([]) // noms courants / mots-clés pour la recherche publique
   status              ValidationStatus  @default(A_VERIFIER)
   nomenclatureVersion String?
   effectiveFrom       DateTime?
