@@ -51,8 +51,30 @@ model User {
   auditLogs      AuditLog[]
   notifications  Notification[]
   importJobs     ImportJob[]
+  simulations    SimulationRecord[]
 
   @@index([role])
+}
+
+// Historique des simulations d'un utilisateur connecté (supprimé avec le compte).
+model SimulationRecord {
+  id           String       @id @default(cuid())
+  userId       String
+  user         User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+  facilityName String
+  coverageType CoverageType
+  total        Int // total à charge du patient, en FCFA
+  lines        Json // [{ label, ok, ticket }]
+  createdAt    DateTime     @default(now())
+
+  @@index([userId, createdAt])
+}
+
+// Compteur d'échecs de connexion (limitation des tentatives, par IP + identifiant).
+model AuthThrottle {
+  key         String   @id
+  failures    Int
+  windowStart DateTime
 }
 
 // ─────────────────────────────────────────────────────────────
@@ -180,6 +202,9 @@ model Exam {
   lettreCle           LettreCle?        @relation(fields: [lettreCleCode], references: [code])
   coefficient         Int? // "cotation" du document — utilisé avec lettreCle.nationalValue
   synonyms            String[]          @default([]) // noms courants / mots-clés pour la recherche publique
+  displayName         String? // nom usuel affiché au public (le libellé officiel reste dans officialName)
+  namesEditedAt       DateTime? // renseigné quand un admin modifie nom usuel/synonymes : le seed n'y touche plus
+  searchText          String            @default("") // texte normalisé (sans accents/majuscules) pour la recherche
   status              ValidationStatus  @default(A_VERIFIER)
   nomenclatureVersion String?
   effectiveFrom       DateTime?

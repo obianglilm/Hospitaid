@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
 import SiteHeader from "@/components/site-header";
+import SiteFooter from "@/components/site-footer";
 import BottomNav from "@/components/bottom-nav";
 
 export const metadata: Metadata = {
@@ -30,6 +31,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body>
         <SiteHeader />
         {children}
+        <SiteFooter />
         <BottomNav />
       </body>
     </html>

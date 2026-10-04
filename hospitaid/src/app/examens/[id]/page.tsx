@@ -14,7 +14,8 @@ export default async function ExamDetailPage({ params }: { params: { id: string 
   return (
     <main className="container">
       <Link href="/simulateur" className="back-link">← Simulateur</Link>
-      <h1 className="page-title" style={{ fontSize: 21 }}>{exam.officialName}</h1>
+      <h1 className="page-title" style={{ fontSize: 21 }}>{exam.displayName ?? exam.officialName}</h1>
+      {exam.displayName && <p className="muted">Libellé officiel : {exam.officialName}</p>}
       <div style={{ margin: "6px 0 12px" }}>
         <span className={`badge ${exam.status === "VERIFIE" ? "badge-ok" : "badge-warn"}`}>
           {exam.status === "VERIFIE" ? "Vérifié" : "À vérifier"}

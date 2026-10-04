@@ -7,6 +7,7 @@ const ITEMS = [
   { href: "/", label: "Accueil", icon: "🏠" },
   { href: "/simulateur", label: "Simulateur", icon: "🧮" },
   { href: "/etablissements", label: "Établissements", icon: "🏥" },
+  { href: "/mon-compte", label: "Compte", icon: "👤" },
 ];
 
 export default function BottomNav() {
@@ -15,7 +16,12 @@ export default function BottomNav() {
   return (
     <nav className="bottom-nav" aria-label="Navigation principale">
       {ITEMS.map((i) => {
-        const active = i.href === "/" ? pathname === "/" : pathname.startsWith(i.href);
+        const isAccountTab = i.href === "/mon-compte";
+        const active = i.href === "/"
+          ? pathname === "/"
+          : isAccountTab
+            ? ["/mon-compte", "/connexion", "/inscription"].some((p) => pathname.startsWith(p))
+            : pathname.startsWith(i.href);
         return (
           <Link key={i.href} href={i.href} className={active ? "active" : ""}>
             <span className="ic">{i.icon}</span>

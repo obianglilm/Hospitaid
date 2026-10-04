@@ -3,7 +3,7 @@ import { prisma } from "@/lib/prisma";
 
 export const dynamic = "force-dynamic";
 
-export default async function Home() {
+export default async function Home({ searchParams }: { searchParams: { compte?: string } }) {
   let facilitiesCount = 0, examsCount = 0, verifiedCount = 0;
   let dbError: string | null = null;
   try {
@@ -18,6 +18,9 @@ export default async function Home() {
 
   return (
     <main className="container">
+      {searchParams.compte === "supprime" && (
+        <div className="notice notice-blue" role="status">Votre compte et votre historique ont été supprimés.</div>
+      )}
       <section className="hero">
         <h1>Connaissez vos examens. Comprenez votre ticket modérateur.</h1>
         <p>Choisissez vos examens, votre établissement et votre statut CNAMGS : voyez tout de suite ce qui reste à votre charge.</p>
@@ -27,7 +30,7 @@ export default async function Home() {
       <div className="tiles">
         <Link href="/simulateur" className="tile"><span className="ic">🧮</span>Simulateur</Link>
         <Link href="/etablissements" className="tile"><span className="ic">🏥</span>Établissements</Link>
-        <a href="#statuts" className="tile"><span className="ic">📋</span>Statuts</a>
+        <Link href="/mon-compte" className="tile"><span className="ic">👤</span>Mon compte</Link>
       </div>
 
       <section className="card" id="statuts">

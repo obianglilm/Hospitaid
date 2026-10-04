@@ -1,5 +1,6 @@
 import { PrismaClient } from "@prisma/client";
 import nomenclatureActes from "./data/nomenclature-actes.json";
+import { buildSearchText } from "../src/lib/names-core";
 
 const prisma = new PrismaClient();
 
@@ -211,6 +212,7 @@ async function main() {
           lettreCleCode: a.letterCode,
           coefficient: a.coefficient,
           synonyms: a.synonyms ?? [],
+          searchText: buildSearchText({ officialName: a.label, synonyms: a.synonyms ?? [], code: a.code }),
           status: "A_VERIFIER" as const,
           nomenclatureVersion: NOMENCLATURE_VERSION,
         })),
@@ -220,7 +222,7 @@ async function main() {
     console.log(`  ${actes.length} actes importés (statut: à vérifier).`);
   }
 
-  console.log("Seed : synchronisation des synonymes (mise à jour légère, à chaque déploiement)...");
+  console.log("Seed : synchronisation des synonymes (sans écraser les modifications faites par un admin)...");
   {
     type ActeRow = { chapter: string; code: string; label: string; letterCode: string; coefficient: number; synonyms: string[] };
     const actesWithSynonyms = (nomenclatureActes as ActeRow[]).filter((a) => a.synonyms?.length > 0);
@@ -228,16 +230,64 @@ async function main() {
     for (const a of actesWithSynonyms) {
       const nc = await prisma.nomenclatureCode.findFirst({ where: { code: a.code }, select: { id: true } });
       if (!nc) continue;
-      const exam = await prisma.exam.findFirst({ where: { nomenclatureCodeId: nc.id }, select: { id: true, synonyms: true } });
-      if (!exam) continue;
+      const exam = await prisma.exam.findFirst({
+        where: { nomenclatureCodeId: nc.id },
+        select: { id: true, officialName: true, displayName: true, synonyms: true, namesEditedAt: true },
+      });
+      if (!exam || exam.namesEditedAt) continue; // édité à la main : on n'y touche plus
       const same =
-        exam.synonyms.length === a.synonyms.length && exam.synonyms.every((s, i) => s === a.synonyms[i]);
+        exam.synonyms.length === a.synonyms.length && exam.synonyms.every((syn, i) => syn === a.synonyms[i]);
       if (!same) {
-        await prisma.exam.update({ where: { id: exam.id }, data: { synonyms: a.synonyms } });
+        await prisma.exam.update({
+          where: { id: exam.id },
+          data: {
+            synonyms: a.synonyms,
+            searchText: buildSearchText({
+              officialName: exam.officialName,
+              displayName: exam.displayName,
+              synonyms: a.synonyms,
+              code: a.code,
+            }),
+          },
+        });
         updated++;
       }
     }
-    console.log(`  ${updated} actes mis à jour avec de nouveaux synonymes (sur ${actesWithSynonyms.length} concernés).`);
+    console.log(`  ${updated} actes mis à jour (sur ${actesWithSynonyms.length} concernés).`);
+  }
+
+  console.log("Seed : index de recherche (rattrapage des actes sans texte de recherche)...");
+  {
+    const pending = await prisma.exam.findMany({
+      where: { searchText: "" },
+      select: {
+        id: true,
+        officialName: true,
+        displayName: true,
+        synonyms: true,
+        nomenclatureCode: { select: { code: true } },
+      },
+    });
+    const BATCH = 100;
+    for (let i = 0; i < pending.length; i += BATCH) {
+      const slice = pending.slice(i, i + BATCH);
+      await prisma.$transaction(
+        slice.map((e) =>
+          prisma.exam.update({
+            where: { id: e.id },
+            data: {
+              searchText: buildSearchText({
+                officialName: e.officialName,
+                displayName: e.displayName,
+                synonyms: e.synonyms,
+                code: e.nomenclatureCode?.code ?? null,
+              }),
+            },
+          })
+        )
+      );
+    }
+    console.log(`  ${pending.length} actes indexés.`);
   }
 
   console.log("Seed terminé.");

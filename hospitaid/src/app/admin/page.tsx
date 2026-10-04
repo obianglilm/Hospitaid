@@ -23,6 +23,11 @@ export default async function AdminPage() {
       <h1 className="page-title">Espace admin</h1>
       <p className="page-sub">{verifiedCount} / {examCount} actes marqués « Vérifié ».</p>
 
+      <Link href="/admin/examens" className="option" style={{ marginBottom: 12 }}>
+        <span>Noms des examens<span className="meta">Rendre les noms plus usuels, ajouter des mots-clés de recherche</span></span>
+        <span className="badge">Modifier →</span>
+      </Link>
+
       <section className="card">
         <h2>Établissements</h2>
         <div className="stack" style={{ marginTop: 10 }}>

@@ -9,7 +9,7 @@ type Selected = { key: string; kind: "exam" | "consultation"; id?: string; code?
 type Facility = { id: string; name: string; tier: string | null };
 type StatusId = "EXONERE" | "PLEIN" | "PLEIN_ALD" | "PAF";
 type PriceLine = { label: string; ok: boolean; reason?: string; ticket?: number };
-type PriceResult = { error?: string; lines?: PriceLine[]; total?: number; facility?: { name: string } };
+type PriceResult = { error?: string; lines?: PriceLine[]; total?: number; saved?: boolean; facility?: { name: string } };
 
 const STATUSES: { id: StatusId; label: string; meta: string; rate: number }[] = [
   { id: "EXONERE", label: "Exonéré", meta: "Femme enceinte déclarée", rate: 100 },
@@ -22,13 +22,21 @@ function money(n: number) {
   return Math.round(n).toString().replace(/\B(?=(\d{3})+(?!\d))/g, "\u202F") + " FCFA";
 }
 
-export default function SimulatorApp({ facilities }: { facilities: Facility[] }) {
+export default function SimulatorApp({
+  facilities,
+  defaultStatus,
+  loggedIn,
+}: {
+  facilities: Facility[];
+  defaultStatus: StatusId | null;
+  loggedIn: boolean;
+}) {
   const [step, setStep] = useState<1 | 2 | 3 | 4>(1);
   const [query, setQuery] = useState("");
   const [results, setResults] = useState<SearchResult[]>([]);
   const [selected, setSelected] = useState<Selected[]>([]);
   const [facilityId, setFacilityId] = useState<string | null>(null);
-  const [status, setStatus] = useState<StatusId | null>(null);
+  const [status, setStatus] = useState<StatusId | null>(defaultStatus);
   const [priceResult, setPriceResult] = useState<PriceResult | null>(null);
   const [isPending, startTransition] = useTransition();
 
@@ -84,7 +92,7 @@ export default function SimulatorApp({ facilities }: { facilities: Facility[] })
   }
 
   function reset() {
-    setStep(1); setSelected([]); setFacilityId(null); setStatus(null); setPriceResult(null); setQuery(""); setResults([]);
+    setStep(1); setSelected([]); setFacilityId(null); setStatus(defaultStatus); setPriceResult(null); setQuery(""); setResults([]);
   }
 
   return (
@@ -185,6 +193,13 @@ export default function SimulatorApp({ facilities }: { facilities: Facility[] })
             Ces informations proviennent de données en cours de vérification et ne remplacent pas une
             confirmation auprès de l&apos;établissement ou de la CNAMGS.
           </div>
+          {loggedIn ? (
+            priceResult.saved && <p className="muted">Cette simulation est enregistrée dans votre historique (Mon compte).</p>
+          ) : (
+            <p className="muted">
+              Envie de garder l&apos;historique de vos simulations ? <a href="/inscription" style={{ color: "#0577BE" }}>Créez votre profil</a>.
+            </p>
+          )}
           <button className="btn btn-primary btn-block" onClick={reset}>Nouvelle simulation</button>
         </section>
       )}

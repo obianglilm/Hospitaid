@@ -1,4 +1,4 @@
-# HospitAid — Phase 4 (application réelle, sans paiement)
+# HospitAid — application réelle (sans paiement)
 
 Application de recherche d'examens médicaux et de tarifs CNAMGS pour Libreville, Gabon.
 
@@ -23,18 +23,39 @@ Application de recherche d'examens médicaux et de tarifs CNAMGS pour Libreville
   des tests qui reproduisent les valeurs exactes des tableaux des Annexes 2 et 3
   (secteur public et privé, y compris le dépassement d'honoraires).
 
-## Sécurité de l'espace admin
+## Comptes utilisateurs
 
-`/admin` est protégé par un mot de passe (`ADMIN_PASSWORD`) et une session signée
-(`ADMIN_SESSION_SECRET`, cookie HttpOnly valable 8 h). La protection est appliquée
-à deux niveaux : le middleware (`src/middleware.ts`) et chaque action serveur
-(`src/app/admin/actions.ts`). **Les deux variables doivent être définies sur Vercel**
-(Settings → Environment Variables), avec un mot de passe fort et un secret long et
-aléatoire (40 caractères ou plus), puis l'application redéployée.
+- Inscription (`/inscription`), connexion (`/connexion`), profil et historique (`/mon-compte`).
+- Données conservées : e-mail, nom et statut CNAMGS habituel (facultatifs), historique des
+  simulations. Aucune donnée médicale. Suppression du compte et de l'historique par
+  l'utilisateur lui-même (`/mon-compte`).
+- Mots de passe : PBKDF2-SHA256 (600 000 itérations, sel aléatoire), jamais stockés en clair.
+- Session : cookie HttpOnly signé (HMAC), 14 jours. Un jeton utilisateur n'ouvre pas l'admin.
+- Limitation des tentatives : 5 échecs par 15 minutes (par adresse IP + e-mail ; par IP pour l'admin).
+- `/confidentialite` : texte **provisoire** décrivant ce que fait l'application, à faire
+  valider par un juriste avant ouverture au public.
 
-Limites connues : un seul mot de passe partagé (pas de comptes individuels), pas de
-limitation du nombre d'essais de connexion, pas de journal d'audit. À renforcer
-avant toute ouverture large au public.
+## Espace admin
+
+`/admin` est protégé par un mot de passe (`ADMIN_PASSWORD`) et une session signée de 8 h
+(`ADMIN_SESSION_SECRET`), au niveau du middleware ET de chaque action serveur. Il est
+accessible depuis le pied de page (« Espace administrateur ») et depuis la page de connexion.
+
+- **Noms des examens** (`/admin/examens`) : nom usuel et mots-clés de chaque acte et de
+  chaque consultation/prestation. Le libellé officiel n'est jamais modifié. Chaque
+  modification est enregistrée dans `AuditLog` (avant/après). Le seed ne remplace
+  jamais un acte déjà édité à la main (`namesEditedAt`).
+- Validation des actes et des établissements, ajout d'un établissement.
+
+Limites connues : un seul mot de passe admin partagé (pas de comptes admin individuels),
+pas d'authentification à deux facteurs, pas de récupération de mot de passe par e-mail pour
+les utilisateurs, pas de limitation sur la création de comptes.
+
+## Recherche
+
+Insensible aux accents et à la casse (« glycemie » = « Glycémie »), tous les mots saisis
+doivent être présents dans le nom officiel, le nom usuel, les mots-clés ou le code. Colonne
+`Exam.searchText`, maintenue par le seed et par l'admin.
 
 ## Installation locale
 
@@ -56,8 +77,8 @@ GitHub et les variables d'environnement configurées sur Vercel.
 
 ## Prochaines étapes possibles
 
-- Comptes admin individuels + limitation des tentatives de connexion.
-- Pages légales (mentions légales, politique de confidentialité, contact).
+- Comptes admin individuels, récupération de mot de passe par e-mail.
+- Mentions légales et contact de l'éditeur (informations à fournir), validation juridique de la politique de confidentialité.
 - Vérifier et compléter les coordonnées des établissements.
 - Étendre les synonymes à davantage d'actes (256/2690 actuellement).
 - Reprendre le système de paiement (Phase 6) quand vous serez prêt.

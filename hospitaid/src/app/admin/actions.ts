@@ -2,8 +2,14 @@
 
 import { prisma } from "@/lib/prisma";
 import { revalidatePath } from "next/cache";
+import type { Prisma } from "@prisma/client";
 import { cookies } from "next/headers";
 import { ADMIN_COOKIE_NAME, verifySessionToken } from "@/lib/admin-auth";
+import { buildSearchText, cleanDisplayName, parseSynonyms } from "@/lib/names-core";
+import { CONSULTATIONS } from "@/lib/tier-tariffs";
+import { CONSULTATION_OVERRIDES_KEY, parseOverrides, type ConsultationOverrides } from "@/lib/consultation-core";
+
+const asJson = (v: unknown) => v as Prisma.InputJsonObject;
 
 // Défense en profondeur : même si le middleware protège déjà /admin, chaque
 // action re-vérifie la session côté serveur avant de toucher à la base.
@@ -55,4 +61,78 @@ export async function addFacility(formData: FormData) {
   });
   revalidatePath("/admin");
   revalidatePath("/etablissements");
+}
+
+/** Modifie le nom usuel et les synonymes d'un acte (le libellé officiel n'est jamais modifié). */
+export async function updateExamNames(formData: FormData) {
+  await requireAdmin();
+  const examId = String(formData.get("examId") ?? "");
+  if (!examId) return;
+  const displayName = cleanDisplayName(String(formData.get("displayName") ?? ""));
+  const synonyms = parseSynonyms(String(formData.get("synonyms") ?? ""));
+
+  const before = await prisma.exam.findUnique({
+    where: { id: examId },
+    select: { officialName: true, displayName: true, synonyms: true, nomenclatureCode: { select: { code: true } } },
+  });
+  if (!before) return;
+
+  await prisma.exam.update({
+    where: { id: examId },
+    data: {
+      displayName,
+      synonyms,
+      namesEditedAt: new Date(),
+      searchText: buildSearchText({
+        officialName: before.officialName,
+        displayName,
+        synonyms,
+        code: before.nomenclatureCode?.code ?? null,
+      }),
+    },
+  });
+  // Traçabilité : qui (admin), quoi, avant/après.
+  await prisma.auditLog.create({
+    data: {
+      action: "EXAM_NAMES_UPDATE",
+      entityType: "Exam",
+      entityId: examId,
+      before: { displayName: before.displayName, synonyms: before.synonyms },
+      after: { displayName, synonyms },
+    },
+  });
+  revalidatePath("/admin/examens");
+  revalidatePath("/simulateur");
+}
+
+/** Modifie le nom usuel et les synonymes d'une consultation / prestation forfaitaire. */
+export async function updateConsultationNames(formData: FormData) {
+  await requireAdmin();
+  const code = String(formData.get("code") ?? "");
+  const def = CONSULTATIONS.find((c) => c.code === code);
+  if (!def) return;
+  const label = cleanDisplayName(String(formData.get("label") ?? ""));
+  const synonyms = parseSynonyms(String(formData.get("synonyms") ?? ""));
+
+  const row = await prisma.systemSetting.findUnique({ where: { key: CONSULTATION_OVERRIDES_KEY } });
+  const overrides: ConsultationOverrides = parseOverrides(row?.value);
+  const before = overrides[code] ?? null;
+  overrides[code] = { ...(label ? { label } : {}), synonyms };
+
+  await prisma.systemSetting.upsert({
+    where: { key: CONSULTATION_OVERRIDES_KEY },
+    create: { key: CONSULTATION_OVERRIDES_KEY, value: asJson(overrides) },
+    update: { value: asJson(overrides) },
+  });
+  await prisma.auditLog.create({
+    data: {
+      action: "CONSULTATION_NAMES_UPDATE",
+      entityType: "Consultation",
+      entityId: code,
+      before: before ? asJson(before) : undefined,
+      after: asJson(overrides[code] ?? {}),
+    },
+  });
+  revalidatePath("/admin/examens");
+  revalidatePath("/simulateur");
 }
