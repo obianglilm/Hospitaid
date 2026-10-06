@@ -25,15 +25,46 @@ Application de recherche d'examens médicaux et de tarifs CNAMGS pour Libreville
 
 ## Comptes utilisateurs
 
-- Inscription (`/inscription`), connexion (`/connexion`), profil et historique (`/mon-compte`).
-- Données conservées : e-mail, nom et statut CNAMGS habituel (facultatifs), historique des
-  simulations. Aucune donnée médicale. Suppression du compte et de l'historique par
-  l'utilisateur lui-même (`/mon-compte`).
-- Mots de passe : PBKDF2-SHA256 (600 000 itérations, sel aléatoire), jamais stockés en clair.
-- Session : cookie HttpOnly signé (HMAC), 14 jours. Un jeton utilisateur n'ouvre pas l'admin.
-- Limitation des tentatives : 5 échecs par 15 minutes (par adresse IP + e-mail ; par IP pour l'admin).
-- `/confidentialite` : texte **provisoire** décrivant ce que fait l'application, à faire
-  valider par un juriste avant ouverture au public.
+- Inscription avec un **identifiant** et un mot de passe (pas d'e-mail demandé). Le mot de passe
+  peut être une date de naissance (6 caractères minimum ; seuls les mots de passe triviaux
+  sont refusés). Les anciens comptes créés avec un e-mail peuvent toujours se connecter avec.
+- Connexion (`/connexion`), profil et historique (`/mon-compte`), changement de mot de passe.
+- **Mot de passe oublié** : pas d'e-mail de récupération. L'admin attribue un mot de passe
+  provisoire (`/admin/utilisateurs`) après avoir vérifié l'identité de la personne.
+- Données conservées : identifiant, nom et statut CNAMGS habituel (facultatifs), historique
+  des simulations. Aucune donnée médicale. Suppression du compte par l'utilisateur lui-même.
+- Mots de passe : PBKDF2-SHA256 (600 000 itérations, sel aléatoire). Session : cookie
+  HttpOnly signé (HMAC), 14 jours. 5 échecs de connexion par 15 minutes (IP + identifiant).
+- Limite assumée : un mot de passe court ou une date de naissance se devine facilement
+  par un proche, et se retrouve vite si la base fuitait. À réévaluer si des données plus
+  sensibles sont ajoutées.
+- `/confidentialite` : texte **provisoire**, à faire valider par un juriste.
+
+## PDF de simulation
+
+Bouton « Télécharger en PDF » sous le résultat (`/api/pdf`). Le serveur recalcule la simulation
+(il ne fait pas confiance aux montants du navigateur) puis génère un PDF A4 : logo et
+coordonnées HospitAid, patient (nom, identifiant, statut), établissement, tableau
+(tarif facturé / pris en charge / à charge), totaux, mentions. Générateur maison sans dépendance
+(`src/lib/pdf-writer.ts`, mise en page `src/lib/pdf-report.ts`). Les coordonnées de HospitAid se
+modifient dans `/admin/parametres`.
+
+## Règles de prix
+
+- **Tarif conventionné** : nomenclature (lettre-clé × coefficient) ou barèmes des Annexes 2 et 3.
+- **Soins infirmiers (AMI) non pris en charge** : le patient paie la totalité, quel que soit son
+  statut. Configurable dans `/admin/parametres` (lettres-clés et prestations exclues).
+- **Marge d'établissement** (`/admin/prix`) : % ajouté au prix facturé de l'établissement ;
+  la part CNAMGS ne change pas, le supplément reste à la charge du patient.
+- **Ajustement d'une prestation** : prix facturé exact et/ou tarif conventionné corrigé, pour
+  un établissement ou pour tous (nécessaire pour les actes Rd/Rt dont la valeur de lettre-clé
+  n'est pas connue). Chaque modification est tracée dans `AuditLog`.
+
+## Partenaires et annonces
+
+`/admin/annonces` : encarts partenaires (accueil et sous le résultat d'une simulation, toujours
+étiquetés « Partenaire ») et bande d'annonces défilante en bas de chaque page. Dates de début et
+de fin facultatives, ordre d'affichage, activation. Seuls les liens `https://` sont acceptés.
 
 ## Espace admin
 
@@ -45,11 +76,11 @@ accessible depuis le pied de page (« Espace administrateur ») et depuis la pag
   chaque consultation/prestation. Le libellé officiel n'est jamais modifié. Chaque
   modification est enregistrée dans `AuditLog` (avant/après). Le seed ne remplace
   jamais un acte déjà édité à la main (`namesEditedAt`).
-- Validation des actes et des établissements, ajout d'un établissement.
+- Validation des actes et des établissements, ajout d'un établissement, utilisateurs, prix et marges, paramètres, partenaires et annonces.
 
 Limites connues : un seul mot de passe admin partagé (pas de comptes admin individuels),
-pas d'authentification à deux facteurs, pas de récupération de mot de passe par e-mail pour
-les utilisateurs, pas de limitation sur la création de comptes.
+pas d'authentification à deux facteurs, pas de limitation sur la création de comptes, images des partenaires hébergées chez eux
+(leur adresse est contactée par le navigateur du visiteur).
 
 ## Recherche
 

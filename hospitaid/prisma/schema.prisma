@@ -34,7 +34,8 @@ enum CoverageType {
 
 model User {
   id                  String   @id @default(cuid())
-  email               String   @unique
+  username            String?  @unique // identifiant de connexion (minuscules, sans accents)
+  email               String?  @unique // facultatif : plus demandé à l'inscription (comptes anciens)
   passwordHash        String
   fullName            String?
   phone               String?
@@ -113,6 +114,7 @@ model HealthFacility {
   typeId          String
   type            FacilityType   @relation(fields: [typeId], references: [id])
   tier            PricingTier?   // niveau tarifaire pour consultations/prestations forfaitaires
+  marginPercent   Int            @default(0) // marge de l'établissement sur le tarif facturé (en %)
   address         String?
   city            String         @default("Libreville")
   zone            String?
@@ -454,4 +456,46 @@ model SystemSetting {
   value     Json
   updatedBy String?
   updatedAt DateTime @updatedAt
+}
+
+// Ajustement de prix décidé par l'admin pour une prestation (acte ou consultation).
+// scope = "ALL" (tous les établissements) ou l'identifiant d'un établissement.
+// referenceAmount : corrige/complète le tarif conventionné ; billedAmount : prix facturé exact.
+model PriceOverride {
+  id              String   @id @default(cuid())
+  scope           String
+  kind            String // "EXAM" | "CONSULTATION"
+  targetKey       String // id de l'acte, ou code de la consultation
+  referenceAmount Int?
+  billedAmount    Int?
+  updatedAt       DateTime @updatedAt
+
+  @@unique([scope, kind, targetKey])
+}
+
+// Encart partenaire (espace publicitaire), géré par l'admin.
+model Partner {
+  id        String    @id @default(cuid())
+  name      String
+  title     String
+  text      String
+  imageUrl  String?
+  linkUrl   String?
+  active    Boolean   @default(true)
+  sortOrder Int       @default(0)
+  startsAt  DateTime?
+  endsAt    DateTime?
+  createdAt DateTime  @default(now())
+}
+
+// Message de la bande d'annonces défilante, géré par l'admin.
+model Announcement {
+  id        String    @id @default(cuid())
+  text      String
+  linkUrl   String?
+  active    Boolean   @default(true)
+  sortOrder Int       @default(0)
+  startsAt  DateTime?
+  endsAt    DateTime?
+  createdAt DateTime  @default(now())
 }

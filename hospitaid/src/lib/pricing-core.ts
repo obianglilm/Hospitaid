@@ -92,6 +92,7 @@ export type PriceLine =
       coveredAmount: number;
       ticket: number;
       ratePercent: number;
+      notCovered: boolean;
     }
   | { ok: false; reason: string };
 
@@ -106,15 +107,17 @@ export function priceLine(params: {
   status: CoverageType;
   rates: Record<CoverageType, number>;
   coveredStatuses?: string[];
+  /** Prestation exclue de la prise en charge CNAMGS (ex. soins infirmiers) : le patient paie tout. */
+  notCovered?: boolean;
 }): PriceLine {
-  const { referenceAmount, billedAmount, status, rates, coveredStatuses } = params;
-  if (status !== "PAF" && coveredStatuses && coveredStatuses.length > 0 && !coveredStatuses.includes(status)) {
+  const { referenceAmount, billedAmount, status, rates, coveredStatuses, notCovered = false } = params;
+  if (!notCovered && status !== "PAF" && coveredStatuses && coveredStatuses.length > 0 && !coveredStatuses.includes(status)) {
     return {
       ok: false,
       reason: "Prise en charge non prévue au barème pour ce statut — se renseigner auprès de la CNAMGS.",
     };
   }
-  const ratePercent = rates[status];
+  const ratePercent = notCovered ? 0 : rates[status];
   const { amountCoveredByCnamgs, ticketModerateur } = calculateTicketModerateur({
     referenceAmount,
     facilityBilledAmount: billedAmount,
@@ -127,5 +130,6 @@ export function priceLine(params: {
     coveredAmount: amountCoveredByCnamgs,
     ticket: ticketModerateur,
     ratePercent,
+    notCovered,
   };
 }

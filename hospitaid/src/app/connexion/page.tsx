@@ -5,7 +5,7 @@ import { getCurrentUserId } from "@/lib/current-user";
 import { safeNextPath } from "@/lib/account-core";
 
 const ERRORS: Record<string, string> = {
-  invalid: "E-mail ou mot de passe incorrect.",
+  invalid: "Identifiant ou mot de passe incorrect.",
   throttled: "Trop de tentatives. Patientez 15 minutes avant de réessayer.",
 };
 
@@ -21,8 +21,9 @@ export default async function ConnexionPage({ searchParams }: { searchParams: { 
       <form action={login} className="card stack">
         <input type="hidden" name="next" value={next} />
         <div className="field">
-          <label htmlFor="email">E-mail</label>
-          <input className="input" id="email" name="email" type="email" required autoComplete="email" />
+          <label htmlFor="identifier">Identifiant</label>
+          <input className="input" id="identifier" name="identifier" type="text" required autoComplete="username"
+            autoCapitalize="none" autoCorrect="off" placeholder="ex. marie.ndong" />
         </div>
         <div className="field">
           <label htmlFor="password">Mot de passe</label>

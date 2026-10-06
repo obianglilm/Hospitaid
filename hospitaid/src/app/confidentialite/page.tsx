@@ -11,8 +11,8 @@ export default function ConfidentialitePage() {
       <section className="card">
         <h2>Ce que nous conservons</h2>
         <p className="muted">
-          Sans compte : rien n&apos;est enregistré à votre sujet. Avec un compte : votre e-mail, votre nom et votre
-          statut CNAMGS habituel (facultatifs), et l&apos;historique de vos simulations (examens choisis,
+          Sans compte : rien n&apos;est enregistré à votre sujet. Avec un compte : votre identifiant, votre nom et votre
+          statut CNAMGS habituel (le nom et le statut sont facultatifs), et l&apos;historique de vos simulations (examens choisis,
           établissement, statut, montant). Aucune donnée médicale (diagnostic, ordonnance, résultat) n&apos;est
           demandée. Votre mot de passe n&apos;est jamais stocké en clair : seule une empreinte irréversible est conservée.
         </p>
@@ -36,14 +36,15 @@ export default function ConfidentialitePage() {
         <p className="muted">
           L&apos;application est hébergée par Vercel et la base de données par Neon, dans la région
           américaine « us-east-2 » (hors du Gabon). Les polices de caractères sont chargées depuis Google Fonts.
-          Un cookie de session, strictement nécessaire à la connexion, est utilisé ; aucun traceur publicitaire.
+          Un cookie de session, strictement nécessaire à la connexion, est utilisé. Les encarts « partenaires » peuvent charger une image depuis le site du partenaire et mènent vers des sites tiers ; aucun traceur publicitaire n&apos;est installé par HospitAid.
         </p>
       </section>
       <section className="card">
         <h2>Vos droits et contact</h2>
         <p className="muted">
-          Suppression : directement depuis « Mon compte ». Pour toute demande d&apos;accès ou de rectification, le
-          contact de l&apos;éditeur sera indiqué ici avant l&apos;ouverture publique.
+          Suppression : directement depuis « Mon compte ». Mot de passe oublié : il n&apos;y a pas d&apos;e-mail de récupération ; l&apos;équipe HospitAid peut vous en attribuer un
+          nouveau après vérification de votre identité. Pour toute demande d&apos;accès ou de rectification, le contact
+          de l&apos;éditeur sera indiqué ici avant l&apos;ouverture publique.
         </p>
       </section>
     </main>

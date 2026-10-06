@@ -4,7 +4,7 @@ import { prisma } from "@/lib/prisma";
 import { getCurrentUser } from "@/lib/current-user";
 import { COVERAGE_LABELS, formatFcfa, type CoverageType } from "@/lib/pricing-core";
 import { summarizeLines } from "@/lib/account-core";
-import { clearHistory, deleteAccount, logout, updateProfile } from "./actions";
+import { changePassword, clearHistory, deleteAccount, logout, updateProfile } from "./actions";
 
 export const dynamic = "force-dynamic";
 
@@ -24,9 +24,12 @@ export default async function MonComptePage({ searchParams }: { searchParams: { 
   return (
     <main className="container">
       <h1 className="page-title">Bonjour{user.fullName ? ` ${user.fullName}` : ""}</h1>
-      <p className="page-sub">{user.email}</p>
+      <p className="page-sub">Identifiant : <strong>{user.username ?? user.email}</strong></p>
 
-      {searchParams.saved && <div className="notice notice-blue" role="status">Profil enregistré.</div>}
+      {searchParams.saved === "pw" && <div className="notice notice-blue" role="status">Mot de passe modifié.</div>}
+      {searchParams.saved && searchParams.saved !== "pw" && <div className="notice notice-blue" role="status">Profil enregistré.</div>}
+      {searchParams.error === "pwwrong" && <div className="notice" role="alert">Le mot de passe actuel est incorrect.</div>}
+      {searchParams.error === "pwweak" && <div className="notice" role="alert">Nouveau mot de passe refusé : 6 caractères minimum, pas trop courant.</div>}
       {searchParams.cleared && <div className="notice notice-blue" role="status">Historique supprimé.</div>}
       {searchParams.error === "confirm" && <div className="notice" role="alert">Tapez SUPPRIMER pour confirmer la suppression du compte.</div>}
       {searchParams.error === "delete" && <div className="notice" role="alert">La suppression a échoué. Contactez-nous pour la finaliser.</div>}
@@ -49,6 +52,23 @@ export default async function MonComptePage({ searchParams }: { searchParams: { 
           </div>
           <button className="btn btn-primary btn-block">Enregistrer</button>
         </form>
+      </section>
+
+      <section className="card">
+        <details>
+          <summary style={{ cursor: "pointer", fontWeight: 600 }}>Changer mon mot de passe</summary>
+          <form action={changePassword} className="stack" style={{ marginTop: 10 }}>
+            <div className="field">
+              <label htmlFor="currentPassword">Mot de passe actuel</label>
+              <input className="input" id="currentPassword" name="currentPassword" type="password" required autoComplete="current-password" />
+            </div>
+            <div className="field">
+              <label htmlFor="newPassword">Nouveau mot de passe</label>
+              <input className="input" id="newPassword" name="newPassword" type="password" required minLength={6} autoComplete="new-password" />
+            </div>
+            <button className="btn btn-primary btn-block">Modifier</button>
+          </form>
+        </details>
       </section>
 
       <section className="card">

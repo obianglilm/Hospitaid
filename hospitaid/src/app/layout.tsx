@@ -4,6 +4,8 @@ import type { ReactNode } from "react";
 import SiteHeader from "@/components/site-header";
 import SiteFooter from "@/components/site-footer";
 import BottomNav from "@/components/bottom-nav";
+import Ticker from "@/components/ticker";
+import { getActiveAnnouncements } from "@/lib/ads";
 
 export const metadata: Metadata = {
   title: "HospitAid — Parce que chaque patient compte",
@@ -17,7 +19,8 @@ export const viewport: Viewport = {
   themeColor: "#0577BE",
 };
 
-export default function RootLayout({ children }: { children: ReactNode }) {
+export default async function RootLayout({ children }: { children: ReactNode }) {
+  const announcements = await getActiveAnnouncements();
   return (
     <html lang="fr">
       <head>
@@ -28,10 +31,11 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           rel="stylesheet"
         />
       </head>
-      <body>
+      <body className={announcements.length > 0 ? "has-ticker" : undefined}>
         <SiteHeader />
         {children}
         <SiteFooter />
+        <Ticker items={announcements} />
         <BottomNav />
       </body>
     </html>

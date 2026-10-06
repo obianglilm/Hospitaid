@@ -1,11 +1,12 @@
 import { prisma } from "@/lib/prisma";
 import SimulatorApp from "@/components/simulator-app";
 import { getCurrentUser } from "@/lib/current-user";
+import { getActivePartners } from "@/lib/ads";
 
 export const dynamic = "force-dynamic";
 
 export default async function SimulateurPage() {
-  const user = await getCurrentUser();
+  const [user, partners] = await Promise.all([getCurrentUser(), getActivePartners(2)]);
   const facilities = await prisma.healthFacility.findMany({
     where: { status: "ACTIVE" },
     select: { id: true, name: true, tier: true },
@@ -19,7 +20,13 @@ export default async function SimulateurPage() {
       {facilities.length === 0 ? (
         <div className="notice">Aucun établissement disponible pour l&apos;instant.</div>
       ) : (
-        <SimulatorApp facilities={facilities} defaultStatus={user?.defaultCoverageType ?? null} loggedIn={!!user} />
+        <SimulatorApp
+          facilities={facilities}
+          defaultStatus={user?.defaultCoverageType ?? null}
+          loggedIn={!!user}
+          patientName={user?.fullName ?? ""}
+          partners={partners}
+        />
       )}
     </main>
   );

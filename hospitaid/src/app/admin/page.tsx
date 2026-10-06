@@ -23,10 +23,28 @@ export default async function AdminPage() {
       <h1 className="page-title">Espace admin</h1>
       <p className="page-sub">{verifiedCount} / {examCount} actes marqués « Vérifié ».</p>
 
-      <Link href="/admin/examens" className="option" style={{ marginBottom: 12 }}>
-        <span>Noms des examens<span className="meta">Rendre les noms plus usuels, ajouter des mots-clés de recherche</span></span>
-        <span className="badge">Modifier →</span>
-      </Link>
+      <div className="stack" style={{ marginBottom: 12 }}>
+        <Link href="/admin/examens" className="option">
+          <span>Noms des examens<span className="meta">Noms plus usuels et mots-clés de recherche</span></span>
+          <span className="badge">Modifier →</span>
+        </Link>
+        <Link href="/admin/prix" className="option">
+          <span>Prix et marges<span className="meta">Marge de chaque établissement, ajustement d&apos;un prix</span></span>
+          <span className="badge">Modifier →</span>
+        </Link>
+        <Link href="/admin/annonces" className="option">
+          <span>Partenaires et annonces<span className="meta">Encarts publicitaires et bande défilante</span></span>
+          <span className="badge">Modifier →</span>
+        </Link>
+        <Link href="/admin/utilisateurs" className="option">
+          <span>Utilisateurs<span className="meta">Réinitialiser un mot de passe oublié</span></span>
+          <span className="badge">Ouvrir →</span>
+        </Link>
+        <Link href="/admin/parametres" className="option">
+          <span>Paramètres<span className="meta">Prestations non remboursées (AMI), coordonnées pour les PDF</span></span>
+          <span className="badge">Ouvrir →</span>
+        </Link>
+      </div>
 
       <section className="card">
         <h2>Établissements</h2>

@@ -7,6 +7,7 @@ import { prisma } from "@/lib/prisma";
 import { getCurrentUserId } from "@/lib/current-user";
 import { USER_COOKIE_NAME } from "@/lib/user-session";
 import { cleanName, parseCoverage } from "@/lib/account-core";
+import { hashPassword, passwordProblem, verifyPassword } from "@/lib/password";
 
 async function requireUserId(): Promise<string> {
   const id = await getCurrentUserId();
@@ -53,4 +54,16 @@ export async function deleteAccount(formData: FormData) {
   if (!deleted) redirect("/mon-compte?error=delete");
   cookies().delete(USER_COOKIE_NAME);
   redirect("/?compte=supprime");
+}
+
+export async function changePassword(formData: FormData) {
+  const userId = await requireUserId();
+  const current = String(formData.get("currentPassword") ?? "");
+  const next = String(formData.get("newPassword") ?? "");
+  const user = await prisma.user.findUnique({ where: { id: userId }, select: { passwordHash: true, username: true, email: true } });
+  if (!user) redirect("/connexion");
+  if (!(await verifyPassword(current, user.passwordHash))) redirect("/mon-compte?error=pwwrong");
+  if (passwordProblem(next, user.username ?? user.email ?? "")) redirect("/mon-compte?error=pwweak");
+  await prisma.user.update({ where: { id: userId }, data: { passwordHash: await hashPassword(next) } });
+  redirect("/mon-compte?saved=pw");
 }

@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect, useState, useTransition } from "react";
+import PartnerCard from "@/components/partner-card";
+import type { PartnerView } from "@/lib/ads";
 
 type SearchResult =
   | { kind: "exam"; id: string; label: string; category: string; meta: string }
@@ -8,7 +10,7 @@ type SearchResult =
 type Selected = { key: string; kind: "exam" | "consultation"; id?: string; code?: string; label: string };
 type Facility = { id: string; name: string; tier: string | null };
 type StatusId = "EXONERE" | "PLEIN" | "PLEIN_ALD" | "PAF";
-type PriceLine = { label: string; ok: boolean; reason?: string; ticket?: number };
+type PriceLine = { label: string; ok: boolean; reason?: string; notCovered?: boolean; ticket?: number };
 type PriceResult = { error?: string; lines?: PriceLine[]; total?: number; saved?: boolean; facility?: { name: string } };
 
 const STATUSES: { id: StatusId; label: string; meta: string; rate: number }[] = [
@@ -26,10 +28,14 @@ export default function SimulatorApp({
   facilities,
   defaultStatus,
   loggedIn,
+  patientName: initialPatientName,
+  partners,
 }: {
   facilities: Facility[];
   defaultStatus: StatusId | null;
   loggedIn: boolean;
+  patientName: string;
+  partners: PartnerView[];
 }) {
   const [step, setStep] = useState<1 | 2 | 3 | 4>(1);
   const [query, setQuery] = useState("");
@@ -39,6 +45,9 @@ export default function SimulatorApp({
   const [status, setStatus] = useState<StatusId | null>(defaultStatus);
   const [priceResult, setPriceResult] = useState<PriceResult | null>(null);
   const [isPending, startTransition] = useTransition();
+  const [patientName, setPatientName] = useState(initialPatientName);
+  const [pdfBusy, setPdfBusy] = useState(false);
+  const [pdfError, setPdfError] = useState<string | null>(null);
 
   useEffect(() => {
     if (query.trim().length < 2) {
@@ -89,6 +98,43 @@ export default function SimulatorApp({
       }
       setStep(4);
     });
+  }
+
+  async function downloadPdf() {
+    if (!facilityId || !status) return;
+    setPdfBusy(true);
+    setPdfError(null);
+    try {
+      const res = await fetch("/api/pdf", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          items: selected.map((s) => ({ kind: s.kind, id: s.id, code: s.code })),
+          facilityId,
+          status,
+          patientName,
+        }),
+      });
+      if (!res.ok) {
+        const d = await res.json().catch(() => null);
+        setPdfError(d?.error ?? "Impossible de générer le PDF pour le moment.");
+        return;
+      }
+      const blob = await res.blob();
+      const name = /filename="([^"]+)"/.exec(res.headers.get("Content-Disposition") ?? "")?.[1] ?? "HospitAid-simulation.pdf";
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = name;
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      setTimeout(() => URL.revokeObjectURL(url), 10000);
+    } catch {
+      setPdfError("Le téléchargement a échoué. Vérifiez votre connexion et réessayez.");
+    } finally {
+      setPdfBusy(false);
+    }
   }
 
   function reset() {
@@ -180,6 +226,7 @@ export default function SimulatorApp({
                 <span>
                   {l.label}
                   {!l.ok && <span style={{ color: "#C2282A", fontSize: 12 }}> — {l.reason}</span>}
+                  {l.ok && l.notCovered && <span className="mini-flag">Non pris en charge CNAMGS</span>}
                 </span>
                 {l.ok && <span className="n">{money(l.ticket ?? 0)}</span>}
               </div>
@@ -193,6 +240,21 @@ export default function SimulatorApp({
             Ces informations proviennent de données en cours de vérification et ne remplacent pas une
             confirmation auprès de l&apos;établissement ou de la CNAMGS.
           </div>
+          <div className="card" style={{ marginTop: 12 }}>
+            <div className="field">
+              <label htmlFor="patientName">Nom du patient (pour l&apos;en-tête du PDF, facultatif)</label>
+              <input className="input" id="patientName" value={patientName} maxLength={80} onChange={(e) => setPatientName(e.target.value)} placeholder="Ex. Marie Ndong" />
+            </div>
+            <button className="btn btn-red btn-block" style={{ marginTop: 10 }} disabled={pdfBusy} onClick={downloadPdf}>
+              {pdfBusy ? "Préparation du PDF…" : "Télécharger en PDF"}
+            </button>
+            {pdfError && <p style={{ color: "#C2282A", fontSize: 13, margin: "8px 0 0" }} role="alert">{pdfError}</p>}
+          </div>
+          {partners.length > 0 && (
+            <div className="stack" style={{ marginTop: 12 }}>
+              {partners.map((p) => <PartnerCard key={p.id} partner={p} />)}
+            </div>
+          )}
           {loggedIn ? (
             priceResult.saved && <p className="muted">Cette simulation est enregistrée dans votre historique (Mon compte).</p>
           ) : (

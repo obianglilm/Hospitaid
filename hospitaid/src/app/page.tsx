@@ -1,10 +1,13 @@
 import Link from "next/link";
 import { prisma } from "@/lib/prisma";
+import PartnerCard from "@/components/partner-card";
+import { getActivePartners } from "@/lib/ads";
 
 export const dynamic = "force-dynamic";
 
 export default async function Home({ searchParams }: { searchParams: { compte?: string } }) {
   let facilitiesCount = 0, examsCount = 0, verifiedCount = 0;
+  const partners = await getActivePartners(4);
   let dbError: string | null = null;
   try {
     [facilitiesCount, examsCount, verifiedCount] = await Promise.all([
@@ -50,6 +53,13 @@ export default async function Home({ searchParams }: { searchParams: { compte?: 
           ))}
         </div>
       </section>
+
+      {partners.length > 0 && (
+        <section style={{ marginBottom: 12 }}>
+          <h2 className="section-title">Nos partenaires</h2>
+          <div className="stack">{partners.map((p) => <PartnerCard key={p.id} partner={p} />)}</div>
+        </section>
+      )}
 
       {dbError ? (
         <div className="notice">⚠️ Connexion à la base de données impossible : {dbError}</div>

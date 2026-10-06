@@ -41,13 +41,24 @@ export function getDummyHash(): Promise<string> {
   return dummyHash;
 }
 
-export const MIN_PASSWORD_LENGTH = 10;
+export const MIN_PASSWORD_LENGTH = 6;
 export const MAX_PASSWORD_LENGTH = 128;
 
-export function passwordProblem(password: string, email: string): string | null {
+const COMMON_PASSWORDS = new Set([
+  "123456", "1234567", "12345678", "123456789", "1234567890", "000000", "0000000", "00000000",
+  "111111", "11111111", "password", "motdepasse", "azerty", "azerty123", "qwerty", "qwerty123",
+  "abcdef", "hospitaid", "gabon", "libreville",
+]);
+
+/**
+ * Règles volontairement simples : une date de naissance (ex. 15031985) est acceptée.
+ * On écarte seulement les mots de passe triviaux. Retourne le message d'erreur, ou null.
+ */
+export function passwordProblem(password: string, identifier: string): string | null {
   if (password.length < MIN_PASSWORD_LENGTH) return `Le mot de passe doit contenir au moins ${MIN_PASSWORD_LENGTH} caractères.`;
   if (password.length > MAX_PASSWORD_LENGTH) return `Le mot de passe ne peut pas dépasser ${MAX_PASSWORD_LENGTH} caractères.`;
-  if (password.toLowerCase() === email.toLowerCase()) return "Le mot de passe ne doit pas être identique à l'e-mail.";
+  if (password.toLowerCase() === identifier.toLowerCase()) return "Le mot de passe ne doit pas être identique à l'identifiant.";
   if (/^(.)\1+$/.test(password)) return "Choisissez un mot de passe moins prévisible.";
+  if (COMMON_PASSWORDS.has(password.toLowerCase())) return "Ce mot de passe est trop courant. Choisissez-en un autre.";
   return null;
 }
